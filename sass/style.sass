@@ -1,0 +1,119 @@
+@import 'https://fonts.googleapis.com/css?family=Lalezar|Yanone+Kaffeesatz'
+
+=button($color)
+  font-size: 50px
+  margin: 20px
+  border: none
+  width: 50px
+  height: 50px
+  position: relative
+  background-color: lighten($color, 2%)
+  border-radius: 50%
+  background-image: radial-gradient(ellipse closest-side,lighten($color, 13%) 20%, lighten($color, 2%) 70%, lighten($color, 20%) 88%, darken($color, 12%)), radial-gradient(50% 20%, 200% 60%, darken($color, 29%) 20%, darken($color, 19%) 60%, darken($color, 6%) 70% ), radial-gradient(50% 80%, 100% 40%, lighten($color, 61%) 10%, lighten($color, 13%) 60%, rgba(100,100,250,0) 70% )
+  outline: none
+  cursor: pointer
+
+  &:active
+    top: 2.5px
+
+  &:after
+    display: none
+  &:before
+    top: -3.75px
+    bottom: -7.5px
+
+  &:after
+    content: ""
+    position: absolute
+    z-index: -1
+    top: 0
+    right: 1px
+    bottom: -2.5px
+    left: 1px
+    border-radius: 50%
+    background-color: lighten($color, 2%)
+    background-image: linear-gradient(left, lighten($color, 2%), $color 10%, darken($color, 21%), darken($color, 12%) 90%, lighten($color, 2%))
+
+  &:before
+    content: ""
+    position: absolute
+    top: -1.25px
+    bottom: -10px
+    right: -6.25px
+    left: -6.25px
+    border-radius: 50%
+    background-color: lighten($color, 2%)
+    background-image: radial-gradient(cover, black 50%, lighten($color, 2%) 58%)
+    z-index: -2
+
+html, body
+  width: 100%
+  height: 100%
+
+body
+  margin: 0
+  font-size: 0
+  background: #294A67
+  
+.container
+  font-size: 20px
+  font-family: Calibri, Verdana
+  color: black
+  min-height: 150px
+  
+  .buttons
+    .button
+      display: inline-block
+      min-height: 120px
+      width: 150px
+      text-align: center
+      vertical-align: top
+      position: relative
+      
+      .item
+        +button(#FF0000)
+      
+        $colors: red     pink    purple  deeppurple indigo  blue    lightblue cyan    teal    green   lightgreen lime    yellow  amber   orange  deeporange brown   grey    bluegrey black white
+        $hex:    #F44336 #E91E63 #9C27B0 #673AB7    #3F51B5 #2196F3 #03A9F4   #00BCD4 #009688 #4CAF50 #8BC34A    #CDDC39 #FFEB3B #FFC107 #FF9800 #FF5722 #795548 #9E9E9E #607D8B  #000  #FFF
+        @for $i from 1 through length($colors)
+          &.#{nth($colors, $i)}-button
+            +button(nth($hex, $i))
+          
+    .title
+      font-family: 'Lalezar'
+      color: #fdbc23
+      text-shadow: 0px 0px 2px #ff5e007
+      position: relative
+      cursor: default
+      
+      &:hover + .description
+        opacity: 1
+        transform: translateY(0)
+        z-index: 12
+      
+    .description
+      position: absolute
+      transition: all ease-in-out 0.3s
+      font-family: 'Yanone Kaffeesatz'
+      background: #333
+      background: rgba(0,0,0,.8)
+      border-radius: 5px
+      color: white
+      margin-bottom: -100px
+      margin-top: 5px
+      opacity: 0
+      z-index: 5     
+      padding: 5px
+      width: 140px
+      transform: translateY(10px)
+      z-index: -1
+      
+      &:before
+        content: ''
+        border: solid
+        border-color: rgba(0,0,0,.8) transparent
+        border-width: 0 6px 6px 6px
+        position: absolute
+        z-index: 99
+        top: -5px
+        left: 45%
