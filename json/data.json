@@ -1,0 +1,189 @@
+[
+  {
+    "title": "Après",
+    "src": "sounds/apay.mp3"
+  },
+  {
+    "title": "Bonne nuit les chiards",
+    "description": "Un petit coup de pipeau?",
+    "src": "sounds/bonnenuitleschiards.mp3"
+  },
+  {
+    "title": "Careless Whisper",
+    "description": "Envie de sensualité?",
+    "src": "sounds/carelesswhisper.mp3"
+  },
+  {
+    "title": "Hello darkness my old friend",
+    "description": "Pour les moments de solitude",
+    "src": "sounds/hellodarknessmyoldfriend.mp3"
+  },
+  {
+    "title": "Keuuuuuwah",
+    "description": "Exclamation tirée de la série 'Le coeur a ses raisons'",
+    "src": "sounds/keuuuuuwah.mp3"
+  },
+  {
+    "title": "Tin-tin-tin-tiiin",
+    "description": "Exclamation tirée du sublime film 'La cité de la peur'",
+    "src": "sounds/lacitedelapeur.mp3"
+  },
+  {
+    "title": "C'est qui le patron?",
+    "description": "Ne mets pas tes doigts sur la porte, tu risques de te faire pincer très fort",
+    "src": "sounds/lapindumetro.mp3"
+  },
+  {
+    "title": "Merci vous",
+    "src": "sounds/mercivous.mp3"
+  },
+  {
+    "title": "Non",
+    "description": "Mario l'a dit",
+    "src": "sounds/non.mp3"
+  },
+  {
+    "title": "Ouaip",
+    "description": "C'est pas un Racaillou ça m'dame !",
+    "src": "sounds/ouaisouais.mp3"
+  },
+  {
+    "title": "Papi fougasse l'énigme",
+    "src": "sounds/papifougasse.mp3"
+  },
+  {
+    "title": "Papi fougasse solution",
+    "src": "sounds/papifougasse2.mp3"
+  },
+  {
+    "title": "Super Timor",
+    "description": "Paraît que c'est encore plus fort avec sa nouvelle formule",
+    "src": "sounds/supertimor.mp3"
+  },
+  {
+    "title": "Surprise",
+    "src": "sounds/surprise.mp3"
+  },
+  {
+    "title": "We are the champions",
+    "description": "Pour fêter ses succès !",
+    "src": "sounds/wearethechampions.mp3"
+  },
+  {
+    "title": "1up",
+    "description": "You get an extra life !",
+    "src": "sounds/1up.mp3"
+  },
+  {
+    "title": "06h30",
+    "description": "Et tout va bien !",
+    "src": "sounds/6h30.mp3"
+  },
+  {
+    "title": "Boblennon",
+    "description": "Notre dieu à tous",
+    "src": "sounds/boblennon.mp3"
+  },
+  {
+    "title": "Snoop Dogg",
+    "description": "Alors qu'est-ce qu'on attend?",
+    "src": "sounds/cesoirsnoopdogg.mp3"
+  },
+  {
+    "title": "Codec",
+    "description": "Snake? Snake? SNAAAAKE !",
+    "src": "sounds/codec.mp3"
+  },
+  {
+    "title": "Dring dring dring",
+    "description": "Eh oui, ça vient de Pokémon :D",
+    "src": "sounds/dringdringdring.mp3"
+  },
+  {
+    "title": "Gameboy",
+    "src": "sounds/gameboy.mp3"
+  },
+  {
+    "title": "Gurdil",
+    "description": "On creuse le jour, on boit la nuit",
+    "src": "sounds/gurdil.mp3"
+  },
+  {
+    "title": "Hey",
+    "description": "Listen !",
+    "src": "sounds/hey.mp3"
+  },
+  {
+    "title": "Magabons",
+    "description": "Vous n'êtes que des magabons !",
+    "src": "sounds/magabon.mp3"
+  },
+  {
+    "title": "Même que des fois...",
+    "src": "sounds/memequedesfoismoijevomis.mp3"
+  },
+  {
+    "title": "Michel c'est le Brésil",
+    "description": "Tout ça pour des Velux !",
+    "src": "sounds/michelcestlebresil.mp3"
+  },
+  {
+    "title": "Moskau",
+    "description": "Un peu de Russie dans vos veines",
+    "src": "sounds/moskau.mp3"
+  },
+  {
+    "title": "Nom de Zeus",
+    "description": "C'est vous l'doc, doc",
+    "src": "sounds/nomdezeus.mp3"
+  },
+  {
+    "title": "Quoiiii?",
+    "src": "sounds/quoiiii.mp3"
+  },
+  {
+    "title": "Sega",
+    "description": "C'est plus fort que toi",
+    "src": "sounds/sega.mp3"
+  },
+  {
+    "title": "SEGA",
+    "description": "...En fait peut-être pas",
+    "src": "sounds/sega2.mp3"
+  },
+  {
+    "title": "On est champions",
+    "description": "On est tous ensemble !",
+    "src": "sounds/tousensemble.mp3"
+  },
+  {
+    "title": "Trop géniaaaale",
+    "description": "La peluuuche !",
+    "src": "sounds/tropgeniale.mp3"
+  },
+  {
+    "title": "Troy and Abed in the morning",
+    "description": "De la série 'Community' (que je vous recommande)",
+    "src": "sounds/troyandabedinthemorning.mp3"
+  },
+  {
+    "title": "Cantina",
+    "description": "By Watto, dans Star Wars Racer",
+    "src": "sounds/wattocantina.mp3"
+  },
+  {
+    "title": "What iz ze fuque?",
+    "description": "De 'Norman fait des vidéos'",
+    "src": "sounds/whatisthefuque.mp3"
+  },
+  {
+    "title": "What The Cut Résumé",
+    "description": "Antoine Daniel <3",
+    "src": "sounds/whatthecut.mp3"
+  },
+  {
+    "title": "Windows 95",
+    "description": "Souvenirs...",
+    "src": "sounds/windows95.mp3"
+  }
+]

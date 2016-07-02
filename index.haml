@@ -1,6 +1,6 @@
 .container{"data-ng-app"=>"app","data-ng-controller"=>"AppController as vm"}
   .buttons
-    .button{"data-ng-repeat"=>"button in vm.buttons track by $index"}
+    .button{"data-ng-cloak"=>"true", "data-ng-repeat"=>"button in vm.buttons | orderBy:"title" track by $index"}
       %audio{"data-ng-class"=>"'audio-'+$index","ng-src"=>"{{button.src}}", "type"=>"audio/mpeg"}
       %button.item{"data-ng-click"=>"vm.play($index)", "data-ng-class"=>"button.class"}
       .title{"data-ng-bind"=>"button.title"}
