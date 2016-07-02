@@ -41,10 +41,10 @@ body {
 .container .buttons .button .item:active {
   top: 2.5px;
 }
-.container .buttons .button .item:after {
+.container .buttons .button .item:active:after {
   display: none;
 }
-.container .buttons .button .item:before {
+.container .buttons .button .item:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -91,10 +91,10 @@ body {
 .container .buttons .button .item.red-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.red-button:after {
+.container .buttons .button .item.red-button:active:after {
   display: none;
 }
-.container .buttons .button .item.red-button:before {
+.container .buttons .button .item.red-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -141,10 +141,10 @@ body {
 .container .buttons .button .item.pink-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.pink-button:after {
+.container .buttons .button .item.pink-button:active:after {
   display: none;
 }
-.container .buttons .button .item.pink-button:before {
+.container .buttons .button .item.pink-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -191,10 +191,10 @@ body {
 .container .buttons .button .item.purple-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.purple-button:after {
+.container .buttons .button .item.purple-button:active:after {
   display: none;
 }
-.container .buttons .button .item.purple-button:before {
+.container .buttons .button .item.purple-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -241,10 +241,10 @@ body {
 .container .buttons .button .item.deeppurple-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.deeppurple-button:after {
+.container .buttons .button .item.deeppurple-button:active:after {
   display: none;
 }
-.container .buttons .button .item.deeppurple-button:before {
+.container .buttons .button .item.deeppurple-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -291,10 +291,10 @@ body {
 .container .buttons .button .item.indigo-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.indigo-button:after {
+.container .buttons .button .item.indigo-button:active:after {
   display: none;
 }
-.container .buttons .button .item.indigo-button:before {
+.container .buttons .button .item.indigo-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -341,10 +341,10 @@ body {
 .container .buttons .button .item.blue-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.blue-button:after {
+.container .buttons .button .item.blue-button:active:after {
   display: none;
 }
-.container .buttons .button .item.blue-button:before {
+.container .buttons .button .item.blue-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -391,10 +391,10 @@ body {
 .container .buttons .button .item.lightblue-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.lightblue-button:after {
+.container .buttons .button .item.lightblue-button:active:after {
   display: none;
 }
-.container .buttons .button .item.lightblue-button:before {
+.container .buttons .button .item.lightblue-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -441,10 +441,10 @@ body {
 .container .buttons .button .item.cyan-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.cyan-button:after {
+.container .buttons .button .item.cyan-button:active:after {
   display: none;
 }
-.container .buttons .button .item.cyan-button:before {
+.container .buttons .button .item.cyan-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -491,10 +491,10 @@ body {
 .container .buttons .button .item.teal-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.teal-button:after {
+.container .buttons .button .item.teal-button:active:after {
   display: none;
 }
-.container .buttons .button .item.teal-button:before {
+.container .buttons .button .item.teal-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -541,10 +541,10 @@ body {
 .container .buttons .button .item.green-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.green-button:after {
+.container .buttons .button .item.green-button:active:after {
   display: none;
 }
-.container .buttons .button .item.green-button:before {
+.container .buttons .button .item.green-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -591,10 +591,10 @@ body {
 .container .buttons .button .item.lightgreen-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.lightgreen-button:after {
+.container .buttons .button .item.lightgreen-button:active:after {
   display: none;
 }
-.container .buttons .button .item.lightgreen-button:before {
+.container .buttons .button .item.lightgreen-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -641,10 +641,10 @@ body {
 .container .buttons .button .item.lime-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.lime-button:after {
+.container .buttons .button .item.lime-button:active:after {
   display: none;
 }
-.container .buttons .button .item.lime-button:before {
+.container .buttons .button .item.lime-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -691,10 +691,10 @@ body {
 .container .buttons .button .item.yellow-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.yellow-button:after {
+.container .buttons .button .item.yellow-button:active:after {
   display: none;
 }
-.container .buttons .button .item.yellow-button:before {
+.container .buttons .button .item.yellow-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -741,10 +741,10 @@ body {
 .container .buttons .button .item.amber-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.amber-button:after {
+.container .buttons .button .item.amber-button:active:after {
   display: none;
 }
-.container .buttons .button .item.amber-button:before {
+.container .buttons .button .item.amber-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -791,10 +791,10 @@ body {
 .container .buttons .button .item.orange-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.orange-button:after {
+.container .buttons .button .item.orange-button:active:after {
   display: none;
 }
-.container .buttons .button .item.orange-button:before {
+.container .buttons .button .item.orange-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -841,10 +841,10 @@ body {
 .container .buttons .button .item.deeporange-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.deeporange-button:after {
+.container .buttons .button .item.deeporange-button:active:after {
   display: none;
 }
-.container .buttons .button .item.deeporange-button:before {
+.container .buttons .button .item.deeporange-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -891,10 +891,10 @@ body {
 .container .buttons .button .item.brown-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.brown-button:after {
+.container .buttons .button .item.brown-button:active:after {
   display: none;
 }
-.container .buttons .button .item.brown-button:before {
+.container .buttons .button .item.brown-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -941,10 +941,10 @@ body {
 .container .buttons .button .item.grey-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.grey-button:after {
+.container .buttons .button .item.grey-button:active:after {
   display: none;
 }
-.container .buttons .button .item.grey-button:before {
+.container .buttons .button .item.grey-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -991,10 +991,10 @@ body {
 .container .buttons .button .item.bluegrey-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.bluegrey-button:after {
+.container .buttons .button .item.bluegrey-button:active:after {
   display: none;
 }
-.container .buttons .button .item.bluegrey-button:before {
+.container .buttons .button .item.bluegrey-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -1041,10 +1041,10 @@ body {
 .container .buttons .button .item.black-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.black-button:after {
+.container .buttons .button .item.black-button:active:after {
   display: none;
 }
-.container .buttons .button .item.black-button:before {
+.container .buttons .button .item.black-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -1091,10 +1091,10 @@ body {
 .container .buttons .button .item.white-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.white-button:after {
+.container .buttons .button .item.white-button:active:after {
   display: none;
 }
-.container .buttons .button .item.white-button:before {
+.container .buttons .button .item.white-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
@@ -1134,7 +1134,7 @@ body {
 .container .buttons .title:hover + .description {
   opacity: 1;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   z-index: 12;
 }
 .container .buttons .description {
@@ -1153,7 +1153,7 @@ body {
   padding: 5px;
   width: 140px;
   -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  transform: translateY(10px);
   z-index: -1;
 }
 .container .buttons .description:before {
