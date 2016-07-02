@@ -23,7 +23,7 @@ var app = angular.module('app', [])
         else {
           colors = COLORS;
         }
-        i.src = $sce.trustAsResourceUrl(i.src);
+        i.src = $sce.trustAsResourceUrl('sounds/' + i.src + '.mp3');
       });
     });
 

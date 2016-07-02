@@ -18,8 +18,8 @@
   <body>
 
     <div class='container' data-ng-app='app' data-ng-controller='AppController as vm'>
-  <div class='buttons'>
-    <div class='button' data-ng-cloak='true' data-ng-repeat='button in vm.buttons | orderBy:"title" track by $index'>
+  <div class='buttons' data-ng-if="vm.buttons.length>1">
+    <div class='button ng-cloak' data-ng-repeat='button in vm.buttons | orderBy:"title" track by $index'>
       <audio data-ng-class="'audio-'+$index" ng-src='{{button.src}}' type='audio/mpeg'></audio>
       <button class='item' data-ng-class='button.class' data-ng-click='vm.play($index)'></button>
       <div class='title' data-ng-bind='button.title'></div>

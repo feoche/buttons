@@ -16,6 +16,9 @@ body {
   color: black;
   min-height: 150px;
 }
+.container .buttons {
+  text-align: center;
+}
 .container .buttons .button {
   display: inline-block;
   min-height: 120px;
