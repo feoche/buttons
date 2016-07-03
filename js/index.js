@@ -27,11 +27,14 @@ var app = angular.module('app', [])
       });
     });
 
-    vm.play = function(index) {
+    vm.play = function(title) {
       for (var i = 0; i < vm.buttons.length; i++) {
-        document.getElementsByClassName("audio-" + i)[0].pause();
+        var item = document.getElementsByClassName("audio-" + vm.buttons[i].title);
+        if(vm.buttons[i] && item && item[0]) {
+          item[0].pause();
+        }
       }
-      document.getElementsByClassName("audio-" + index)[0].load();
-      document.getElementsByClassName("audio-" + index)[0].play();
+      document.getElementsByClassName("audio-" + title)[0].load();
+      document.getElementsByClassName("audio-" + title)[0].play();
     };
   }]);

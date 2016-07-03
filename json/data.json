@@ -717,5 +717,45 @@
   {
     "title": "On s'en bat les...",
     "src": "onsenbatlescouilles"
+  },
+  {
+    "title": "La jungle des animaux",
+    "src": "lajungledesanimaux"
+  },
+  {
+    "title": "Ramoucho",
+    "description": "Jeu de mots Ramoucho !",
+    "src": "jeudemotsramoucho"
+  },
+  {
+    "title": "Merguez Party",
+    "description": "Tant qu'y a d'la braise, c'est pas fini !",
+    "src": "lamerguezparty"
+  },
+  {
+    "title": "Viens boire un p'tit coup",
+    "description": "...à la maison",
+    "src": "viensboireunptitcoup"
+  },{
+    "title": "Le papa pingouin",
+    "src": "papapingouin"
+  },
+  {
+    "title": "J'ai fait caca",
+    "description": "Ah mais oui mais non c'est vrai !",
+    "src": "jaifaitcaca"
+  },
+  {
+    "title": "It's OK to be gay",
+    "src": "itsoktobegay"
+  },
+  {
+    "title": "Et on fait tourner les serviettes",
+    "description": "Pour vos mariages",
+    "src": "tournerlesserviettes"
+  },{
+    "title": "Le petit bonhomme en mousse",
+    "description": "Pour vos soirées beaufs",
+    "src": "lepetitbonhommeenmousse"
   }
 ]

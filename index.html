@@ -21,8 +21,8 @@
     <input class='filter' data-ng-model='filter'>
     <div class='buttons' data-ng-if='vm.buttons.length&gt;1'>
       <div class='button ng-cloak' data-ng-repeat="button in vm.buttons | orderBy:'title' | filter:filter track by $index">
-        <audio data-ng-class="'audio-'+$index" ng-src='{{button.src}}' type='audio/mpeg'></audio>
-        <button class='item' data-ng-class='button.class' data-ng-click='vm.play($index)'></button>
+        <audio data-ng-class="'audio-'+button.title" ng-src='{{button.src}}' type='audio/mpeg'></audio>
+        <button class='item' data-ng-class='button.class' data-ng-click='vm.play(button.title)'></button>
         <div class='title' data-ng-bind='button.title'></div>
         <div class='description' data-ng-bind='button.description' data-ng-if='button.description'></div>
       </div>

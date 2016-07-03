@@ -2,7 +2,7 @@
   %input.filter{"data-ng-model"=>"filter"}
   .buttons{"data-ng-if"=>"vm.buttons.length>1"}
     .button.ng-cloak{"data-ng-repeat"=>"button in vm.buttons | orderBy:'title' | filter:filter track by $index"}
-      %audio{"data-ng-class"=>"'audio-'+$index","ng-src"=>"{{button.src}}", "type"=>"audio/mpeg"}
-      %button.item{"data-ng-click"=>"vm.play($index)", "data-ng-class"=>"button.class"}
+      %audio{"data-ng-class"=>"'audio-'+button.title","ng-src"=>"{{button.src}}", "type"=>"audio/mpeg"}
+      %button.item{"data-ng-click"=>"vm.play(button.title)", "data-ng-class"=>"button.class"}
       .title{"data-ng-bind"=>"button.title"}
       .description{"data-ng-if"=>"button.description", "data-ng-bind"=>"button.description"}
