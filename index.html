@@ -3,27 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <title>Funny buttons</title>
-    
-    
+
+
     <link rel="stylesheet" href="css/reset.css">
 
-    
+
         <link rel="stylesheet" href="css/style.css">
 
-    
-    
-    
+
+
+
   </head>
 
   <body>
 
-    <div class='container' data-ng-app='app' data-ng-controller='AppController as vm'>
-  <div class='buttons' data-ng-if="vm.buttons.length>1">
-    <div class='button ng-cloak' data-ng-repeat='button in vm.buttons | orderBy:"title" track by $index'>
-      <audio data-ng-class="'audio-'+$index" ng-src='{{button.src}}' type='audio/mpeg'></audio>
-      <button class='item' data-ng-class='button.class' data-ng-click='vm.play($index)'></button>
-      <div class='title' data-ng-bind='button.title'></div>
-      <div class='description' data-ng-bind='button.description' data-ng-if='button.description'></div>
+  <div class='container' data-ng-app='app' data-ng-controller='AppController as vm'>
+    <input class='filter' data-ng-model='filter'>
+    <div class='buttons' data-ng-if='vm.buttons.length&gt;1'>
+      <div class='button ng-cloak' data-ng-repeat="button in vm.buttons | orderBy:'title' | filter:filter track by $index">
+        <audio data-ng-class="'audio-'+$index" ng-src='{{button.src}}' type='audio/mpeg'></audio>
+        <button class='item' data-ng-class='button.class' data-ng-click='vm.play($index)'></button>
+        <div class='title' data-ng-bind='button.title'></div>
+        <div class='description' data-ng-bind='button.description' data-ng-if='button.description'></div>
+      </div>
     </div>
   </div>
 </div>
@@ -31,8 +33,8 @@
 
         <script src="js/index.js"></script>
 
-    
-    
-    
+
+
+
   </body>
 </html>

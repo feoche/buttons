@@ -15,6 +15,18 @@ body {
   font-family: Calibri, Verdana;
   color: black;
   min-height: 150px;
+  text-align: center;
+}
+.container .filter {
+  background: rgba(0, 0, 0, 0.15);
+  font-size: 30px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  outline: none;
+  color: white;
+  padding: 2px 10px;
+  font-family: "Yanone Kaffeesatz";
 }
 .container .buttons {
   text-align: center;
@@ -22,7 +34,7 @@ body {
 .container .buttons .button {
   display: inline-block;
   min-height: 120px;
-  width: 125px;
+  width: 126px;
   text-align: center;
   vertical-align: top;
   position: relative;
