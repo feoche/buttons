@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/feoche/pen/zBwWbg.
-
- 
+Funny buttons, based on the (instantsfun.es) website. http://feoche.github.io/buttons
