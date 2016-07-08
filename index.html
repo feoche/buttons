@@ -1,40 +1,15 @@
 <!DOCTYPE html>
-<html >
+<html>
   <head>
     <meta charset="UTF-8">
     <title>Funny buttons</title>
-
-
     <link rel="stylesheet" href="css/reset.css">
-
-
-        <link rel="stylesheet" href="css/style.css">
-
-
-
-
+    <link rel="stylesheet" href="css/style.css">
   </head>
-
-  <body>
-
-  <div class='container' data-ng-app='app' data-ng-controller='AppController as vm'>
-    <input class='filter' data-ng-model='filter'>
-    <div class='buttons' data-ng-if='vm.buttons.length&gt;1'>
-      <div class='button ng-cloak' data-ng-repeat="button in vm.buttons | orderBy:'title' | filter:filter track by $index">
-        <audio data-ng-class="'audio-'+button.title" ng-src='{{button.src}}' type='audio/mpeg'></audio>
-        <button class='item' data-ng-class='button.class' data-ng-click='vm.play(button.title)'></button>
-        <div class='title' data-ng-bind='button.title'></div>
-        <div class='description' data-ng-bind='button.description' data-ng-if='button.description'></div>
-      </div>
-    </div>
-  </div>
-</div>
+  <body data-ng-app='app'>
+    <div ui-view></div>
     <script src='https://code.angularjs.org/1.4.1/angular.js'></script>
-
-        <script src="js/index.js"></script>
-
-
-
-
+    <script src='http://angular-ui.github.io/ui-router/release/angular-ui-router.js'></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

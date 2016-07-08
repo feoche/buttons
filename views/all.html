@@ -1,0 +1,11 @@
+<div class='container'>
+    <input class='filter' data-ng-model='filter'>
+    <div class='buttons' data-ng-if='buttons.length>1'>
+        <div class='button ng-cloak' data-ng-repeat="button in buttons | orderBy:'title' | filter:filter track by $index">
+            <audio data-ng-class="'audio-'+button.title" ng-src='{{button.source}}' type='audio/mpeg'></audio>
+            <button class='item' data-ng-class='button.class' data-ng-click='play(button.title)'></button>
+            <a ng-href="#/{{button.src}}"><div class='title' data-ng-bind='button.title'></div></a>
+            <div class='description' data-ng-bind='button.description' data-ng-if='button.description'></div>
+        </div>
+    </div>
+</div>

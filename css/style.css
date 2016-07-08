@@ -38,6 +38,7 @@ body {
   text-align: center;
   vertical-align: top;
   position: relative;
+  text-decoration: none;
 }
 .container .buttons .button .item {
   font-size: 50px;
