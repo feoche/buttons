@@ -736,7 +736,8 @@
     "title": "Viens boire un p'tit coup",
     "description": "...à la maison",
     "src": "viensboireunptitcoup"
-  },{
+  },
+  {
     "title": "Le papa pingouin",
     "src": "papapingouin"
   },
@@ -753,9 +754,189 @@
     "title": "Et on fait tourner les serviettes",
     "description": "Pour vos mariages",
     "src": "tournerlesserviettes"
-  },{
+  },
+  {
     "title": "Le petit bonhomme en mousse",
     "description": "Pour vos soirées beaufs",
     "src": "lepetitbonhommeenmousse"
+  },
+  {
+    "title": "Sing hallelujah",
+    "src": "singhallelujah"
+  },
+  {
+    "title": "Ça dépasserait l'entendement !",
+    "description": "Mais enfin Jérôme !",
+    "src": "cadepasselentendement"
+  },
+  {
+    "title": "J'danse comme un ouf",
+    "description": "CL4P-TP :D",
+    "src": "jdonnetout"
+  },
+  {
+    "title": "</3",
+    "description": "GlaDoS :'(",
+    "src": "glados"
+  },
+  {
+    "title": "Goodbye",
+    "description": "Se faire cuire à 4000° #tbt",
+    "src": "goodbye"
+  },
+  {
+    "title": "Wheatley",
+    "description": "Avec cet accent british !",
+    "src": "wheatley"
+  },
+  {
+    "title": "Tunak tunak",
+    "src": "tunaktunak"
+  },
+  {
+    "title": "Hard Corner",
+    "description": "Benzaaaaaaie !",
+    "src": "hardcorner"
+  },
+  {
+    "title": "Harlem shake",
+    "description": "Pour vos soirées entre potes avec des poneys",
+    "src": "harlemshake"
+  },
+  {
+    "title": "Everyday I'm shufflin",
+    "src": "shufflin"
+  },
+  {
+    "title": "Yeah",
+    "description": "Yea !",
+    "src": "yeah"
+  },
+  {
+    "title": "C'est pas faux",
+    "description": "Perceval rulz",
+    "src": "cestpasfaux"
+  },
+  {
+    "title": "A que coucou",
+    "description": "COUCOU !",
+    "src": "aquecoucou"
+  },
+  {
+    "title": "Arthour",
+    "description": "Couillère",
+    "src": "arthour"
+  },
+  {
+    "title": "Laughing owl",
+    "description": "Une chouette qui rigole de manière bizarre ^^",
+    "src": "laughingowl"
+  },
+  {
+    "title": "What what",
+    "description": "In the butt",
+    "src": "whatwhat"
+  },
+  {
+    "title": "Wheeeeeee",
+    "src": "whee"
+  },
+  {
+    "title": "MEU",
+    "description": "MEU",
+    "src": "meu"
+  },
+  {
+    "title": "DROOOOGUE",
+    "src": "drogue"
+  },
+  {
+    "title": "Café?",
+    "src": "cafe"
+  },
+  {
+    "title": "Don't drop that durka durk",
+    "src": "durkadurk"
+  },
+  {
+    "title": "Yamete kudasai",
+    "src": "yametekudasai"
+  },
+  {
+    "title": "Au revoir.",
+    "src": "aurevoir"
+  },
+  {
+    "title": "Kamehameha",
+    "src": "kamehameha"
+  },
+  {
+    "title": "Wingardium leviosaaa",
+    "src": "leviosa"
+  },
+  {
+    "title": "Die potato",
+    "description": "NOOOOOOO",
+    "src": "diepotato"
+  },
+  {
+    "title": "À moi?",
+    "src": "amoi"
+  },
+  {
+    "title": "It's me Mario",
+    "src": "itsmemario"
+  },
+  {
+    "title": "Hi-hi",
+    "description": "MJ représente",
+    "src": "mjhihi"
+  },
+  {
+    "title": "Scatman",
+    "src": "scatman"
+  },
+  {
+    "title": "NO !",
+    "description": "GOD PLEASE NO",
+    "src": "no"
+  },
+  {
+    "title": "Vous êtes vraiment dégeulasse",
+    "description": "Mais ça m'plaît !",
+    "src": "degeulasse"
+  },
+  {
+    "title": "C'est pas sorcier",
+    "description": "Une putain d'émission <3",
+    "src": "cestpassorcier"
+  },
+  {
+    "title": "Koh Lanta",
+    "description": "Cette sanction est irrévocable",
+    "src": "kohlanta"
+  },
+  {
+    "title": "Chapi chapo",
+    "src": "chapichapo"
+  },
+  {
+    "title": "Boule noire",
+    "description": "OHOHOHOH",
+    "src": "boulenoire"
+  },
+  {
+    "title": "J'vous aime putain",
+    "src": "jvousaimeputain"
+  },
+  {
+    "title": "Coucou",
+    "description": "Tu veux voir ma bite?",
+    "src": "coucou"
+  },
+  {
+    "title": "Do it",
+    "description": "JUST DO IT",
+    "src": "justdoit"
   }
 ]
