@@ -1,8 +1,9 @@
 <div class='container'>
+    <a class="back-button" ui-sref="buttons">&lt; Home</a>
     <div class='button ng-cloak'>
-        <audio data-ng-class="'audio-'+button.title" ng-src='{{button.source}}' type='audio/mpeg'></audio>
-        <button class='item' data-ng-class='button.class' data-ng-click='play(button.title)'></button>
-        <div class='title' data-ng-bind='button.title'></div>
-        <div class='description' data-ng-bind='button.description'></div>
+        <audio data-ng-class="'audio-' + vm.buttonDetail.title" ng-src='{{vm.buttonDetail.source}}' type='audio/mpeg'></audio>
+        <button class='item' data-ng-class='vm.buttonDetail.class' data-ng-click='vm.play(vm.buttonDetail.title)'></button>
+        <div class='title' data-ng-bind='vm.buttonDetail.title'></div>
+        <div class='description' data-ng-bind='vm.buttonDetail.description'></div>
     </div>
 </div>

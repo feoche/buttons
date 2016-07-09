@@ -31,7 +31,8 @@ body {
 .container .buttons {
   text-align: center;
 }
-.container .buttons .button {
+
+.button {
   display: inline-block;
   min-height: 120px;
   width: 126px;
@@ -40,7 +41,7 @@ body {
   position: relative;
   text-decoration: none;
 }
-.container .buttons .button .item {
+.button .item {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -54,17 +55,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item:active {
+.button .item:active {
   top: 2.5px;
 }
-.container .buttons .button .item:active:after {
+.button .item:active:after {
   display: none;
 }
-.container .buttons .button .item:active:before {
+.button .item:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item:after {
+.button .item:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -77,7 +78,7 @@ body {
   background-image: -webkit-linear-gradient(left, #ff0a0a, #FF0000 10%, #940000, #c20000 90%, #ff0a0a);
   background-image: linear-gradient(left, #ff0a0a, #FF0000 10%, #940000, #c20000 90%, #ff0a0a);
 }
-.container .buttons .button .item:before {
+.button .item:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -90,7 +91,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #ff0a0a 58%);
   z-index: -2;
 }
-.container .buttons .button .item.red-button {
+.button .item.red-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -104,17 +105,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.red-button:active {
+.button .item.red-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.red-button:active:after {
+.button .item.red-button:active:after {
   display: none;
 }
-.container .buttons .button .item.red-button:active:before {
+.button .item.red-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.red-button:after {
+.button .item.red-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -127,7 +128,7 @@ body {
   background-image: -webkit-linear-gradient(left, #f54c40, #F44336 10%, #b5160a, #e11b0c 90%, #f54c40);
   background-image: linear-gradient(left, #f54c40, #F44336 10%, #b5160a, #e11b0c 90%, #f54c40);
 }
-.container .buttons .button .item.red-button:before {
+.button .item.red-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -140,7 +141,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #f54c40 58%);
   z-index: -2;
 }
-.container .buttons .button .item.pink-button {
+.button .item.pink-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -154,17 +155,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.pink-button:active {
+.button .item.pink-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.pink-button:active:after {
+.button .item.pink-button:active:after {
   display: none;
 }
-.container .buttons .button .item.pink-button:active:before {
+.button .item.pink-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.pink-button:after {
+.button .item.pink-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -177,7 +178,7 @@ body {
   background-image: -webkit-linear-gradient(left, #ea2769, #E91E63 10%, #8e0e39, #b8124a 90%, #ea2769);
   background-image: linear-gradient(left, #ea2769, #E91E63 10%, #8e0e39, #b8124a 90%, #ea2769);
 }
-.container .buttons .button .item.pink-button:before {
+.button .item.pink-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -190,7 +191,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #ea2769 58%);
   z-index: -2;
 }
-.container .buttons .button .item.purple-button {
+.button .item.purple-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -204,17 +205,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.purple-button:active {
+.button .item.purple-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.purple-button:active:after {
+.button .item.purple-button:active:after {
   display: none;
 }
-.container .buttons .button .item.purple-button:active:before {
+.button .item.purple-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.purple-button:after {
+.button .item.purple-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -227,7 +228,7 @@ body {
   background-image: -webkit-linear-gradient(left, #a329b8, #9C27B0 10%, #4e1458, #701c7e 90%, #a329b8);
   background-image: linear-gradient(left, #a329b8, #9C27B0 10%, #4e1458, #701c7e 90%, #a329b8);
 }
-.container .buttons .button .item.purple-button:before {
+.button .item.purple-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -240,7 +241,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #a329b8 58%);
   z-index: -2;
 }
-.container .buttons .button .item.deeppurple-button {
+.button .item.deeppurple-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -254,17 +255,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.deeppurple-button:active {
+.button .item.deeppurple-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.deeppurple-button:active:after {
+.button .item.deeppurple-button:active:after {
   display: none;
 }
-.container .buttons .button .item.deeppurple-button:active:before {
+.button .item.deeppurple-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.deeppurple-button:after {
+.button .item.deeppurple-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -277,7 +278,7 @@ body {
   background-image: -webkit-linear-gradient(left, #6b3cbf, #673AB7 10%, #392066, #4d2b89 90%, #6b3cbf);
   background-image: linear-gradient(left, #6b3cbf, #673AB7 10%, #392066, #4d2b89 90%, #6b3cbf);
 }
-.container .buttons .button .item.deeppurple-button:before {
+.button .item.deeppurple-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -290,7 +291,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #6b3cbf 58%);
   z-index: -2;
 }
-.container .buttons .button .item.indigo-button {
+.button .item.indigo-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -304,17 +305,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.indigo-button:active {
+.button .item.indigo-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.indigo-button:active:after {
+.button .item.indigo-button:active:after {
   display: none;
 }
-.container .buttons .button .item.indigo-button:active:before {
+.button .item.indigo-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.indigo-button:after {
+.button .item.indigo-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -327,7 +328,7 @@ body {
   background-image: -webkit-linear-gradient(left, #4254bd, #3F51B5 10%, #232d66, #2f3d88 90%, #4254bd);
   background-image: linear-gradient(left, #4254bd, #3F51B5 10%, #232d66, #2f3d88 90%, #4254bd);
 }
-.container .buttons .button .item.indigo-button:before {
+.button .item.indigo-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -340,7 +341,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #4254bd 58%);
   z-index: -2;
 }
-.container .buttons .button .item.blue-button {
+.button .item.blue-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -354,17 +355,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.blue-button:active {
+.button .item.blue-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.blue-button:active:after {
+.button .item.blue-button:active:after {
   display: none;
 }
-.container .buttons .button .item.blue-button:active:before {
+.button .item.blue-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.blue-button:after {
+.button .item.blue-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -377,7 +378,7 @@ body {
   background-image: -webkit-linear-gradient(left, #2b9bf4, #2196F3 10%, #095da0, #0b76cc 90%, #2b9bf4);
   background-image: linear-gradient(left, #2b9bf4, #2196F3 10%, #095da0, #0b76cc 90%, #2b9bf4);
 }
-.container .buttons .button .item.blue-button:before {
+.button .item.blue-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -390,7 +391,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #2b9bf4 58%);
   z-index: -2;
 }
-.container .buttons .button .item.lightblue-button {
+.button .item.lightblue-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -404,17 +405,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.lightblue-button:active {
+.button .item.lightblue-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.lightblue-button:active:after {
+.button .item.lightblue-button:active:after {
   display: none;
 }
-.container .buttons .button .item.lightblue-button:active:before {
+.button .item.lightblue-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.lightblue-button:after {
+.button .item.lightblue-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -427,7 +428,7 @@ body {
   background-image: -webkit-linear-gradient(left, #05affc, #03A9F4 10%, #02608a, #027fb8 90%, #05affc);
   background-image: linear-gradient(left, #05affc, #03A9F4 10%, #02608a, #027fb8 90%, #05affc);
 }
-.container .buttons .button .item.lightblue-button:before {
+.button .item.lightblue-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -440,7 +441,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #05affc 58%);
   z-index: -2;
 }
-.container .buttons .button .item.cyan-button {
+.button .item.cyan-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -454,17 +455,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.cyan-button:active {
+.button .item.cyan-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.cyan-button:active:after {
+.button .item.cyan-button:active:after {
   display: none;
 }
-.container .buttons .button .item.cyan-button:active:before {
+.button .item.cyan-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.cyan-button:after {
+.button .item.cyan-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -477,7 +478,7 @@ body {
   background-image: -webkit-linear-gradient(left, #00c5de, #00BCD4 10%, #005d69, #008697 90%, #00c5de);
   background-image: linear-gradient(left, #00c5de, #00BCD4 10%, #005d69, #008697 90%, #00c5de);
 }
-.container .buttons .button .item.cyan-button:before {
+.button .item.cyan-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -490,7 +491,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #00c5de 58%);
   z-index: -2;
 }
-.container .buttons .button .item.teal-button {
+.button .item.teal-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -504,17 +505,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.teal-button:active {
+.button .item.teal-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.teal-button:active:after {
+.button .item.teal-button:active:after {
   display: none;
 }
-.container .buttons .button .item.teal-button:active:before {
+.button .item.teal-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.teal-button:after {
+.button .item.teal-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -527,7 +528,7 @@ body {
   background-image: -webkit-linear-gradient(left, #00a091, #009688 10%, #002b27, #005951 90%, #00a091);
   background-image: linear-gradient(left, #00a091, #009688 10%, #002b27, #005951 90%, #00a091);
 }
-.container .buttons .button .item.teal-button:before {
+.button .item.teal-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -540,7 +541,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #00a091 58%);
   z-index: -2;
 }
-.container .buttons .button .item.green-button {
+.button .item.green-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -554,17 +555,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.green-button:active {
+.button .item.green-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.green-button:active:after {
+.button .item.green-button:active:after {
   display: none;
 }
-.container .buttons .button .item.green-button:active:before {
+.button .item.green-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.green-button:after {
+.button .item.green-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -577,7 +578,7 @@ body {
   background-image: -webkit-linear-gradient(left, #52b455, #4CAF50 10%, #2c642e, #39843c 90%, #52b455);
   background-image: linear-gradient(left, #52b455, #4CAF50 10%, #2c642e, #39843c 90%, #52b455);
 }
-.container .buttons .button .item.green-button:before {
+.button .item.green-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -590,7 +591,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #52b455 58%);
   z-index: -2;
 }
-.container .buttons .button .item.lightgreen-button {
+.button .item.lightgreen-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -604,17 +605,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.lightgreen-button:active {
+.button .item.lightgreen-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.lightgreen-button:active:after {
+.button .item.lightgreen-button:active:after {
   display: none;
 }
-.container .buttons .button .item.lightgreen-button:active:before {
+.button .item.lightgreen-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.lightgreen-button:after {
+.button .item.lightgreen-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -627,7 +628,7 @@ body {
   background-image: -webkit-linear-gradient(left, #90c652, #8BC34A 10%, #547a28, #6c9c34 90%, #90c652);
   background-image: linear-gradient(left, #90c652, #8BC34A 10%, #547a28, #6c9c34 90%, #90c652);
 }
-.container .buttons .button .item.lightgreen-button:before {
+.button .item.lightgreen-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -640,7 +641,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #90c652 58%);
   z-index: -2;
 }
-.container .buttons .button .item.lime-button {
+.button .item.lime-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -654,17 +655,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.lime-button:active {
+.button .item.lime-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.lime-button:active:after {
+.button .item.lime-button:active:after {
   display: none;
 }
-.container .buttons .button .item.lime-button:active:before {
+.button .item.lime-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.lime-button:after {
+.button .item.lime-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -677,7 +678,7 @@ body {
   background-image: -webkit-linear-gradient(left, #cfde42, #CDDC39 10%, #85901a, #a9b720 90%, #cfde42);
   background-image: linear-gradient(left, #cfde42, #CDDC39 10%, #85901a, #a9b720 90%, #cfde42);
 }
-.container .buttons .button .item.lime-button:before {
+.button .item.lime-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -690,7 +691,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #cfde42 58%);
   z-index: -2;
 }
-.container .buttons .button .item.yellow-button {
+.button .item.yellow-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -704,17 +705,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.yellow-button:active {
+.button .item.yellow-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.yellow-button:active:after {
+.button .item.yellow-button:active:after {
   display: none;
 }
-.container .buttons .button .item.yellow-button:active:before {
+.button .item.yellow-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.yellow-button:after {
+.button .item.yellow-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -727,7 +728,7 @@ body {
   background-image: -webkit-linear-gradient(left, #ffec45, #FFEB3B 10%, #cfba00, #fde300 90%, #ffec45);
   background-image: linear-gradient(left, #ffec45, #FFEB3B 10%, #cfba00, #fde300 90%, #ffec45);
 }
-.container .buttons .button .item.yellow-button:before {
+.button .item.yellow-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -740,7 +741,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #ffec45 58%);
   z-index: -2;
 }
-.container .buttons .button .item.amber-button {
+.button .item.amber-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -754,17 +755,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.amber-button:active {
+.button .item.amber-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.amber-button:active:after {
+.button .item.amber-button:active:after {
   display: none;
 }
-.container .buttons .button .item.amber-button:active:before {
+.button .item.amber-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.amber-button:after {
+.button .item.amber-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -777,7 +778,7 @@ body {
   background-image: -webkit-linear-gradient(left, #ffc411, #FFC107 10%, #9b7400, #c99700 90%, #ffc411);
   background-image: linear-gradient(left, #ffc411, #FFC107 10%, #9b7400, #c99700 90%, #ffc411);
 }
-.container .buttons .button .item.amber-button:before {
+.button .item.amber-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -790,7 +791,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #ffc411 58%);
   z-index: -2;
 }
-.container .buttons .button .item.orange-button {
+.button .item.orange-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -804,17 +805,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.orange-button:active {
+.button .item.orange-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.orange-button:active:after {
+.button .item.orange-button:active:after {
   display: none;
 }
-.container .buttons .button .item.orange-button:active:before {
+.button .item.orange-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.orange-button:after {
+.button .item.orange-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -827,7 +828,7 @@ body {
   background-image: -webkit-linear-gradient(left, #ff9c0a, #FF9800 10%, #945800, #c27400 90%, #ff9c0a);
   background-image: linear-gradient(left, #ff9c0a, #FF9800 10%, #945800, #c27400 90%, #ff9c0a);
 }
-.container .buttons .button .item.orange-button:before {
+.button .item.orange-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -840,7 +841,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #ff9c0a 58%);
   z-index: -2;
 }
-.container .buttons .button .item.deeporange-button {
+.button .item.deeporange-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -854,17 +855,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.deeporange-button:active {
+.button .item.deeporange-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.deeporange-button:active:after {
+.button .item.deeporange-button:active:after {
   display: none;
 }
-.container .buttons .button .item.deeporange-button:active:before {
+.button .item.deeporange-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.deeporange-button:after {
+.button .item.deeporange-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -877,7 +878,7 @@ body {
   background-image: -webkit-linear-gradient(left, #ff5f2c, #FF5722 10%, #b62c00, #e43700 90%, #ff5f2c);
   background-image: linear-gradient(left, #ff5f2c, #FF5722 10%, #b62c00, #e43700 90%, #ff5f2c);
 }
-.container .buttons .button .item.deeporange-button:before {
+.button .item.deeporange-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -890,7 +891,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #ff5f2c 58%);
   z-index: -2;
 }
-.container .buttons .button .item.brown-button {
+.button .item.brown-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -904,17 +905,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.brown-button:active {
+.button .item.brown-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.brown-button:active:after {
+.button .item.brown-button:active:after {
   display: none;
 }
-.container .buttons .button .item.brown-button:active:before {
+.button .item.brown-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.brown-button:after {
+.button .item.brown-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -927,7 +928,7 @@ body {
   background-image: -webkit-linear-gradient(left, #7f594c, #795548 10%, #362620, #533a31 90%, #7f594c);
   background-image: linear-gradient(left, #7f594c, #795548 10%, #362620, #533a31 90%, #7f594c);
 }
-.container .buttons .button .item.brown-button:before {
+.button .item.brown-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -940,7 +941,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #7f594c 58%);
   z-index: -2;
 }
-.container .buttons .button .item.grey-button {
+.button .item.grey-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -954,17 +955,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.grey-button:active {
+.button .item.grey-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.grey-button:active:after {
+.button .item.grey-button:active:after {
   display: none;
 }
-.container .buttons .button .item.grey-button:active:before {
+.button .item.grey-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.grey-button:after {
+.button .item.grey-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -977,7 +978,7 @@ body {
   background-image: -webkit-linear-gradient(left, #a3a3a3, #9E9E9E 10%, #686868, #7f7f7f 90%, #a3a3a3);
   background-image: linear-gradient(left, #a3a3a3, #9E9E9E 10%, #686868, #7f7f7f 90%, #a3a3a3);
 }
-.container .buttons .button .item.grey-button:before {
+.button .item.grey-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -990,7 +991,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #a3a3a3 58%);
   z-index: -2;
 }
-.container .buttons .button .item.bluegrey-button {
+.button .item.bluegrey-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -1004,17 +1005,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.bluegrey-button:active {
+.button .item.bluegrey-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.bluegrey-button:active:after {
+.button .item.bluegrey-button:active:after {
   display: none;
 }
-.container .buttons .button .item.bluegrey-button:active:before {
+.button .item.bluegrey-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.bluegrey-button:after {
+.button .item.bluegrey-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1027,7 +1028,7 @@ body {
   background-image: -webkit-linear-gradient(left, #648291, #607D8B 10%, #34444c, #475c67 90%, #648291);
   background-image: linear-gradient(left, #648291, #607D8B 10%, #34444c, #475c67 90%, #648291);
 }
-.container .buttons .button .item.bluegrey-button:before {
+.button .item.bluegrey-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -1040,7 +1041,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #648291 58%);
   z-index: -2;
 }
-.container .buttons .button .item.black-button {
+.button .item.black-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -1054,17 +1055,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.black-button:active {
+.button .item.black-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.black-button:active:after {
+.button .item.black-button:active:after {
   display: none;
 }
-.container .buttons .button .item.black-button:active:before {
+.button .item.black-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.black-button:after {
+.button .item.black-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1077,7 +1078,7 @@ body {
   background-image: -webkit-linear-gradient(left, #050505, #000 10%, black, black 90%, #050505);
   background-image: linear-gradient(left, #050505, #000 10%, black, black 90%, #050505);
 }
-.container .buttons .button .item.black-button:before {
+.button .item.black-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -1090,7 +1091,7 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #050505 58%);
   z-index: -2;
 }
-.container .buttons .button .item.white-button {
+.button .item.white-button {
   font-size: 50px;
   margin: 20px;
   border: none;
@@ -1104,17 +1105,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.container .buttons .button .item.white-button:active {
+.button .item.white-button:active {
   top: 2.5px;
 }
-.container .buttons .button .item.white-button:active:after {
+.button .item.white-button:active:after {
   display: none;
 }
-.container .buttons .button .item.white-button:active:before {
+.button .item.white-button:active:before {
   top: -3.75px;
   bottom: -7.5px;
 }
-.container .buttons .button .item.white-button:after {
+.button .item.white-button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1127,7 +1128,7 @@ body {
   background-image: -webkit-linear-gradient(left, white, #FFF 10%, #c9c9c9, #e0e0e0 90%, white);
   background-image: linear-gradient(left, white, #FFF 10%, #c9c9c9, #e0e0e0 90%, white);
 }
-.container .buttons .button .item.white-button:before {
+.button .item.white-button:before {
   content: "";
   position: absolute;
   top: -1.25px;
@@ -1140,20 +1141,23 @@ body {
   background-image: radial-gradient(cover, #000000 50%, #ffffff 58%);
   z-index: -2;
 }
-.container .buttons .title {
+.button .link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.button .title {
   font-family: "Lalezar";
   color: #fdbc23;
   text-shadow: 0px 0px 2px #ff5e007;
   position: relative;
-  cursor: default;
 }
-.container .buttons .title:hover + .description {
+.button .title:hover + .description {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
   z-index: 12;
 }
-.container .buttons .description {
+.button .description {
   position: absolute;
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
@@ -1172,7 +1176,7 @@ body {
   transform: translateY(10px);
   z-index: -1;
 }
-.container .buttons .description:before {
+.button .description:before {
   content: "";
   border: solid;
   border-color: rgba(0, 0, 0, 0.8) transparent;
@@ -1181,4 +1185,15 @@ body {
   z-index: 99;
   top: -5px;
   left: 45%;
+}
+
+.back-button {
+  font-family: 'Lalezar';
+  color: #fdbc23;
+  text-shadow: 0px 0px 2px #ff5e007;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  margin: 40px;
 }

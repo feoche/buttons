@@ -1,14 +1,17 @@
 var app = angular.module('app', ['ui.router'])
-  .controller('AppController', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
+  .controller('AppController', ['$http', '$sce', '$stateParams', function($http, $sce, $stateParams) {
     var vm = this;
 
     var COLORS = ['red', 'pink', 'purple', 'deeppurple', 'indigo', 'blue', 'lightblue', 'cyan', 'teal', 'green', 'lightgreen', 'lime', 'yellow', 'amber', 'orange', 'deeporange', 'brown', 'grey', 'bluegrey', 'black', 'white'],
       colors = COLORS;
 
-    $scope.buttons = [];
+    vm.buttons = [];
     $http.get('json/data.json').then(function(data){
-      $scope.buttons = data.data;
-      angular.forEach($scope.buttons, function(i){
+      vm.buttons = data.data;
+      angular.forEach(vm.buttons, function(i){
+        if(i.src === $stateParams.src) {
+          vm.buttonDetail = i;
+        }
         var rand = Math.floor(Math.random()*colors.length);
         i.class = colors[rand] + '-button';
         var tmp = [];
@@ -27,10 +30,10 @@ var app = angular.module('app', ['ui.router'])
       });
     });
 
-    $scope.play = function(title) {
-      for (var i = 0; i < $scope.buttons.length; i++) {
-        var item = document.getElementsByClassName('audio-' + $scope.buttons[i].title);
-        if($scope.buttons[i] && item && item[0] && $scope.buttons[i].title !== title) {
+    vm.play = function(title) {
+      for (var i = 0; i < vm.buttons.length; i++) {
+        var item = document.getElementsByClassName('audio-' + vm.buttons[i].title);
+        if(vm.buttons[i] && item && item[0] && vm.buttons[i].title !== title) {
           item[0].pause();
         }
       }
@@ -49,13 +52,7 @@ var app = angular.module('app', ['ui.router'])
       .state('item', {
         url: '/{src}',
         templateUrl: 'views/button.html',
-        controller: function($scope, $stateParams){
-          angular.forEach($scope.buttons, function(item) {
-            if(item.src === $stateParams.src) {
-              $scope.button = item;
-            }
-          });
-        }
+        controller: 'AppController as vm'
       });
     $urlRouterProvider.otherwise('/');
   });
