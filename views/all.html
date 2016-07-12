@@ -1,7 +1,7 @@
 <div class='container'>
     <input class='filter' data-ng-model='filter'>
-    <div class='buttons' data-ng-if='vm.buttons.length>1'>
-        <div class='button ng-cloak' data-ng-repeat="button in vm.buttons | orderBy:'title' | filter:filter track by $index">
+    <div class='buttons'>
+        <div class='button ng-cloak' data-ng-repeat="button in vm.buttons | orderBy:'title' track by $index" data-ng-show="([button] | filter:filter).length > 0">
             <audio data-ng-class="'audio-'+button.title" ng-src='{{button.source}}' type='audio/mpeg'></audio>
             <button class='item' data-ng-class='button.class' data-ng-click='vm.play(button.title)'></button>
             <a class='link' ng-href="#/{{button.src}}">
