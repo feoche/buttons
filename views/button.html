@@ -5,5 +5,8 @@
         <button class='item' data-ng-class='vm.buttonDetail.class' data-ng-click='vm.play(vm.buttonDetail.title)'></button>
         <div class='title' data-ng-bind='vm.buttonDetail.title'></div>
         <div class='description' data-ng-bind='vm.buttonDetail.description'></div>
+        <iframe ng-if="vm.buttonDetail.video" id="ytplayer" type="text/html" width="640" height="390"
+                ng-src="{{vm.buttonDetail.video}}"
+                frameborder="0"/>
     </div>
 </div>
