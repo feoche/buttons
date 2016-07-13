@@ -5,7 +5,7 @@ var app = angular.module('app', ['ui.router'])
     var COLORS = ['red', 'pink', 'purple', 'deeppurple', 'indigo', 'blue', 'lightblue', 'cyan', 'teal', 'green', 'lightgreen', 'lime', 'yellow', 'amber', 'orange', 'deeporange', 'brown', 'grey', 'bluegrey', 'black', 'white'],
       colors = COLORS;
 
-    vm.buttons = [];
+    vm.buttons = [], vm.currentAudio = '';
     $http.get('json/data.json').then(function(data){
       vm.buttons = data.data;
       angular.forEach(vm.buttons, function(i){
@@ -39,7 +39,14 @@ var app = angular.module('app', ['ui.router'])
       }
       var audio = document.getElementsByClassName('audio-' + title)[0];
       audio.currentTime = 0;
-      audio.play();
+      if(vm.currentAudio === title) {
+        audio.pause();
+        vm.currentAudio = '';
+      }
+      else{
+        audio.play();
+        vm.currentAudio = title;
+      }
     };
   }])
   .config(function($stateProvider, $urlRouterProvider) {
