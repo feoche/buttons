@@ -35,7 +35,7 @@ body {
   min-height: 120px;
   width: 126px;
 }
-.container .buttons .button .title:hover + .description {
+.container .buttons .button .link:hover + .description {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
