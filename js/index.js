@@ -46,8 +46,9 @@ var app = angular.module('app', ['ui.router'])
         vm.currentAudio = '';
       }
       else {
-        audio.play();
         vm.currentAudio = title;
+        audio.play();
+        vm.currentAudio = '';
       }
     };
   }])
