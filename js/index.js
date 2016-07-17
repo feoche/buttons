@@ -12,7 +12,7 @@ var app = angular.module('app', ['ui.router'])
       angular.forEach(vm.buttons, function (i) {
         if (i.src === $stateParams.src) {
           vm.buttonDetail = i;
-          vm.buttonDetail.video = $sce.trustAsResourceUrl('//www.youtube.com/embed/' + vm.buttonDetail.video + (vm.buttonDetail.video.indexOf('?') === -1 ? '?' : '&amp;') + '&amp;controls=0&amp;theme=dark&amp;showinfo=0&amp;rel=0&amp;modestbranding=1');
+          vm.buttonDetail.video = vm.buttonDetail.video && $sce.trustAsResourceUrl('//www.youtube.com/embed/' + vm.buttonDetail.video + (vm.buttonDetail.video.indexOf('?') === -1 ? '?' : '&amp;') + '&amp;controls=0&amp;theme=dark&amp;showinfo=0&amp;rel=0&amp;modestbranding=1');
         }
         var rand = Math.floor(Math.random() * colors.length);
         i.class = colors[rand] + '-button';
