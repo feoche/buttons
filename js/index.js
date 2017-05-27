@@ -5,8 +5,8 @@ var app = angular.module('app', ['ui.router'])
     var COLORS = ['red', 'pink', 'purple', 'deeppurple', 'indigo', 'blue', 'lightblue', 'cyan', 'teal', 'green', 'lightgreen', 'lime', 'yellow', 'amber', 'orange', 'deeporange', 'brown', 'grey', 'bluegrey', 'black', 'white'],
       colors = COLORS;
 
-    vm.buttons = [],
-      vm.currentAudio = '';
+    vm.buttons = [];
+    vm.currentAudio = '';
     $http.get('json/data.json').then(function (data) {
       vm.buttons = data.data;
       angular.forEach(vm.buttons, function (i) {
@@ -15,7 +15,7 @@ var app = angular.module('app', ['ui.router'])
           vm.buttonDetail.video = vm.buttonDetail.video && $sce.trustAsResourceUrl('//www.youtube.com/embed/' + vm.buttonDetail.video + (vm.buttonDetail.video.indexOf('?') === -1 ? '?' : '&amp;') + '&amp;controls=0&amp;theme=dark&amp;showinfo=0&amp;rel=0&amp;modestbranding=1');
         }
         var rand = Math.floor(Math.random() * colors.length);
-        i.class = colors[rand] + '-button';
+        i.class = (rand? colors[rand] : 'red') + '-button';
         var tmp = [];
         if (colors.length) {
           for (var j = 0; j < colors.length; j++) {
