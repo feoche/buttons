@@ -89,11 +89,14 @@ body {
   position: relative;
   text-decoration: none; }
   .button .item.red-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #f54c40;
     border-radius: 50%;
@@ -132,11 +135,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #f54c40 58%);
       z-index: -2; }
   .button .item.pink-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #ea2769;
     border-radius: 50%;
@@ -175,11 +181,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #ea2769 58%);
       z-index: -2; }
   .button .item.purple-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #a329b8;
     border-radius: 50%;
@@ -218,11 +227,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #a329b8 58%);
       z-index: -2; }
   .button .item.deeppurple-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #6b3cbf;
     border-radius: 50%;
@@ -261,11 +273,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #6b3cbf 58%);
       z-index: -2; }
   .button .item.indigo-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #4254bd;
     border-radius: 50%;
@@ -304,11 +319,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #4254bd 58%);
       z-index: -2; }
   .button .item.blue-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #2b9bf4;
     border-radius: 50%;
@@ -347,11 +365,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #2b9bf4 58%);
       z-index: -2; }
   .button .item.lightblue-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #05affc;
     border-radius: 50%;
@@ -390,11 +411,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #05affc 58%);
       z-index: -2; }
   .button .item.cyan-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #00c5de;
     border-radius: 50%;
@@ -433,11 +457,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #00c5de 58%);
       z-index: -2; }
   .button .item.teal-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #00a091;
     border-radius: 50%;
@@ -476,11 +503,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #00a091 58%);
       z-index: -2; }
   .button .item.green-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #52b455;
     border-radius: 50%;
@@ -519,11 +549,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #52b455 58%);
       z-index: -2; }
   .button .item.lightgreen-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #90c652;
     border-radius: 50%;
@@ -562,11 +595,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #90c652 58%);
       z-index: -2; }
   .button .item.lime-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #cfde42;
     border-radius: 50%;
@@ -605,11 +641,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #cfde42 58%);
       z-index: -2; }
   .button .item.yellow-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #ffec45;
     border-radius: 50%;
@@ -648,11 +687,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #ffec45 58%);
       z-index: -2; }
   .button .item.amber-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #ffc411;
     border-radius: 50%;
@@ -691,11 +733,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #ffc411 58%);
       z-index: -2; }
   .button .item.orange-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #ff9c0a;
     border-radius: 50%;
@@ -734,11 +779,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #ff9c0a 58%);
       z-index: -2; }
   .button .item.deeporange-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #ff5f2c;
     border-radius: 50%;
@@ -777,11 +825,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #ff5f2c 58%);
       z-index: -2; }
   .button .item.brown-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #7f594c;
     border-radius: 50%;
@@ -820,11 +871,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #7f594c 58%);
       z-index: -2; }
   .button .item.grey-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #a3a3a3;
     border-radius: 50%;
@@ -863,11 +917,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #a3a3a3 58%);
       z-index: -2; }
   .button .item.bluegrey-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #648291;
     border-radius: 50%;
@@ -906,11 +963,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #648291 58%);
       z-index: -2; }
   .button .item.black-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: #050505;
     border-radius: 50%;
@@ -949,11 +1009,14 @@ body {
       background-image: -webkit-radial-gradient(cover, black 50%, #050505 58%);
       z-index: -2; }
   .button .item.white-button {
+    display: inline-block;
     font-size: 50px;
     margin: 20px;
     border: none;
     width: 50px;
+    max-width: 50px;
     height: 50px;
+    max-height: 50px;
     position: relative;
     background-color: white;
     border-radius: 50%;
