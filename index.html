@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Buttons</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <head>
+        <meta charset="UTF-8">
+        <title>Buttons</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="icon" type="image/png" href="img/favicon.png"/>
+        <link href="img/favicon.png" rel="apple-touch-icon"/>
+        <link href="img/favicon.png" rel="apple-touch-icon" sizes="152x152"/>
+        <link href="img/favicon.png" rel="apple-touch-icon" sizes="167x167"/>
+        <link href="img/favicon.png" rel="apple-touch-icon" sizes="180x180"/>
+        <style>html,body,div{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}html,body{width:100%;height:100%;}body{margin:0;font-size:0;background:#294A67;line-height:1;}</style>
+    </head>
+    <body data-ng-app="app">
+        <div ui-view></div>
+    </body>
+    <!-- Templates -->
+    <script type="text/ng-template" id="all.html">
+        <div class="container all">
+            <input class="filter" data-ng-model="filter">
+            <div class="buttons">
+                <div class="button"
+                     data-ng-repeat="button in vm.buttons | orderBy:'title' track by $index"
+                     data-ng-show="([button] | filter:filter).length > 0"
+                     ng-cloak>
+                    <audio class="audio-{{::button.title}}"
+                           ng-src="{{::button.source}}"></audio>
+                    <button class="item {{::button.class}}"
+                            data-ng-click="vm.play(button.title)"></button>
+                    <a class="link"
+                       ng-href="#/{{::button.src}}">
+                        <div class="title"
+                             data-ng-bind="::button.title"></div>
+                    </a>
+                    <div class="description"
+                         data-ng-bind="::button.description"
+                         data-ng-if="::button.description"></div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="text/ng-template" id="button.html">
+        <div class="container button-detail">
+            <a class="back-button" ui-sref="buttons">&lt; Home</a>
+            <div class="button ng-cloak">
+                <audio class="audio-{{::vm.buttonDetail.title}}"
+                       ng-src="{{::vm.buttonDetail.source}}"></audio>
+                <button class="item {{::vm.buttonDetail.class}}"
+                        data-ng-click="vm.play(vm.buttonDetail.title)"></button>
+                <div class="title" data-ng-bind="::vm.buttonDetail.title"></div>
+                <div class="description" data-ng-bind="::vm.buttonDetail.description"></div>
+                <iframe ng-if="::vm.buttonDetail.video"
+                        id="ytplayer"
+                        type="text/html"
+                        width="640"
+                        height="390"
+                        ng-src="{{::vm.buttonDetail.video}}"
+                        frameborder="0"/>
+            </div>
+        </div>
+    </script>
+    <!-- Vendors -->
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="icon" type="image/png" href="img/favicon.png" />
-    <link href="img/favicon.png" rel="apple-touch-icon" />
-    <link href="img/favicon.png" rel="apple-touch-icon" sizes="152x152" />
-    <link href="img/favicon.png" rel="apple-touch-icon" sizes="167x167" />
-    <link href="img/favicon.png" rel="apple-touch-icon" sizes="180x180" />
-  </head>
-  <body data-ng-app='app'>
-    <div ui-view></div>
-    <script src='js/angular.js'></script>
-    <script src='js/angular-ui-router.js'></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-ui-router.js"></script>
     <script src="js/index.js"></script>
-  </body>
 </html>
