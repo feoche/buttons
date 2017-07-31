@@ -24,8 +24,8 @@
                      data-ng-show="([button] | filter:filter).length > 0"
                      ng-cloak>
                     <div class="button-container">
-                        <button class="item {{::button.class}}"
-                                data-ng-click="vm.play(button)"></button>
+                        <div class="item {{::button.class}}"
+                                data-ng-click="vm.play(button)"></div>
                     </div>
                     <a class="link"
                        ng-href="#/{{::button.src}}">
@@ -46,8 +46,8 @@
             <div class="button ng-cloak">
                 <audio preload="auto"></audio>
                 <div class="button-container">
-                    <button class="item {{::vm.buttonDetail.class}}"
-                            data-ng-click="vm.play(vm.buttonDetail)"></button>
+                    <div class="item {{::vm.buttonDetail.class}}"
+                            data-ng-click="vm.play(vm.buttonDetail)"></div>
                 </div>
                 <div class="title" data-ng-bind="::vm.buttonDetail.title"></div>
                 <div class="description" data-ng-bind="::vm.buttonDetail.description"></div>
