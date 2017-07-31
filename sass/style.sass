@@ -91,7 +91,7 @@ body
   color: black
   min-height: 150px
   text-align: center
-
+  overflow-x: hidden
 
   .filter
     background: rgba(0,0,0,0.15)
@@ -153,6 +153,7 @@ body
   vertical-align: top
   position: relative
   text-decoration: none
+  margin: 0 5px
 
   .item
     $colors: red     pink    purple  deeppurple indigo  blue    lightblue cyan    teal    green   lightgreen lime    yellow  amber   orange  deeporange brown   grey    bluegrey black white
@@ -170,6 +171,10 @@ body
     color: #fdbc23
     text-shadow: 0 0 2px #ff5e00
     position: relative
+    word-break: break-all
+    -webkit-hyphens: auto
+    -ms-hyphens: auto
+    hyphens: auto
 
 .button-detail
 

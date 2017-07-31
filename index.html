@@ -23,10 +23,8 @@
                      data-ng-repeat="button in vm.buttons | orderBy:'title' track by $index"
                      data-ng-show="([button] | filter:filter).length > 0"
                      ng-cloak>
-                    <audio class="audio-{{::button.title}}"
-                           ng-src="{{::button.source}}"></audio>
                     <button class="item {{::button.class}}"
-                            data-ng-click="vm.play(button.title)"></button>
+                            data-ng-click="vm.play(button)"></button>
                     <a class="link"
                        ng-href="#/{{::button.src}}">
                         <div class="title"
@@ -38,13 +36,15 @@
                 </div>
             </div>
         </div>
+        <audio></audio>
     </script>
     <script type="text/ng-template" id="button.html">
         <div class="container button-detail">
             <a class="back-button" ui-sref="buttons">&lt; Home</a>
             <div class="button ng-cloak">
                 <audio class="audio-{{::vm.buttonDetail.title}}"
-                       ng-src="{{::vm.buttonDetail.source}}"></audio>
+                       ng-src="{{::vm.buttonDetail.source}}"
+                       preload="auto"></audio>
                 <button class="item {{::vm.buttonDetail.class}}"
                         data-ng-click="vm.play(vm.buttonDetail.title)"></button>
                 <div class="title" data-ng-bind="::vm.buttonDetail.title"></div>

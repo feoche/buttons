@@ -62,29 +62,36 @@ var app = angular
         i.source = $sce.trustAsResourceUrl("sounds/" + i.src + ".mp3");
       });
 
-      vm.play = function(title) {
-        for (var i = 0; i < vm.buttons.length; i++) {
-          var item = document.getElementsByClassName(
-            "audio-" + vm.buttons[i].title
-          );
-          if (
-            vm.buttons[i] &&
-            item &&
-            item[0] &&
-            vm.buttons[i].title !== title
-          ) {
-            item[0].pause();
+      vm.play = function(button) {
+        var audio = document.getElementsByTagName("audio")[0];
+        var audioSource = audio.src.replace(/.*?buttons\//g, '');
+        var buttonSource = 'sounds/' + button.src + '.mp3';
+        console.log(audio.src);
+        console.log(buttonSource);
+        if(audioSource === buttonSource) { // Click on the same button
+          if(!audio.currentTime || audio.duration - audio.currentTime < audio.duration/20 || button.paused) { // Start of track/End of track, reset timer
+            console.log('play');
+            if(!button.paused) {
+              audio.currentTime = 0.01;
+            }
+            audio.play();
+            button.paused = false;
+          }
+          else { // Track is playing
+            console.log('pause');
+            audio.pause();
+            button.paused = true;
           }
         }
-        var audio = document.getElementsByClassName("audio-" + title)[0];
-        audio.currentTime = 0;
-        if (vm.currentAudio === title) {
-          audio.pause();
-          vm.currentAudio = "";
-        } else {
-          vm.currentAudio = title;
+        else { // Click on new button
+          if (audio.currentTime && audio.currentTime <= audio.duration) { // Previous track is running
+            audio.pause(); // Unload previous
+          }
+          // Hotswap audio sources
+          audio.src = buttonSource;
+          audio.preload = 'auto';
+          audio.currentTime = 0.01;
           audio.play();
-          vm.currentAudio = "";
         }
       };
     }
@@ -103,6 +110,8 @@ var app = angular
       });
     $urlRouterProvider.otherwise("/");
   });
+
+// DATA
 
 var data = [
   {
