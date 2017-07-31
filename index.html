@@ -42,11 +42,9 @@
         <div class="container button-detail">
             <a class="back-button" ui-sref="buttons">&lt; Home</a>
             <div class="button ng-cloak">
-                <audio class="audio-{{::vm.buttonDetail.title}}"
-                       ng-src="{{::vm.buttonDetail.source}}"
-                       preload="auto"></audio>
+                <audio preload="auto"></audio>
                 <button class="item {{::vm.buttonDetail.class}}"
-                        data-ng-click="vm.play(vm.buttonDetail.title)"></button>
+                        data-ng-click="vm.play(vm.buttonDetail)"></button>
                 <div class="title" data-ng-bind="::vm.buttonDetail.title"></div>
                 <div class="description" data-ng-bind="::vm.buttonDetail.description"></div>
                 <iframe ng-if="::vm.buttonDetail.video"

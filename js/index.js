@@ -64,7 +64,7 @@ var app = angular
 
       vm.play = function(button) {
         var audio = document.getElementsByTagName("audio")[0];
-        var audioSource = audio.src.replace(/.*?buttons\//g, '');
+        var audioSource = audio.src && audio.src.replace(/.*?buttons\//g, '');
         var buttonSource = 'sounds/' + button.src + '.mp3';
         if(audioSource === buttonSource) { // Click on the same button
           if(!audio.currentTime || audio.duration - audio.currentTime < audio.duration/20 || button.paused) { // Start of track/End of track, reset timer
