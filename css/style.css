@@ -123,9 +123,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #f77e75 20%, #f54c40 70%, #f99d97 88%, #e11b0c), radial-gradient(200% 60% at 50% 20%, #8e1108 20%, #bf170a 60%, #f22819 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #f77e75 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.red-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.red-button:active:after {
         display: none; }
       .button .item.red-button:active:before {
@@ -165,9 +166,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #ef5a8d 20%, #ea2769 70%, #f27ba3 88%, #b8124a), radial-gradient(200% 60% at 50% 20%, #690a2a 20%, #970f3d 60%, #d41556 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #ef5a8d 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.pink-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.pink-button:active:after {
         display: none; }
       .button .item.pink-button:active:before {
@@ -207,9 +209,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #c044d6 20%, #a329b8 70%, #ca61dc 88%, #701c7e), radial-gradient(200% 60% at 50% 20%, #310c37 20%, #561561 60%, #862197 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #c044d6 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.purple-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.purple-button:active:after {
         display: none; }
       .button .item.purple-button:active:before {
@@ -249,9 +252,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #8b65ce 20%, #6b3cbf 70%, #9f80d7 88%, #4d2b89), radial-gradient(200% 60% at 50% 20%, #281647 20%, #3e236d 60%, #5a33a0 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #8b65ce 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.deeppurple-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.deeppurple-button:active:after {
         display: none; }
       .button .item.deeppurple-button:active:before {
@@ -291,9 +295,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #6b7acb 20%, #4254bd 70%, #8591d5 88%, #2f3d88), radial-gradient(200% 60% at 50% 20%, #192047 20%, #26316d 60%, #37479e 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #6b7acb 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.indigo-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.indigo-button:active:after {
         display: none; }
       .button .item.indigo-button:active:before {
@@ -333,9 +338,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #60b4f6 20%, #2b9bf4 70%, #82c4f8 88%, #0b76cc), radial-gradient(200% 60% at 50% 20%, #07477a 20%, #0963aa 60%, #0d87e9 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #60b4f6 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.blue-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.blue-button:active:after {
         display: none; }
       .button .item.blue-button:active:before {
@@ -375,9 +381,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #3dc1fd 20%, #05affc 70%, #60ccfd 88%, #027fb8), radial-gradient(200% 60% at 50% 20%, #014462 20%, #026794 60%, #0394d6 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #3dc1fd 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.lightblue-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.lightblue-button:active:after {
         display: none; }
       .button .item.lightblue-button:active:before {
@@ -417,9 +424,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #17e5ff 20%, #00c5de 70%, #3be9ff 88%, #008697), radial-gradient(200% 60% at 50% 20%, #003940 20%, #006673 60%, #00a1b5 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #17e5ff 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.cyan-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.cyan-button:active:after {
         display: none; }
       .button .item.cyan-button:active:before {
@@ -459,9 +467,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #00d8c4 20%, #00a091 70%, #00fce4 88%, #005951), radial-gradient(200% 60% at 50% 20%, #000202 20%, #003530 60%, #00776c 70%), radial-gradient(100% 40% at 50% 80%, #cefffa 10%, #00d8c4 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.teal-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.teal-button:active:after {
         display: none; }
       .button .item.teal-button:active:before {
@@ -501,9 +510,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #79c57c 20%, #52b455 70%, #92cf94 88%, #39843c), radial-gradient(200% 60% at 50% 20%, #1f4821 20%, #2f6b31 60%, #439a46 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #79c57c 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.green-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.green-button:active:after {
         display: none; }
       .button .item.green-button:active:before {
@@ -543,9 +553,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #abd47c 20%, #90c652 70%, #bcdc97 88%, #6c9c34), radial-gradient(200% 60% at 50% 20%, #3f5b1e 20%, #59812b 60%, #7cb33b 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #abd47c 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.lightgreen-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.lightgreen-button:active:after {
         display: none; }
       .button .item.lightgreen-button:active:before {
@@ -585,9 +596,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #dbe671 20%, #cfde42 70%, #e3eb90 88%, #a9b720), radial-gradient(200% 60% at 50% 20%, #656e13 20%, #8d991b 60%, #c2d125 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #dbe671 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.lime-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.lime-button:active:after {
         display: none; }
       .button .item.lime-button:active:before {
@@ -627,9 +639,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #fff27d 20%, #ffec45 70%, #fff5a1 88%, #fde300), radial-gradient(200% 60% at 50% 20%, #a69500 20%, #d9c300 60%, #ffe81c 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #fff27d 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.yellow-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.yellow-button:active:after {
         display: none; }
       .button .item.yellow-button:active:before {
@@ -669,9 +682,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #ffd249 20%, #ffc411 70%, #ffdb6d 88%, #c99700), radial-gradient(200% 60% at 50% 20%, #725600 20%, #a57c00 60%, #e7ae00 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #ffd249 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.amber-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.amber-button:active:after {
         display: none; }
       .button .item.amber-button:active:before {
@@ -711,9 +725,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #ffb342 20%, #ff9c0a 70%, #ffc166 88%, #c27400), radial-gradient(200% 60% at 50% 20%, #6b4000 20%, #9e5e00 60%, #e08600 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #ffb342 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.orange-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.orange-button:active:after {
         display: none; }
       .button .item.orange-button:active:before {
@@ -753,9 +768,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #ff8964 20%, #ff5f2c 70%, #ffa588 88%, #e43700), radial-gradient(200% 60% at 50% 20%, #8d2200 20%, #c02e00 60%, #ff4003 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #ff8964 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.deeporange-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.deeporange-button:active:after {
         display: none; }
       .button .item.deeporange-button:active:before {
@@ -795,9 +811,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #a17362 20%, #7f594c 70%, #af8778 88%, #533a31), radial-gradient(200% 60% at 50% 20%, #1c1411 20%, #3c2a24 60%, #66483d 70%), radial-gradient(100% 40% at 50% 80%, #fdfcfb 10%, #a17362 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.brown-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.brown-button:active:after {
         display: none; }
       .button .item.brown-button:active:before {
@@ -837,9 +854,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #bfbfbf 20%, #a3a3a3 70%, #d1d1d1 88%, #7f7f7f), radial-gradient(200% 60% at 50% 20%, #545454 20%, #6e6e6e 60%, #8f8f8f 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #bfbfbf 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.grey-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.grey-button:active:after {
         display: none; }
       .button .item.grey-button:active:before {
@@ -879,9 +897,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #849daa 20%, #648291 70%, #99aeb8 88%, #475c67), radial-gradient(200% 60% at 50% 20%, #242e34 20%, #384952 60%, #536d79 70%), radial-gradient(100% 40% at 50% 80%, white 10%, #849daa 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.bluegrey-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.bluegrey-button:active:after {
         display: none; }
       .button .item.bluegrey-button:active:before {
@@ -921,9 +940,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, #212121 20%, #050505 70%, #333333 88%, black), radial-gradient(200% 60% at 50% 20%, black 20%, black 60%, black 70%), radial-gradient(100% 40% at 50% 80%, #9c9c9c 10%, #212121 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.black-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.black-button:active:after {
         display: none; }
       .button .item.black-button:active:before {
@@ -963,9 +983,10 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(ellipse closest-side, white 20%, white 70%, white 88%, #e0e0e0), radial-gradient(200% 60% at 50% 20%, #b5b5b5 20%, #cfcfcf 60%, #f0f0f0 70%), radial-gradient(100% 40% at 50% 80%, white 10%, white 60%, rgba(100, 100, 250, 0) 70%);
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .button .item.white-button:active {
-      top: 2.5px; }
+      margin-top: 2.5px; }
       .button .item.white-button:active:after {
         display: none; }
       .button .item.white-button:active:before {

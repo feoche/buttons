@@ -30,7 +30,7 @@ var app = angular
         "black",
         "white"
       ],
-        colors = COLORS;
+        colors = [];
 
       vm.currentAudio = "";
       vm.buttons = data;
@@ -46,19 +46,12 @@ var app = angular
                 "&amp;controls=0&amp;theme=dark&amp;showinfo=0&amp;rel=0&amp;modestbranding=1"
             );
         }
-        var rand = Math.floor(Math.random() * colors.length);
-        i.class = (rand ? colors[rand] : "red") + "-button";
-        var tmp = [];
-        if (colors.length) {
-          for (var j = 0; j < colors.length; j++) {
-            if (j !== rand) {
-              tmp.push(colors[j]);
-            }
-          }
-          colors = tmp;
-        } else {
-          colors = COLORS;
+        if(!colors.length) {
+          colors = angular.copy(COLORS);
         }
+        var rand = Math.floor(Math.random() * colors.length);
+        i.class = colors[rand] + "-button";
+        colors.splice(rand, 1);
         i.source = $sce.trustAsResourceUrl("sounds/" + i.src + ".mp3");
       });
 
