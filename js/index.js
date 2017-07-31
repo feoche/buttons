@@ -66,11 +66,8 @@ var app = angular
         var audio = document.getElementsByTagName("audio")[0];
         var audioSource = audio.src.replace(/.*?buttons\//g, '');
         var buttonSource = 'sounds/' + button.src + '.mp3';
-        console.log(audio.src);
-        console.log(buttonSource);
         if(audioSource === buttonSource) { // Click on the same button
           if(!audio.currentTime || audio.duration - audio.currentTime < audio.duration/20 || button.paused) { // Start of track/End of track, reset timer
-            console.log('play');
             if(!button.paused) {
               audio.currentTime = 0.01;
             }
@@ -78,7 +75,6 @@ var app = angular
             button.paused = false;
           }
           else { // Track is playing
-            console.log('pause');
             audio.pause();
             button.paused = true;
           }
