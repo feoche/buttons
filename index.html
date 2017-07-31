@@ -17,7 +17,9 @@
     <!-- Templates -->
     <script type="text/ng-template" id="all.html">
         <div class="container all">
-            <input class="filter" data-ng-model="filter">
+            <input class="filter"
+                   data-ng-model="filter"
+                   placeholder="Search...">
             <div class="buttons">
                 <div class="button"
                      data-ng-repeat="button in vm.buttons | orderBy:'title' track by $index"
