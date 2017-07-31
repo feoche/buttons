@@ -23,8 +23,10 @@
                      data-ng-repeat="button in vm.buttons | orderBy:'title' track by $index"
                      data-ng-show="([button] | filter:filter).length > 0"
                      ng-cloak>
-                    <button class="item {{::button.class}}"
-                            data-ng-click="vm.play(button)"></button>
+                    <div class="button-container">
+                        <button class="item {{::button.class}}"
+                                data-ng-click="vm.play(button)"></button>
+                    </div>
                     <a class="link"
                        ng-href="#/{{::button.src}}">
                         <div class="title"
@@ -43,8 +45,10 @@
             <a class="back-button" ui-sref="buttons">&lt; Home</a>
             <div class="button ng-cloak">
                 <audio preload="auto"></audio>
-                <button class="item {{::vm.buttonDetail.class}}"
-                        data-ng-click="vm.play(vm.buttonDetail)"></button>
+                <div class="button-container">
+                    <button class="item {{::vm.buttonDetail.class}}"
+                            data-ng-click="vm.play(vm.buttonDetail)"></button>
+                </div>
                 <div class="title" data-ng-bind="::vm.buttonDetail.title"></div>
                 <div class="description" data-ng-bind="::vm.buttonDetail.description"></div>
                 <iframe ng-if="::vm.buttonDetail.video"

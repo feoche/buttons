@@ -33,7 +33,8 @@ body {
   font-family: Calibri, Verdana;
   color: black;
   min-height: 150px;
-  text-align: center; }
+  text-align: center;
+  overflow-x: hidden; }
   .container .filter {
     background: rgba(0, 0, 0, 0.15);
     font-size: 30px;
@@ -53,6 +54,13 @@ body {
         .container .buttons .button {
           min-height: 30vw;
           width: 30vw; } }
+      .container .buttons .button .button-container {
+        display: inline-block;
+        width: 50px;
+        max-width: 50px;
+        height: 50px;
+        max-height: 50px;
+        margin: 20px; }
       .container .buttons .button .link:hover + .description {
         opacity: 1;
         transform: translateY(0);
@@ -87,16 +95,14 @@ body {
   text-align: center;
   vertical-align: top;
   position: relative;
-  text-decoration: none; }
+  text-decoration: none;
+  margin: 0 5px; }
   .button .item.red-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #f54c40;
     border-radius: 50%;
@@ -137,12 +143,9 @@ body {
   .button .item.pink-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #ea2769;
     border-radius: 50%;
@@ -183,12 +186,9 @@ body {
   .button .item.purple-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #a329b8;
     border-radius: 50%;
@@ -229,12 +229,9 @@ body {
   .button .item.deeppurple-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #6b3cbf;
     border-radius: 50%;
@@ -275,12 +272,9 @@ body {
   .button .item.indigo-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #4254bd;
     border-radius: 50%;
@@ -321,12 +315,9 @@ body {
   .button .item.blue-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #2b9bf4;
     border-radius: 50%;
@@ -367,12 +358,9 @@ body {
   .button .item.lightblue-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #05affc;
     border-radius: 50%;
@@ -413,12 +401,9 @@ body {
   .button .item.cyan-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #00c5de;
     border-radius: 50%;
@@ -459,12 +444,9 @@ body {
   .button .item.teal-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #00a091;
     border-radius: 50%;
@@ -505,12 +487,9 @@ body {
   .button .item.green-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #52b455;
     border-radius: 50%;
@@ -551,12 +530,9 @@ body {
   .button .item.lightgreen-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #90c652;
     border-radius: 50%;
@@ -597,12 +573,9 @@ body {
   .button .item.lime-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #cfde42;
     border-radius: 50%;
@@ -643,12 +616,9 @@ body {
   .button .item.yellow-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #ffec45;
     border-radius: 50%;
@@ -689,12 +659,9 @@ body {
   .button .item.amber-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #ffc411;
     border-radius: 50%;
@@ -735,12 +702,9 @@ body {
   .button .item.orange-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #ff9c0a;
     border-radius: 50%;
@@ -781,12 +745,9 @@ body {
   .button .item.deeporange-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #ff5f2c;
     border-radius: 50%;
@@ -827,12 +788,9 @@ body {
   .button .item.brown-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #7f594c;
     border-radius: 50%;
@@ -873,12 +831,9 @@ body {
   .button .item.grey-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #a3a3a3;
     border-radius: 50%;
@@ -919,12 +874,9 @@ body {
   .button .item.bluegrey-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #648291;
     border-radius: 50%;
@@ -965,12 +917,9 @@ body {
   .button .item.black-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: #050505;
     border-radius: 50%;
@@ -1011,12 +960,9 @@ body {
   .button .item.white-button {
     display: inline-block;
     font-size: 50px;
-    margin: 20px;
     border: none;
-    width: 50px;
-    max-width: 50px;
-    height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: white;
     border-radius: 50%;
@@ -1061,7 +1007,11 @@ body {
     font-family: "Lalezar";
     color: #fdbc23;
     text-shadow: 0 0 2px #ff5e00;
-    position: relative; }
+    position: relative;
+    word-break: break-all;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; }
 
 .button-detail .description {
   font-family: "Lalezar";
