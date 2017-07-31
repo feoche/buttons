@@ -54,18 +54,6 @@ body {
         .container .buttons .button {
           min-height: 30vw;
           width: 30vw; } }
-      .container .buttons .button .button-container {
-        display: inline-block;
-        width: 50px;
-        max-width: 50px;
-        height: 50px;
-        max-height: 50px;
-        margin: 20px;
-        position: relative; }
-      .container .buttons .button .link:hover + .description {
-        opacity: 1;
-        transform: translateY(0);
-        z-index: 12; }
     .container .buttons .description {
       position: absolute;
       transition: all ease-in-out 0.3s;
@@ -90,6 +78,19 @@ body {
         z-index: 99;
         top: -5px;
         left: 45%; }
+
+.button-container {
+  display: inline-block;
+  width: 50px;
+  max-width: 50px;
+  height: 50px;
+  max-height: 50px;
+  margin: 20px;
+  position: relative; }
+  .button-container .link:hover + .description {
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 12; }
 
 .button {
   display: inline-block;
