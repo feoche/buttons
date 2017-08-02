@@ -34,7 +34,7 @@ var app = angular
 
       vm.currentAudio = "";
       vm.buttons = data;
-      angular.forEach(vm.buttons, function(i) {
+      angular.forEach(vm.buttons, function(i, key) {
         if (i.src === $stateParams.src) {
           vm.buttonDetail = i;
           vm.buttonDetail.video =
@@ -51,6 +51,7 @@ var app = angular
         }
         var rand = Math.floor(Math.random() * colors.length);
         i.class = colors[rand] + "-button";
+        i.new = vm.buttons.length - key < 20;
         colors.splice(rand, 1);
         i.source = $sce.trustAsResourceUrl("sounds/" + i.src + ".mp3");
       });

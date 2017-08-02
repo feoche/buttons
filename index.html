@@ -24,6 +24,7 @@
                 <div class="button"
                      data-ng-repeat="button in vm.buttons | orderBy:'title' track by $index"
                      data-ng-show="([button] | filter:filter).length > 0"
+                     data-ng-class="{'new-button': button.new}"
                      ng-cloak>
                     <div class="button-container">
                         <div class="item {{::button.class}}"

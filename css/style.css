@@ -69,6 +69,27 @@ body {
         .container .buttons .button {
           min-height: 30vw;
           width: 30vw; } }
+      .container .buttons .button.new-button:after {
+        content: "New";
+        background: orange;
+        color: white;
+        font-weight: bold;
+        font-size: 0.6rem;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        padding: 5px 2.5px;
+        border-radius: 50%;
+        text-shadow: 0 0 1px black;
+        box-shadow: 0 0 1px black;
+        animation: zoom 1s infinite; }
+@keyframes zoom {
+  0% {
+    transform: rotate(-20deg) scale(1); }
+  50% {
+    transform: rotate(-20deg) scale(1.1); }
+  100% {
+    transform: rotate(-20deg) scale(1); } }
     .container .buttons .description {
       position: absolute;
       transition: all ease-in-out 0.3s;
