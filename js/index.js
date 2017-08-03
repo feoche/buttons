@@ -1769,5 +1769,35 @@ var data = [
     description: "We are the champions !",
     fileName: "champions",
     video: "_WE6q4mELjo"
+  },
+  {
+    title: "Mon cucurbitacée",
+    fileName: "cucurbitacee",
+    video: "kzAZ0kR2B1Q"
+  },
+  {
+    title: "The coconut nut",
+    fileName: "coconut",
+    video: "w0AOGeqOnFY"
+  },
+  {
+    title: "Ingénieur informaticien",
+    fileName: "ingenieur",
+    video: "rlarCLhzfoU"
+  },
+  {
+    title: "Jason le maçon",
+    fileName: "jasonlemacon",
+    video: "ejj7q5mqy34"
+  },
+  {
+    title: "Dans ma petite voiture",
+    fileName: "petitevoiture",
+    video: "2bK5IboJKYs"
+  },
+  {
+    title: "Michel forever tonight",
+    fileName: "michelforevertonight",
+    video: "yVzHAhtcDrk"
   }
 ];
