@@ -79,13 +79,13 @@ var app = angular
         }
       }
 
-      var handler = onVisibilityChange(el, function() {
-        /* your code go here */
+      /*var handler = onVisibilityChange(el, function() {
+        /!* your code go here *!/
       });
       //jQuery
             $(window).on('DOMContentLoaded load resize scroll', handler);
 
-      /* //non-jQuery
+      //non-jQuery
        if (window.addEventListener) {
        addEventListener('DOMContentLoaded', handler, false);
        addEventListener('load', handler, false);
@@ -96,7 +96,7 @@ var app = angular
        attachEvent('onload', handler);
        attachEvent('onscroll', handler);
        attachEvent('onresize', handler);
-       }
+       }*/
 
 
       vm.play = function(button) {
