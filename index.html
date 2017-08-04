@@ -39,6 +39,18 @@
                          data-ng-bind="::button.description"
                          data-ng-if="::button.description"></div>
                 </div>
+                <div class="button random-button"
+                     ng-cloak>
+                    <div class="button-container">
+                        <div class="item {{vm.randomButton.class}}"
+                                data-ng-click="vm.play(vm.randomButton)"></div>
+                    </div>
+                    <a class="link"
+                       ng-href="#/{{vm.randomButton.fileName}}">
+                        <div class="title"
+                             data-ng-bind="'???'"></div>
+                    </a>
+                </div>
             </div>
         </div>
         <audio></audio>

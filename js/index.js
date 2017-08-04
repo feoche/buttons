@@ -4,7 +4,8 @@ var app = angular
     "$http",
     "$sce",
     "$stateParams",
-    function($http, $sce, $stateParams) {
+    "$scope",
+    function($http, $sce, $stateParams, $scope) {
       var vm = this;
 
       vm.init = function() {
@@ -63,8 +64,17 @@ var app = angular
           i.fullPath = "sounds/" + i.fileName + ".mp3";
           i.source = $sce.trustAsResourceUrl(i.fullPath);
         });
+
+        setInterval(function() {
+          loadRandomButton();
+        }, 2000);
       };
       vm.init();
+
+      function loadRandomButton() {
+        vm.randomButton = vm.buttons[Math.floor(Math.random() * vm.buttons.length)];
+        $scope.$apply();
+      }
 
       function onVisibilityChange(el, callback) {
         var old_visible;

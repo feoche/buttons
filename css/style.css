@@ -35,7 +35,7 @@ body {
   min-height: 150px;
   text-align: center;
   overflow: hidden;
-  padding-top: 2.5rem; }
+  padding: 2.5rem 0 1rem 0; }
   .container .filter {
     font-family: "Yanone Kaffeesatz";
     background: rgba(37, 47, 75, 0.8);
