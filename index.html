@@ -47,7 +47,7 @@
         <div class="container button-detail">
             <a class="back-button" ui-sref="buttons">&lt; Home</a>
             <div class="button ng-cloak">
-                <audio preload="auto"></audio>
+                <audio preload="auto" src="{{::vm.buttonDetail.fullPath}}" autoplay></audio>
                 <div class="button-container">
                     <div class="item {{::vm.buttonDetail.class}}"
                             data-ng-click="vm.play(vm.buttonDetail)"></div>
