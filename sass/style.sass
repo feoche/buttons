@@ -89,7 +89,7 @@ body
   min-height: 150px
   text-align: center
   overflow: hidden
-  padding: 2.5rem 0 1rem 0
+  padding: 2.5rem 0
 
   .filter
     font-family: 'Yanone Kaffeesatz'
@@ -152,6 +152,26 @@ body
         100%
           transform: rotate(-20deg) scale(1)
 
+      &.add-button
+        .item
+          transition: opacity ease-in-out .1s
+          background: none
+          margin-left: -3px
+          opacity: .5
+
+          &:hover
+            opacity: .8
+
+          &:before, &:after
+            background: none
+            border: dashed rgba(255,255,255,0.8)
+
+          &:before
+            content: '+'
+            font-size: 3rem
+            line-height: 2.8rem
+            color: white
+
     .description
       position: absolute
       transition: all ease-in-out 0.3s
@@ -206,6 +226,33 @@ body
     @for $i from 1 through length($colors)
       &.#{nth($colors, $i)}-button
         +button(nth($hex, $i))
+
+  input
+    max-width: 90px
+    background: rgba(24, 44, 62, 0.27)
+    border: none
+    border-radius: 5px
+    padding: 5px 10px
+    margin-bottom: 5px
+    color: #fdbc23
+
+    &:focus, &:active
+      outline: none
+      box-shadow: 0 0 3px #fdbc23
+
+  button
+    border-radius: 5px
+    border: none
+    color: #ffc411
+    background: #17293a
+    font-size: 1rem
+    font-weight: bold
+    padding: 5px 20px
+    cursor: pointer
+
+    &:focus, &:active
+      outline: none
+      box-shadow: 0 0 3px #fdbc23
 
   .link
     text-decoration: none

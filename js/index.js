@@ -5,10 +5,11 @@ var app = angular
     "$sce",
     "$stateParams",
     "$scope",
-    function($http, $sce, $stateParams, $scope) {
+    "$window",
+    function($http, $sce, $stateParams, $scope, $window) {
       var vm = this;
 
-      vm.init = function() {
+      init = function() {
         var COLORS = [
             "red",
             "pink",
@@ -36,6 +37,8 @@ var app = angular
 
         vm.currentAudio = "";
         vm.buttons = data;
+
+        // Set buttons
         angular.forEach(vm.buttons, function(i, key) {
           if (i.fileName === $stateParams.fileName) {
             vm.buttonDetail = i;
@@ -65,16 +68,20 @@ var app = angular
           i.source = $sce.trustAsResourceUrl(i.fullPath);
         });
 
+        // Add user buttons
+        var userButtons = $window.localStorage.getItem('userButtons');
+        console.log('user', userButtons);
+        if(userButtons) {
+          userButtons = JSON.parse($window.localStorage.getItem('userButtons'));
+        }
+
+        // Load a random button
         setInterval(function() {
-          loadRandomButton();
+          vm.randomButton = vm.buttons[Math.floor(Math.random() * vm.buttons.length)];
+          $scope.$apply();
         }, 2000);
       };
-      vm.init();
-
-      function loadRandomButton() {
-        vm.randomButton = vm.buttons[Math.floor(Math.random() * vm.buttons.length)];
-        $scope.$apply();
-      }
+      init();
 
       function onVisibilityChange(el, callback) {
         var old_visible;

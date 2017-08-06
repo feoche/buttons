@@ -51,6 +51,37 @@
                              data-ng-bind="'???'"></div>
                     </a>
                 </div>
+                <div class="button user-button"
+                     data-ng-repeat="button in vm.userButtons | orderBy:'title' track by $index"
+                     data-ng-show="([button] | filter:filter).length > 0"
+                     ng-cloak>
+                    <div class="button-container">
+                        <div class="item {{::button.class}}"
+                             data-ng-click="vm.play(button)"></div>
+                    </div>
+                    <a class="link"
+                       ng-href="#/{{::button.fileName}}">
+                        <div class="title"
+                             data-ng-bind="::button.title"></div>
+                    </a>
+                </div>
+                <div class="button"
+                     data-ng-class="{'add-button': !vm.addNewButton}"
+                     ng-cloak>
+                    <div class="button-container"
+                         data-ng-click="vm.addNewButton = true">
+                        <div class="item {{::vm.randomButton.class}}"></div>
+                    </div>
+                    <div class="button-infos" ng-if="vm.addNewButton">
+                        <div class="title">
+                            <input ng-model="vm.newButton.title" placeholder="Name">
+                        </div>
+                        <div class="url">
+                            <input ng-model="vm.newButton.url" placeholder="Url">
+                        </div>
+                        <button ng-click="vm.addButton()">Add</button>
+                    </div>
+                </div>
             </div>
         </div>
         <audio></audio>
