@@ -27,17 +27,17 @@
                      data-ng-class="{'new-button': button.new}"
                      ng-cloak>
                     <div class="button-container">
-                        <div class="item {{::button.class}}"
+                        <div class="item {{button.class}}"
                                 data-ng-click="vm.play(button)"></div>
                     </div>
                     <a class="link"
-                       ng-href="#/{{::button.fileName}}">
+                       ng-href="#/{{button.fileName}}">
                         <div class="title"
-                             data-ng-bind="::button.title"></div>
+                             data-ng-bind="button.title"></div>
                     </a>
                     <div class="description"
-                         data-ng-bind="::button.description"
-                         data-ng-if="::button.description"></div>
+                         data-ng-bind="button.description"
+                         data-ng-if="button.description"></div>
                 </div>
                 <div class="button random-button"
                      ng-cloak>
@@ -79,7 +79,7 @@
                         <div class="url">
                             <input ng-model="vm.newButton.url" placeholder="Url">
                         </div>
-                        <button ng-click="vm.addButton()">Add</button>
+                        <button ng-click="vm.addButton(vm.newButton)">Add</button>
                     </div>
                 </div>
             </div>

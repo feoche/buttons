@@ -9,32 +9,32 @@ var app = angular
     function($http, $sce, $stateParams, $scope, $window) {
       var vm = this;
 
-      init = function() {
-        var COLORS = [
-            "red",
-            "pink",
-            "purple",
-            "deeppurple",
-            "indigo",
-            "blue",
-            "lightblue",
-            "cyan",
-            "teal",
-            "green",
-            "lightgreen",
-            "lime",
-            "yellow",
-            "amber",
-            "orange",
-            "deeporange",
-            "brown",
-            "grey",
-            "bluegrey",
-            "black",
-            "white"
-          ],
-          colors = [];
+      var COLORS = [
+          "red",
+          "pink",
+          "purple",
+          "deeppurple",
+          "indigo",
+          "blue",
+          "lightblue",
+          "cyan",
+          "teal",
+          "green",
+          "lightgreen",
+          "lime",
+          "yellow",
+          "amber",
+          "orange",
+          "deeporange",
+          "brown",
+          "grey",
+          "bluegrey",
+          "black",
+          "white"
+        ],
+        colors = [];
 
+      init = function() {
         vm.currentAudio = "";
         vm.buttons = data;
 
@@ -53,12 +53,7 @@ var app = angular
           }
 
           // Adding random colors to button
-          if(!colors.length) {
-            colors = angular.copy(COLORS);
-          }
-          var rand = Math.floor(Math.random() * colors.length);
-          i.class = colors[rand] + "-button";
-          colors.splice(rand, 1);
+          pickButtonColor(i);
 
           // Set if new or not
           i.new = vm.buttons.length - key < 20;
@@ -82,6 +77,15 @@ var app = angular
         }, 2000);
       };
       init();
+
+      function pickButtonColor(i){
+        if(typeof colors === 'undefined') {
+          var colors = angular.copy(COLORS);
+        }
+        var rand = Math.floor(Math.random() * colors.length);
+        i.class = colors[rand] + "-button";
+        colors.splice(rand, 1);
+      }
 
       function onVisibilityChange(el, callback) {
         var old_visible;
@@ -155,14 +159,33 @@ var app = angular
         }
       };
 
-      function getData(audioFile, callback) {
-        var reader = new FileReader();
-        reader.onload = function(event) {
-          var data = event.target.result.split(',')
-            , decodedImageData = btoa(data[1]);
-          callback(decodedImageData);
+      // function getData(audioFile, callback) {
+      //   var reader = new FileReader();
+      //   reader.onload = function(event) {
+      //     var data = event.target.result.split(',')
+      //       , decodedImageData = btoa(data[1]);
+      //     callback(decodedImageData);
+      //   };
+      //   reader.readAsDataURL(audioFile);
+      // }
+
+      vm.addButton = function(button) {
+        var newButton = {
+          title: button.title
         };
-        reader.readAsDataURL(audioFile);
+        if(button.url && button.url.match(/.*?\.mp3/g)) {
+          newButton.fullPath = button.url;
+        }
+
+        pickButtonColor(newButton);
+
+        // Push to buttons
+        vm.buttons.push(newButton);
+
+        // Reset fields
+        vm.addNewButton = false;
+        button.title = '';
+        button.url = '';
       }
     }
   ])
@@ -1816,5 +1839,15 @@ var data = [
     title: "Michel forever tonight",
     fileName: "michelforevertonight",
     video: "yVzHAhtcDrk"
+  },
+  {
+    title: "Les cartes bleues en l'air",
+    fileName: "cartebleues",
+    video: "l3xSOCyUcfg"
+  },
+  {
+    title: "Touche à ton cul",
+    fileName: "toucheatoncul",
+    video: "l3xSOCyUcfg"
   }
 ];
