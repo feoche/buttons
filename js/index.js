@@ -121,41 +121,53 @@ var app = angular
 
 
       vm.play = function(button) {
-        var audio = document.getElementsByTagName("audio")[0];
-        var audioSource = audio.src && audio.src.replace(/.*?buttons\//g, '');
-        var buttonSource = button.fullPath;
-        if(audioSource === buttonSource) { // Click on the same button
-          if(!audio.currentTime || audio.duration - audio.currentTime < audio.duration/20 || button.paused) { // Start of track/End of track, reset timer
-            if(!button.paused) {
-              audio.currentTime = 0.01;
-            }
-            audio.play();
-            button.paused = false;
+        if(button.fullPath && !button.fullPath.match(/.*?\.mp3/g)) { // Launching iframe
+          var iframe = document.getElementsByTagName("iframe")[0];
+          var url = button.fullPath,
+          resUrl = '';
+          // Youtube
+          if(url.match(/youtube/g)) {
+            resUrl = url.replace("watch?v=", "embed/").replace(/^(.*?)&(.*?)$/g, '$1?rel=0&autoplay=1&$2');
           }
-          else { // Track is playing
-            audio.pause();
-            button.paused = true;
-          }
+          iframe.src = resUrl;
         }
-        else { // Click on new button
-          if (audio.currentTime && audio.currentTime <= audio.duration) { // Previous track is running
-            audio.pause(); // Unload previous
+        else { // mp3 playing
+          var audio = document.getElementsByTagName("audio")[0];
+          var audioSource = audio.src && audio.src.replace(/.*?buttons\//g, '');
+          var buttonSource = button.fullPath;
+          if(audioSource === buttonSource) { // Click on the same button
+            if(!audio.currentTime || audio.duration - audio.currentTime < audio.duration/20 || button.paused) { // Start of track/End of track, reset timer
+              if(!button.paused) {
+                audio.currentTime = 0.01;
+              }
+              audio.play();
+              button.paused = false;
+            }
+            else { // Track is playing
+              audio.pause();
+              button.paused = true;
+            }
           }
+          else { // Click on new button
+            if (audio.currentTime && audio.currentTime <= audio.duration) { // Previous track is running
+              audio.pause(); // Unload previous
+            }
 
-          // Hotswap audio sources
-          audio.src = buttonSource;
-          audio.preload = 'auto';
-          audio.currentTime = 0.01;
+            // Hotswap audio sources
+            audio.src = buttonSource;
+            audio.preload = 'auto';
+            audio.currentTime = 0.01;
 
-          // var xhr = new XMLHttpRequest();
-          // xhr.open('GET', buttonSource, true);
-          // xhr.responseType = 'blob';
-          // xhr.onload = function () {
-          //   audio.fileName = URL.createObjectURL(xhr.response);
-          // };
-          // xhr.send();
+            // var xhr = new XMLHttpRequest();
+            // xhr.open('GET', buttonSource, true);
+            // xhr.responseType = 'blob';
+            // xhr.onload = function () {
+            //   audio.fileName = URL.createObjectURL(xhr.response);
+            // };
+            // xhr.send();
 
-          audio.play();
+            audio.play();
+          }
         }
       };
 
@@ -173,9 +185,7 @@ var app = angular
         var newButton = {
           title: button.title
         };
-        if(button.url && button.url.match(/.*?\.mp3/g)) {
-          newButton.fullPath = button.url;
-        }
+        newButton.fullPath = button.url;
 
         pickButtonColor(newButton);
 

@@ -60,7 +60,7 @@
                              data-ng-click="vm.play(button)"></div>
                     </div>
                     <a class="link"
-                       ng-href="#/{{::button.fileName}}">
+                       ng-href="{{:: '#/' + button.fileName}}">
                         <div class="title"
                              data-ng-bind="::button.title"></div>
                     </a>
@@ -85,6 +85,7 @@
             </div>
         </div>
         <audio></audio>
+        <iframe></iframe>
     </script>
     <script type="text/ng-template" id="button.html">
         <div class="container button-detail">

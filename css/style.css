@@ -1106,4 +1106,8 @@ body {
   padding: 40px;
   z-index: 10; }
 
+audio + iframe {
+  width: 0;
+  height: 0; }
+
 /*# sourceMappingURL=style.css.map */
