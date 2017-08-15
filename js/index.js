@@ -74,39 +74,6 @@ var app = angular
         colors.splice(rand, 1);
       }
 
-      function onVisibilityChange(el, callback) {
-        var old_visible;
-        return function () {
-          var visible = isElementInViewport(el);
-          if (visible !== old_visible) {
-            old_visible = visible;
-            if (typeof callback === 'function') {
-              callback();
-            }
-          }
-        }
-      }
-
-      /*var handler = onVisibilityChange(el, function() {
-        /!* your code go here *!/
-      });
-      //jQuery
-            $(window).on('DOMContentLoaded load resize scroll', handler);
-
-      //non-jQuery
-       if (window.addEventListener) {
-       addEventListener('DOMContentLoaded', handler, false);
-       addEventListener('load', handler, false);
-       addEventListener('scroll', handler, false);
-       addEventListener('resize', handler, false);
-       } else if (window.attachEvent)  {
-       attachEvent('onDOMContentLoaded', handler); // IE9+ :(
-       attachEvent('onload', handler);
-       attachEvent('onscroll', handler);
-       attachEvent('onresize', handler);
-       }*/
-
-
       vm.play = function (button, key) {
         vm.activeButton = key;
         if (button.fullPath && !button.fullPath.match(/.*?\.mp3/g)) { // Launching iframe
@@ -146,14 +113,6 @@ var app = angular
             audio.preload = 'auto';
             audio.currentTime = 0.01;
 
-            // var xhr = new XMLHttpRequest();
-            // xhr.open('GET', buttonSource, true);
-            // xhr.responseType = 'blob';
-            // xhr.onload = function () {
-            //   audio.fileName = URL.createObjectURL(xhr.response);
-            // };
-            // xhr.send();
-
             audio.play();
           }
         }
@@ -170,16 +129,6 @@ var app = angular
         // Store it
         saveButton(button);
       };
-
-      // function getData(audioFile, callback) {
-      //   var reader = new FileReader();
-      //   reader.onload = function(event) {
-      //     var data = event.target.result.split(',')
-      //       , decodedImageData = btoa(data[1]);
-      //     callback(decodedImageData);
-      //   };
-      //   reader.readAsDataURL(audioFile);
-      // }
 
       vm.addButton = function (button) {
         var newButton = {
