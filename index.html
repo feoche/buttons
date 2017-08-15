@@ -21,50 +21,14 @@
                    data-ng-model="filter"
                    placeholder="Search...">
             <div class="buttons">
-                <div class="button"
-                     data-ng-repeat="(key, button) in vm.buttons | orderBy:'title' track by $index"
-                     data-ng-show="([button] | filter:filter).length > 0"
-                     data-ng-class="{'new-button': (vm.buttons.length - key < 20)}"
-                     data-ng-cloak>
-                    <div class="button-container">
-                        <div class="item {{button.class}}"
-                                data-ng-click="vm.play(button)"></div>
-                    </div>
-                    <a class="link"
-                       data-ng-href="#/{{button.fileName}}">
-                        <div class="title"
-                             data-ng-bind="button.title"></div>
-                    </a>
-                    <div class="description"
-                         data-ng-bind="button.description"
-                         data-ng-if="button.description"></div>
-                </div>
-                <div class="button random-button"
-                     data-ng-cloak>
-                    <div class="button-container">
-                        <div class="item {{vm.randomButton.class}}"
-                                data-ng-click="vm.play(vm.randomButton)"></div>
-                    </div>
-                    <a class="link"
-                       data-ng-href="#/{{vm.randomButton.fileName}}">
-                        <div class="title"
-                             data-ng-bind="'???'"></div>
-                    </a>
-                </div>
-                <div class="button user-button"
-                     data-ng-repeat="button in vm.userButtons | orderBy:'title' track by $index"
-                     data-ng-show="([button] | filter:filter).length > 0"
-                     data-ng-cloak>
-                    <div class="button-container">
-                        <div class="item {{::button.class}}"
-                             data-ng-click="vm.play(button)"></div>
-                    </div>
-                    <a class="link"
-                       data-ng-href="{{:: '#/' + button.fileName}}">
-                        <div class="title"
-                             data-ng-bind="::button.title"></div>
-                    </a>
-                </div>
+                <sound-button data-ng-repeat="(key, button) in vm.buttons | orderBy:['fav','title'] track by $index"
+                              button="button"
+                              key="key"
+                              vm="vm"></sound-button>
+                <sound-button class="random-button"
+                              button="vm.randomButton"
+                              key="vm.buttons.length+1"
+                              vm="vm"></sound-button>
                 <div class="button"
                      data-ng-class="{'add-button': !vm.addNewButton}"
                      data-ng-cloak>
@@ -87,14 +51,14 @@
         <audio></audio>
         <iframe></iframe>
     </script>
-    <script type="text/ng-template" id="button.html">
+    <script type="text/ng-template" id="button-detail.html">
         <div class="container button-detail">
             <a class="back-button" ui-sref="buttons">&lt; Home</a>
             <div class="button data-ng-cloak">
                 <audio preload="auto" src="{{::vm.buttonDetail.fullPath}}" autoplay></audio>
                 <div class="button-container">
                     <div class="item {{::vm.buttonDetail.class}}"
-                            data-ng-click="vm.play(vm.buttonDetail)"></div>
+                            data-ng-click="vm.play(vm.buttonDetail, key)"></div>
                 </div>
                 <div class="title" data-ng-bind="::vm.buttonDetail.title"></div>
                 <div class="description" data-ng-bind="::vm.buttonDetail.description"></div>
@@ -106,6 +70,32 @@
                         data-ng-src="{{::vm.buttonDetail.video}}"
                         frameborder="0"/>
             </div>
+        </div>
+    </script>
+    <script type="text/ng-template" id="button.html">
+        <div class="button"
+             data-ng-show="([button] | filter:filter).length > 0"
+             data-ng-class="{'new-button': (vm.buttons.length - key < 20)}"
+             data-ng-cloak>
+            <div class="button-container"
+                 data-ng-class="{'active': vm.activeButton === key}">
+                <div class="item {{button.class}}"
+                     data-ng-click="vm.play(button, key)"></div>
+                <div class="fav-button"
+                     data-ng-class="{'active': button.fav}"
+                     data-ng-click="vm.toggleFav(button)">
+                    <span ng-if="!button.fav">✰</span>
+                    <span ng-if="button.fav">🟊</span>
+                </div>
+            </div>
+            <a class="link"
+               data-ng-href="#/{{button.fileName}}">
+                <div class="title"
+                     data-ng-bind="button.title"></div>
+            </a>
+            <div class="description"
+                 data-ng-bind="button.description"
+                 data-ng-if="button.description"></div>
         </div>
     </script>
     <!-- Vendors -->

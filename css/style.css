@@ -142,6 +142,23 @@ body {
     opacity: 1;
     transform: translateY(0);
     z-index: 12; }
+  .button-container:hover .fav-button, .button-container:focus .fav-button, .button-container.active .fav-button {
+    opacity: 1; }
+  .button-container .fav-button {
+    transition: all ease-in-out 0.2s;
+    opacity: 0.2;
+    position: absolute;
+    left: -30px;
+    font-size: 2.5rem;
+    top: 37px;
+    color: #696969;
+    cursor: pointer; }
+    .button-container .fav-button:hover {
+      text-shadow: 0 0 3px #F5F5DC;
+      color: beige; }
+    .button-container .fav-button.active {
+      color: #FFFF00;
+      text-shadow: 0 0 1px black; }
 
 .button {
   display: inline-block;

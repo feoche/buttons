@@ -58,7 +58,8 @@ var app = angular
 
         // Load a random button
         setInterval(function () {
-          vm.randomButton = vm.buttons[Math.floor(Math.random() * vm.buttons.length)];
+          vm.randomButton = angular.copy(vm.buttons[Math.floor(Math.random() * vm.buttons.length)]);
+          vm.randomButton.title = '???';
           $scope.$apply();
         }, 2000);
       };
@@ -106,7 +107,8 @@ var app = angular
        }*/
 
 
-      vm.play = function (button) {
+      vm.play = function (button, key) {
+        vm.activeButton = key;
         if (button.fullPath && !button.fullPath.match(/.*?\.mp3/g)) { // Launching iframe
           var iframe = document.getElementsByTagName("iframe")[0];
           var url = button.fullPath,
@@ -157,6 +159,18 @@ var app = angular
         }
       };
 
+      vm.toggleFav = function(button) {
+        if(button.fav) {
+          delete button.fav;
+        }
+        else {
+          button.fav = true;
+        }
+
+        // Store it
+        saveButton(button);
+      };
+
       // function getData(audioFile, callback) {
       //   var reader = new FileReader();
       //   reader.onload = function(event) {
@@ -192,15 +206,18 @@ var app = angular
         var dataButtons = JSON.parse($window.localStorage.getItem('buttons'));
         if (dataButtons) {
           var found = false;
-          angular.forEach(dataButtons, function (item) {
+          angular.forEach(dataButtons, function (item, key) {
             if (item.title === button.title && item.type === button.type) {
-              found = true;
+              found = key;
             }
           });
           if (!found) {
             dataButtons.push(button);
-            $window.localStorage.setItem('buttons', JSON.stringify(dataButtons));
           }
+          else {
+            dataButtons[found] = button;
+          }
+          $window.localStorage.setItem('buttons', JSON.stringify(dataButtons));
         }
         else {
           $window.localStorage.setItem('buttons', JSON.stringify([button]));
@@ -208,6 +225,17 @@ var app = angular
       }
     }
   ])
+  .directive("soundButton", function(){
+    return {
+      restrict: 'E',
+      scope: {
+        vm: '=',
+        button: '=',
+        key: '='
+      },
+      templateUrl: 'button.html'
+    }
+  })
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state("buttons", {
@@ -217,7 +245,7 @@ var app = angular
       })
       .state("item", {
         url: "/{fileName}",
-        templateUrl: "button.html",
+        templateUrl: "button-detail.html",
         controller: "AppController as vm"
       });
     $urlRouterProvider.otherwise("/");

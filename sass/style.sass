@@ -757,8 +757,6 @@ $yellow4: #8B8B00
 $yellowgreen: #9ACD32
 
 
-
-
 // Styling
 =button($color)
   display: inline-block
@@ -948,6 +946,28 @@ body
       opacity: 1
       transform: translateY(0)
       z-index: 12
+
+  &:hover, &:focus, &.active
+    .fav-button
+      opacity: 1
+
+  .fav-button
+    transition: all ease-in-out .2s
+    opacity: .2
+    position: absolute
+    left: -30px
+    font-size: 2.5rem
+    top: 37px
+    color: $dimgrey
+    cursor: pointer
+
+    &:hover
+      text-shadow: 0 0 3px $beige
+      color: beige
+
+    &.active
+      color: $yellow1
+      text-shadow: 0 0 1px black
 
 .button
   display: inline-block
