@@ -22,16 +22,16 @@
                    placeholder="Search...">
             <div class="buttons">
                 <div class="button"
-                     data-ng-repeat="button in vm.buttons | orderBy:'title' track by $index"
+                     data-ng-repeat="(key, button) in vm.buttons | orderBy:'title' track by $index"
                      data-ng-show="([button] | filter:filter).length > 0"
-                     data-ng-class="{'new-button': button.new}"
-                     ng-cloak>
+                     data-ng-class="{'new-button': (vm.buttons.length - key < 20)}"
+                     data-ng-cloak>
                     <div class="button-container">
                         <div class="item {{button.class}}"
                                 data-ng-click="vm.play(button)"></div>
                     </div>
                     <a class="link"
-                       ng-href="#/{{button.fileName}}">
+                       data-ng-href="#/{{button.fileName}}">
                         <div class="title"
                              data-ng-bind="button.title"></div>
                     </a>
@@ -40,13 +40,13 @@
                          data-ng-if="button.description"></div>
                 </div>
                 <div class="button random-button"
-                     ng-cloak>
+                     data-ng-cloak>
                     <div class="button-container">
                         <div class="item {{vm.randomButton.class}}"
                                 data-ng-click="vm.play(vm.randomButton)"></div>
                     </div>
                     <a class="link"
-                       ng-href="#/{{vm.randomButton.fileName}}">
+                       data-ng-href="#/{{vm.randomButton.fileName}}">
                         <div class="title"
                              data-ng-bind="'???'"></div>
                     </a>
@@ -54,32 +54,32 @@
                 <div class="button user-button"
                      data-ng-repeat="button in vm.userButtons | orderBy:'title' track by $index"
                      data-ng-show="([button] | filter:filter).length > 0"
-                     ng-cloak>
+                     data-ng-cloak>
                     <div class="button-container">
                         <div class="item {{::button.class}}"
                              data-ng-click="vm.play(button)"></div>
                     </div>
                     <a class="link"
-                       ng-href="{{:: '#/' + button.fileName}}">
+                       data-ng-href="{{:: '#/' + button.fileName}}">
                         <div class="title"
                              data-ng-bind="::button.title"></div>
                     </a>
                 </div>
                 <div class="button"
                      data-ng-class="{'add-button': !vm.addNewButton}"
-                     ng-cloak>
+                     data-ng-cloak>
                     <div class="button-container"
                          data-ng-click="vm.addNewButton = true">
                         <div class="item {{::vm.randomButton.class}}"></div>
                     </div>
-                    <div class="button-infos" ng-if="vm.addNewButton">
+                    <div class="button-infos" data-ng-if="vm.addNewButton">
                         <div class="title">
-                            <input ng-model="vm.newButton.title" placeholder="Name">
+                            <input data-ng-model="vm.newButton.title" placeholder="Name">
                         </div>
                         <div class="url">
-                            <input ng-model="vm.newButton.url" placeholder="Url">
+                            <input data-ng-model="vm.newButton.url" placeholder="Url">
                         </div>
-                        <button ng-click="vm.addButton(vm.newButton)">Add</button>
+                        <button data-ng-click="vm.addButton(vm.newButton)">Add</button>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
     <script type="text/ng-template" id="button.html">
         <div class="container button-detail">
             <a class="back-button" ui-sref="buttons">&lt; Home</a>
-            <div class="button ng-cloak">
+            <div class="button data-ng-cloak">
                 <audio preload="auto" src="{{::vm.buttonDetail.fullPath}}" autoplay></audio>
                 <div class="button-container">
                     <div class="item {{::vm.buttonDetail.class}}"
@@ -98,12 +98,12 @@
                 </div>
                 <div class="title" data-ng-bind="::vm.buttonDetail.title"></div>
                 <div class="description" data-ng-bind="::vm.buttonDetail.description"></div>
-                <iframe ng-if="::vm.buttonDetail.video"
+                <iframe data-ng-if="::vm.buttonDetail.video"
                         id="ytplayer"
                         type="text/html"
                         width="640"
                         height="390"
-                        ng-src="{{::vm.buttonDetail.video}}"
+                        data-ng-src="{{::vm.buttonDetail.video}}"
                         frameborder="0"/>
             </div>
         </div>
