@@ -23,6 +23,7 @@
             <div class="buttons">
                 <sound-button data-ng-repeat="(key, button) in vm.buttons | orderBy:['fav','title'] track by $index"
                               data-ng-show="([button] | filter:filter).length > 0"
+                              data-ng-class="{'new-button': (vm.buttons.length - key < 20)}"
                               button="button"
                               key="key"
                               vm="vm"></sound-button>
@@ -75,7 +76,6 @@
     </script>
     <script type="text/ng-template" id="button.html">
         <div class="button"
-             data-ng-class="{'new-button': (vm.buttons.length - key < 20)}"
              data-ng-cloak>
             <div class="button-container"
                  data-ng-class="{'active': vm.activeButton === key}">
