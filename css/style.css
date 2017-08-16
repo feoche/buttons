@@ -31673,7 +31673,6 @@ body {
     color: #fdbc23;
     text-shadow: 0 0 2px #ff5e00;
     position: relative;
-    word-break: break-all;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto; }
