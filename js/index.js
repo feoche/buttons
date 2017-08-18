@@ -22,10 +22,7 @@ var app = angular
 
         // Retrieve JSON afterwards
         $http.get('json/data.json').then(function (data) {
-          if(!dataButtons) {
-            vm.buttons = data.status === 200 && data.data;
-          }
-
+          vm.buttons = data.status === 200 && data.data;
           // Set buttons
           angular.forEach(vm.buttons, function (i) {
             if (i.fileName === $stateParams.fileName) {
