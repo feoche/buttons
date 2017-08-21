@@ -83,6 +83,7 @@
     <script type="text/ng-template" id="button.html">
         <div class="button"
              data-ng-init="button.firstLetter = button.title.toLowerCase()[0]"
+             data-ng-right-click="vm.play(button, key, true)"
              data-ng-cloak>
             <div class="button-container"
                  data-ng-class="{'active': vm.activeButton === key}">

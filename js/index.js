@@ -74,7 +74,7 @@ var app = angular
         colors.splice(rand, 1);
       }
 
-      vm.play = function (button, key) {
+      vm.play = function (button, key, repeat) {
         vm.activeButton = key;
         if (button.fullPath && !button.fullPath.match(/.*?\.mp3/g)) { // Launching iframe
           var iframe = document.getElementsByTagName("iframe")[0];
@@ -112,6 +112,7 @@ var app = angular
             audio.src = buttonSource;
             audio.preload = 'auto';
             audio.currentTime = 0.01;
+            audio.loop = typeof repeat !== 'undefined' && repeat;
 
             audio.play();
           }
@@ -200,6 +201,17 @@ var app = angular
       },
       templateUrl: 'button.html'
     }
+  })
+  .directive('ngRightClick', function($parse) {
+    return function(scope, element, attrs) {
+      var fn = $parse(attrs.ngRightClick);
+      element.bind('contextmenu', function(event) {
+        scope.$apply(function() {
+          event.preventDefault();
+          fn(scope, {$event:event});
+        });
+      });
+    };
   })
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
