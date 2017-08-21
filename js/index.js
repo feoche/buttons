@@ -15,42 +15,43 @@ var app = angular
       init = function () {
         vm.currentAudio = "";
 
-        var dataButtons = JSON.parse($window.localStorage.getItem('buttons'));
-        if(dataButtons) {
-          vm.buttons = dataButtons;
-        }
+        var localStorageButtons = JSON.parse($window.localStorage.getItem('buttons'));
+        vm.buttons = localStorageButtons;
 
         // Retrieve JSON afterwards
         $http.get('json/data.json').then(function (data) {
-          vm.buttons = data.status === 200 && data.data;
-          // Set buttons
-          angular.forEach(vm.buttons, function (i) {
-            if (i.fileName === $stateParams.fileName) {
-              vm.buttonDetail = i;
-              vm.buttonDetail.video =
-                vm.buttonDetail.video &&
-                $sce.trustAsResourceUrl(
-                  "//www.youtube.com/embed/" +
-                  vm.buttonDetail.video +
-                  (vm.buttonDetail.video.indexOf("?") === -1 ? "?" : "&amp;") +
-                  "&amp;controls=0&amp;theme=dark&amp;showinfo=0&amp;rel=0&amp;modestbranding=1"
-                );
-            }
+          if(data.status === 200) {
+            // Set buttons
+            vm.buttons = angular.merge(data.data, localStorageButtons);
 
-            // Add non-user tag to it
-            i.type = 'data';
+            angular.forEach(vm.buttons, function (i) {
+              if (i.fileName === $stateParams.fileName) {
+                vm.buttonDetail = i;
+                vm.buttonDetail.video =
+                  vm.buttonDetail.video &&
+                  $sce.trustAsResourceUrl(
+                    "//www.youtube.com/embed/" +
+                    vm.buttonDetail.video +
+                    (vm.buttonDetail.video.indexOf("?") === -1 ? "?" : "&amp;") +
+                    "&amp;controls=0&amp;theme=dark&amp;showinfo=0&amp;rel=0&amp;modestbranding=1"
+                  );
+              }
 
-            // Adding random colors to button
-            pickButtonColor(i);
+              // Add non-user tag to it
+              i.type = 'data';
 
-            // Describe full path source
-            if(i.fileName) {
-              i.fullPath = "sounds/" + i.fileName + ".mp3";
-            }
+              // Adding random colors to button
+              pickButtonColor(i);
 
-            // Store buttons
-            saveButton(i);
-          });
+              // Describe full path source
+              if (i.fileName) {
+                i.fullPath = "sounds/" + i.fileName + ".mp3";
+              }
+
+              // Store buttons
+              saveButton(i);
+            });
+          }
         });
 
         // Load a random button
