@@ -18,11 +18,11 @@
     <script type="text/ng-template" id="all.html">
         <div class="container all">
             <input class="filter"
-                   data-ng-model="filter"
+                   data-ng-model="vm.filter"
                    placeholder="Search...">
             <div class="buttons">
                 <sound-button data-ng-repeat="(key, button) in vm.buttons | orderBy:['fav','title'] track by $index"
-                              data-ng-show="([button] | filter:filter).length > 0"
+                              data-ng-show="([button] | filter:vm.filter).length > 0"
                               data-ng-class="{'new-button': (vm.buttons.length - key < 20)}"
                               button="button"
                               key="key"
@@ -48,6 +48,12 @@
                         <button data-ng-click="vm.addButton(vm.newButton)">Add</button>
                     </div>
                 </div>
+            </div>
+            <div class="letter-scroll">
+                <div class="letter"
+                     data-ng-repeat="letter in '#abcdefghijklmnopqrstuvwxyz'.split('') track by $index"
+                     data-ng-bind="letter"
+                     data-ng-click="vm.scrollToLetter(letter)"></div>
             </div>
         </div>
         <audio></audio>
@@ -76,6 +82,7 @@
     </script>
     <script type="text/ng-template" id="button.html">
         <div class="button"
+             data-ng-init="button.firstLetter = button.title.toLowerCase()[0]"
              data-ng-cloak>
             <div class="button-container"
                  data-ng-class="{'active': vm.activeButton === key}">
