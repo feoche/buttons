@@ -104,7 +104,9 @@ var app = angular
             }
           }
           else { // Click on new button
-            gtag('event', 'button', {'value': button.title});
+            gtag('event', 'button_play', {
+              'button_title': button.title
+            });
             if (audio.currentTime && audio.currentTime <= audio.duration) { // Previous track is running
               audio.pause(); // Unload previous
             }
