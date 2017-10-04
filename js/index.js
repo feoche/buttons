@@ -96,6 +96,9 @@ var app = angular
                 audio.currentTime = 0.01;
               }
               audio.play();
+              gtag('event', 'button_play', {
+              'button_title': button.title
+            });
               button.paused = false;
             }
             else { // Track is playing
@@ -104,9 +107,6 @@ var app = angular
             }
           }
           else { // Click on new button
-            gtag('event', 'button_play', {
-              'button_title': button.title
-            });
             if (audio.currentTime && audio.currentTime <= audio.duration) { // Previous track is running
               audio.pause(); // Unload previous
             }
@@ -118,6 +118,9 @@ var app = angular
             audio.loop = typeof repeat !== 'undefined' && repeat;
 
             audio.play();
+            gtag('event', 'button_play', {
+              'button_title': button.title
+            });
           }
         }
       };
