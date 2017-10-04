@@ -97,7 +97,7 @@ var app = angular
               }
               audio.play();
               gtag('event', 'button_play', {
-              'button_title': button.title
+              'event_label': button.title
             });
               button.paused = false;
             }
@@ -119,7 +119,7 @@ var app = angular
 
             audio.play();
             gtag('event', 'button_play', {
-              'button_title': button.title
+              'event_label': button.title
             });
           }
         }
