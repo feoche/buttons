@@ -146,12 +146,12 @@ body {
     opacity: 1; }
   .button-container .fav-button {
     transition: all ease-in-out 0.2s;
-    opacity: 0.2;
+    opacity: 0.1;
     position: absolute;
     left: -30px;
     font-size: 2.5rem;
     top: 37px;
-    color: #696969;
+    color: #fff;
     cursor: pointer; }
     .button-container .fav-button:hover {
       text-shadow: 0 0 3px #F5F5DC;
