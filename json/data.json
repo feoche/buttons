@@ -2814,13 +2814,13 @@
     "title": "On va faire une réunion !",
     "fileName": "faireunereunion",
     "video": "42v_LCa07zo",
-    "keywords": ["message", "caractère", "informatif", "canal", "réunion"]
+    "keywords": ["message", "caractère", "informatif", "canal", "réunion", "ranu", "cogip"]
   },
   {
     "title": "Mercurochrome",
     "fileName": "mercurochrome",
     "video": "fT45iq2-6tw",
-    "keywords": ["pub"]
+    "keywords": ["pub", "pansement", "héros"]
   },
   {
     "title": "Zigounette pipi",
@@ -2832,7 +2832,7 @@
     "title": "Destins",
     "fileName": "destins",
     "video": "C8IXex1v4Ho",
-    "keywords": ["pub"]
+    "keywords": ["pub", "changer", "vie"]
   },
   {
     "title": "Top délire méga groove",
@@ -2850,12 +2850,108 @@
     "title": "Papy Brossard",
     "fileName": "papybrossard",
     "video": "trv3-3JkjqQ",
-    "keywords": ["pub"]
+    "keywords": ["pub", "aime", "tous"]
   },
   {
     "title": "Le cheval c'est génial",
     "fileName": "chevalgenial",
     "video": "nnHzxgA_uck",
-    "keywords": ["pub"]
+    "keywords": ["pub", "findus"]
+  },
+  {
+    "title": "COGIP bonjour !",
+    "fileName": "cogipbonjour",
+    "video": "WqMAbC6z4c0",
+    "keywords": ["message", "caractère", "informatif", "canal"]
+  },
+  {
+    "title": "Vous avez la parole...",
+    "fileName": "vousavezlaparole",
+    "video": "WqMAbC6z4c0",
+    "keywords": ["message", "caractère", "informatif", "canal", "cogip"]
+  },
+  {
+    "title": "Gewonnen",
+    "fileName": "gewonnen",
+    "video": "spTeHgL8jDA",
+    "keywords": ["windjammers"]
+  },
+  {
+    "title": "Carte Kiwi",
+    "fileName": "cartekiwi",
+    "video": "xsw3ldAjHlQ",
+    "keywords": ["pub", "possible", "si", "sncf"]
+  },
+  {
+    "title": "Je passe",
+    "fileName": "jepasse",
+    "video": "wN_N_gii5ks",
+    "keywords": ["questions", "champion", "julien"]
+  },
+  {
+    "title": "Cliquez",
+    "fileName": "cliquez",
+    "video": "BSIZUMRrD28",
+    "keywords": ["salope", "morsay"]
+  },
+  {
+    "title": "Maïté",
+    "fileName": "jecommencealeprendre",
+    "video": "SEPMuyGe7dg",
+    "keywords": ["sucer", "derrière", "ortolan"]
+  },
+  {
+    "title": "Ça pousse",
+    "fileName": "capousse",
+    "video": "5V2D1aXX_UM",
+    "keywords": ["bolidage"]
+  },
+  {
+    "title": "Déjà vu",
+    "fileName": "dejavu",
+    "video": "dv13gl0a-FA",
+    "keywords": ["initial", "d", "music"]
+  },
+  {
+    "title": "Fistiland",
+    "fileName": "fistiland",
+    "video": "V4PEwKRh9_w",
+    "keywords": ["joueur", "grenier", "fond", "fun"]
+  },
+  {
+    "title": "Les Snorky",
+    "fileName": "lessnorky",
+    "video": "_JhzlO1x4rc",
+    "keywords": ["dessin", "animé"]
+  },
+  {
+    "title": "UMP",
+    "fileName": "ump",
+    "video": "VyLOy7l_jP4",
+    "keywords": ["changer", "monde", "chanson"]
+  },
+  {
+    "title": "Des fruits secs Jamy",
+    "fileName": "fruitssecs",
+    "video": "_iMkF6Il3bs",
+    "keywords": ["sorcier", "fred"]
+  },
+  {
+    "title": "Mortal Kombat",
+    "fileName": "mortalkombat",
+    "video": "EAwWPadFsOA",
+    "keywords": ["game"]
+  },
+  {
+    "title": "Mortal Kombat 2",
+    "fileName": "mortalkombat2",
+    "video": "EAwWPadFsOA",
+    "keywords": ["game"]
+  },
+  {
+    "title": "Sonic Extra Life",
+    "fileName": "sonicextralife",
+    "video": "https://www.youtube.com/watch?v=wTRYkRZctLg",
+    "keywords": ["game", "knuckles", "victory"]
   }
 ]

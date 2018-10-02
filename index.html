@@ -29,6 +29,7 @@
         <div class="container all">
             <input class="filter"
                    data-ng-model="vm.filter"
+                   autofocus
                    placeholder="Search...">
             <div class="buttons">
                 <sound-button data-ng-repeat="(key, button) in vm.buttons | orderBy:['fav','title'] track by $index"
