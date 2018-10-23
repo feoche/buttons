@@ -40,9 +40,6 @@ var app = angular
               // Add non-user tag to it
               i.type = 'data';
 
-              // Adding random colors to button
-              pickButtonColor(i);
-
               // Describe full path source
               if (i.fileName) {
                 i.fullPath = "sounds/" + i.fileName + ".mp3";
@@ -56,6 +53,19 @@ var app = angular
           }
         });
 
+        // Custom lazy load
+        vm.limit = 120;
+        var inter = setInterval(function () {
+            if (vm.limit > vm.buttons) {
+                vm.limit = -1;
+                $scope.$apply();
+                clearInterval(inter);
+            } else {
+                vm.limit += 120;
+                $scope.$apply();
+            }
+        }, 200);
+
         // Load a random button
         setInterval(function () {
           vm.randomButton = angular.copy(vm.buttons[Math.floor(Math.random() * vm.buttons.length)]);
@@ -64,15 +74,6 @@ var app = angular
         }, 2000);
       };
       init();
-
-      function pickButtonColor(i) {
-        if (typeof colors === 'undefined') {
-          var colors = angular.copy(COLORS);
-        }
-        var rand = Math.floor(Math.random() * colors.length);
-        i.class = colors[rand] + "-button";
-        colors.splice(rand, 1);
-      }
 
       vm.play = function (button, key, repeat) {
         vm.activeButton = key;
