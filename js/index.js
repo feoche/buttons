@@ -133,7 +133,7 @@ var app = angular
           // add launchpad colors
           for (var key = 0; key < 64; key++) {
             var button = vm.buttons[key];
-            if(vm.pad) {
+            if (vm.pad) {
               vm.pad.button(vm.launchpadButtonsNotes[key]).send(vm.launchpadColorVelocity[button.color]);
             }
           }
@@ -170,9 +170,16 @@ var app = angular
           iframe.src = resUrl;
         }
         else { // mp3 playing
-          var audio = document.getElementsByTagName("audio")[0];
-          var audioSource = audio.src && audio.src.replace(/.*?buttons\//g, '');
-          var buttonSource = button.fullPath;
+          var audio = document.getElementsByTagName("audio")[0],
+            source = document.getElementsByTagName("source")[0];
+
+          // main params
+          source.type = "audio/mpeg";
+          audio.preload = 'auto';
+          audio.loop = typeof repeat !== 'undefined' && repeat;
+
+          var audioSource = audio.src && audio.src.replace(/.*?buttons\//g, ''),
+            buttonSource = button.fullPath;
           button.duration = audio.duration;
           if (audioSource === buttonSource) { // Click on the same button
             if (!audio.currentTime || audio.duration - audio.currentTime < audio.duration / 20 || button.paused) { // Start of track/End of track, reset timer
@@ -180,8 +187,8 @@ var app = angular
                 audio.currentTime = 0.01;
               }
               audio.play();
-              if(vm.launchpad) {
-                flicker(button, key, true);
+              if (vm.launchpad) {
+                playLaunchpadButton(button, key);
               }
               gtag('event', 'button_play', {
                 'event_label': button.title
@@ -190,8 +197,8 @@ var app = angular
             }
             else { // Track is playing
               audio.pause();
-              if(vm.launchpad) {
-                vm.pad.button(vm.launchpadButtonsNotes[key]).send(vm.launchpadColorVelocity[button.color]);
+              if (vm.launchpad) {
+                vm.stopFlickering = true;
               }
               button.paused = true;
             }
@@ -199,20 +206,18 @@ var app = angular
           else { // Click on new button
             if (audio.currentTime && audio.currentTime <= audio.duration) { // Previous track is running
               audio.pause(); // Unload previous
-              if(vm.launchpad) {
-                vm.pad.button(vm.launchpadButtonsNotes[key]).send(vm.launchpadColorVelocity[button.color]);
+              if (vm.launchpad) {
+                vm.stopFlickering = true;
               }
             }
 
             // Hotswap audio sources
-            audio.src = buttonSource;
-            audio.preload = 'auto';
+            source.src = buttonSource;
             audio.currentTime = 0.01;
-            audio.loop = typeof repeat !== 'undefined' && repeat;
-
             audio.play();
-            if(vm.launchpad) {
-              flicker(button, key);
+
+            if (vm.launchpad) {
+              playLaunchpadButton(button, key);
             }
             gtag('event', 'button_play', {
               'event_label': button.title
@@ -221,25 +226,24 @@ var app = angular
         }
       };
 
-      flicker = function (button, key) {
-        clearInterval(vm.int);
-        clearTimeout(vm.time);
-        vm.stopFlickering = false;
+      playLaunchpadButton = function (button, key) {
+        flicker(button, key, stop);
         $timeout(function () {
+          console.info("button.duration : ", button.duration);
           vm.stopFlickering = true;
         }, button.duration);
-        vm.int = $interval(function() {
-          if(vm.stopFlickering){
-            clearInterval(vm.int);
-          }
-          vm.pad.button(vm.launchpadButtonsNotes[key]).send(vm.launchpadColorVelocity[button.color === 'white'? 'yellow3': button.color]);
-          vm.time = $timeout(function() {
-            if(vm.stopFlickering){
-              clearTimeout(vm.time);
-            }
-            vm.pad.button(vm.launchpadButtonsNotes[key]).send(vm.launchpadColorVelocity['white']); //off
-          }, 300);
-        }, 600);
+      };
+
+      flicker = function (button, key) {
+        vm.pad.button(vm.launchpadButtonsNotes[key]).send(vm.launchpadColorVelocity[button.color === 'white' ? 'yellow3' : button.color]);
+        $timeout(function () {
+          vm.pad.button(vm.launchpadButtonsNotes[key]).send(vm.launchpadColorVelocity['white']); //off
+        }, 300);
+        if (!vm.stopFlickering) {
+          $timeout(function () {
+            flicker(button, key);
+          }, 600);
+        }
       };
 
       vm.toggleFav = function (button) {

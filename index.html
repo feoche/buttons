@@ -25,8 +25,9 @@
                    data-ng-model="vm.filter"
                    autofocus
                    placeholder="Search...">
-            <div class="buttons">
-                <sound-button data-ng-repeat="(key, button) in vm.buttons | orderBy:['fav','title'] | limitTo:vm.limit track by $index"
+            <div class="buttons"
+                 data-ng-class="{'launchpad-buttons': vm.launchpad}">
+                <sound-button data-ng-repeat="(key, button) in vm.buttons | orderBy:['fav','title'] | limitTo:vm.launchpad?63:-1 track by $index"
                               data-ng-show="([button] | filter:vm.filter).length > 0"
                               button="button"
                               key="key"
@@ -43,7 +44,9 @@
                      data-ng-click="vm.scrollToLetter(letter)"></div>
             </div>
         </div>
-        <audio></audio>
+        <audio>
+            <source>
+        </audio>
         <iframe></iframe>
     </script>
     <script type="text/ng-template" id="button-detail.html">
@@ -97,5 +100,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/angular.min.js"></script>
     <script src="js/angular-ui-router.min.js"></script>
+    <script src="js/launchpad.js"></script>
     <script src="js/index.js"></script>
 </html>
