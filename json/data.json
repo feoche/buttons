@@ -2953,5 +2953,46 @@
     "fileName": "sonicextralife",
     "video": "https://www.youtube.com/watch?v=wTRYkRZctLg",
     "keywords": ["game", "knuckles", "victory"]
+  },
+  {
+    "title": "Oh bah ça ça tombe bien alors",
+    "fileName": "catombebienalors",
+    "video": "https://www.youtube.com/watch?v=G97eX3bFPDw",
+    "keywords": ["cité", "peur"]
+  },
+  {
+    "title": "J'vais t'arracher les yeux",
+    "fileName": "arracherlesyeux",
+    "video": "https://www.youtube.com/watch?v=FKPrlnD8iyY",
+    "keywords": ["télé", "tête", "cul"]
+  },
+  {
+    "title": "Laissez la police faire son travail",
+    "fileName": "laissezlapolice",
+    "video": "https://www.youtube.com/watch?v=8JE1uHQeyV4",
+    "keywords": ["cité", "peur"]
+  },
+  {
+    "title": "Nani",
+    "fileName": "nani",
+    "video": "https://www.youtube.com/watch?v=5z7fc397JEk",
+    "keywords": ["video", "game", "yakuza", "kiryu"]
+  },
+  {
+    "title": "Omae wa mou shindeiru",
+    "fileName": "omaewamoushindeiru",
+    "video": "https://www.youtube.com/watch?v=dNQs_Bef_V8",
+    "keywords": ["ken", "survivant", "nani"]
+  },
+  {
+    "title": "Party horn",
+    "fileName": "partyhorn",
+    "keywords": ["langue", "belle", "mère"]
+  },
+  {
+    "title": "Jacques",
+    "fileName": "jacques",
+    "video": "https://www.youtube.com/watch?v=b11AkLYSQ3A",
+    "keywords": ["questions", "champion", "télé", "arrêter"]
   }
 ]
