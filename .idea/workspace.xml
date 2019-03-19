@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="11d88650-415c-4033-905e-e9cb9906d296" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" afterPath="$PROJECT_DIR$/CNAME" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/launchpad.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/launchpad.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/license.txt" beforeDir="false" afterPath="$PROJECT_DIR$/license.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/01189998819991197253.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/01189998819991197253.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/1up.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/1up.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/20thcenturyfoxflute.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/20thcenturyfoxflute.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/23-0.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/23-0.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/56k.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/56k.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/6h30.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/6h30.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/7thelement.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/7thelement.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ah.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ah.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ahouiouiouiouioui.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ahouiouiouiouioui.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/airhorn.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/airhorn.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/alerteaugogol.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/alerteaugogol.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/amoi.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/amoi.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/apay.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/apay.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/apoil.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/apoil.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/apoildanslapiscine.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/apoildanslapiscine.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/applause.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/applause.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/aquecoucou.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/aquecoucou.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/arthour.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/arthour.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/attentionberthier.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/attentionberthier.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/aurevoir.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/aurevoir.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/badadipoopi.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/badadipoopi.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/badger.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/badger.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/badumtss.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/badumtss.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ballsofsteel.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ballsofsteel.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/bananaphone.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/bananaphone.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/bandedecriminels.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/bandedecriminels.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/bazinga.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/bazinga.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/beaucouptropvite.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/beaucouptropvite.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/beep.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/beep.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/begyourpardonsir.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/begyourpardonsir.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/bennyhill.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/bennyhill.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/benzaielive.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/benzaielive.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/bibihendl.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/bibihendl.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/bifle.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/bifle.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/bipbip.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/bipbip.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/birdistheword.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/birdistheword.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/blaguedemerde.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/blaguedemerde.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/boblennon.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/boblennon.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/bonjour.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/bonjour.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/bonnenuitleschiards.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/bonnenuitleschiards.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/boomheadshot.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/boomheadshot.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/boulenoire.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/boulenoire.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/brainpower.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/brainpower.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/brasdanslefion.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/brasdanslefion.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/bruh.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/bruh.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/burned.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/burned.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/cadepasselentendement.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/cadepasselentendement.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/cafe.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/cafe.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/canttouchthis.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/canttouchthis.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/carelesswhisper.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/carelesswhisper.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/carglass.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/carglass.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/cartebleues.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/cartebleues.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ceflim.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ceflim.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/cesoirsnoopdogg.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/cesoirsnoopdogg.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/cestgenial.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/cestgenial.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/cestmameuf.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/cestmameuf.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/cestpasfaux.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/cestpasfaux.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/cestpassorcier.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/cestpassorcier.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/champions.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/champions.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/chapichapo.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/chapichapo.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/charal.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/charal.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/chewbacca.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/chewbacca.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/clapcalapclapclap.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/clapcalapclapclap.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/coconut.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/coconut.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/codec.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/codec.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/combobreaker.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/combobreaker.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/comsi.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/comsi.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/connasse.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/connasse.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/contrenature.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/contrenature.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/coucou.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/coucou.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/cri.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/cri.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/crickets.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/crickets.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/croustibat.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/croustibat.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/cucurbitacee.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/cucurbitacee.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/cuek.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/cuek.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/cykablyat.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/cykablyat.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/darude.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/darude.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/dbzteleport.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/dbzteleport.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/degeulasse.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/degeulasse.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/deschiffresetdeslettres.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/deschiffresetdeslettres.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/deschips.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/deschips.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/dewey.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/dewey.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/diepotato.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/diepotato.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/disdoncjamy.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/disdoncjamy.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/doabarrelroll.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/doabarrelroll.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/doh.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/doh.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/dragonballz.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/dragonballz.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/drama.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/drama.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/dramatic.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/dramatic.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/dringdringdring.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/dringdringdring.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/drogue.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/drogue.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/drumroll.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/drumroll.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/durkadurk.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/durkadurk.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/eagames.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/eagames.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/easports.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/easports.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/elevator.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/elevator.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/emmerdemaison.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/emmerdemaison.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/enferetdamnation.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/enferetdamnation.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ennuyerici.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ennuyerici.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/epicsaxguy.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/epicsaxguy.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/error.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/error.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/etflashmevoila.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/etflashmevoila.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/etquandilpeteiltrouesonslip.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/etquandilpeteiltrouesonslip.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/etunpetitbaiser.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/etunpetitbaiser.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/excellent.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/excellent.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/excusemeprincess.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/excusemeprincess.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/eyeofthetiger.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/eyeofthetiger.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/fairedelamerde.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/fairedelamerde.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/fart.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/fart.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/fascistedemerde.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/fascistedemerde.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/fatality.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/fatality.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/finishhim.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/finishhim.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/fortboyard.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/fortboyard.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/fortboyardlamasticot.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/fortboyardlamasticot.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/fuckyou.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/fuckyou.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/fusrodah.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/fusrodah.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/gaaaay.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/gaaaay.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/gameboy.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/gameboy.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/gamecube.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/gamecube.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/gameofderp.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/gameofderp.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/gangnamstyle.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/gangnamstyle.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/genredesphraseschocs.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/genredesphraseschocs.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/georgespolitiquement.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/georgespolitiquement.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/glados.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/glados.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/goodbye.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/goodbye.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/gourmetrace.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/gourmetrace.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/guiletheme.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/guiletheme.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/gurdil.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/gurdil.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/hadouken.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/hadouken.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/haha.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/haha.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/hahah.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/hahah.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/hallelujah.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/hallelujah.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/halo.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/halo.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/happybirthday.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/happybirthday.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/hardcorner.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/hardcorner.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/harlemshake.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/harlemshake.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/hellodarknessmyoldfriend.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/hellodarknessmyoldfriend.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/helloit.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/helloit.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/hey.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/hey.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/heyheyhey.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/heyheyhey.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/hihi.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/hihi.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/hobbits.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/hobbits.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ibelieveicanfly.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ibelieveicanfly.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ikillyou.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ikillyou.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ilapetemonbic.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ilapetemonbic.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ilenestmort.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ilenestmort.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ilestcontent.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ilestcontent.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ilestecrit.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ilestecrit.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ilestfortcecon.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ilestfortcecon.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ilnepeutplusriennousarriver.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ilnepeutplusriennousarriver.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/imbatman.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/imbatman.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/inception.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/inception.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/inetisforporn.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/inetisforporn.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ingenieur.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ingenieur.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/inspecteurgadget.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/inspecteurgadget.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/instantlove.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/instantlove.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/invincibilite.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/invincibilite.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/iphone.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/iphone.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/iplaypokemongo.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/iplaypokemongo.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/isthisreallife.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/isthisreallife.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/itsatrap.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/itsatrap.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/itsmemario.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/itsmemario.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/itsoktobegay.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/itsoktobegay.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jaienviedmesuicider.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jaienviedmesuicider.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jaifaitcaca.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jaifaitcaca.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jaiglissechef.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jaiglissechef.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jaimemebeurrer.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jaimemebeurrer.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jasonlemacon.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jasonlemacon.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/javoue.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/javoue.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jdonnetout.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jdonnetout.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jeanneausecours.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jeanneausecours.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jecodeaveclecul.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jecodeaveclecul.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jemenvole.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jemenvole.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jeopardy.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jeopardy.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jetemerde.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jetemerde.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jeudemotsramoucho.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jeudemotsramoucho.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jingledenisot.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jingledenisot.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jmenbatslescouilles.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jmenbatslescouilles.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/johncena.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/johncena.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/justdoit.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/justdoit.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/justeleblanc.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/justeleblanc.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/jvousaimeputain.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/jvousaimeputain.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/k2000.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/k2000.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/kamehameha.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/kamehameha.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/keuuuuuwah.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/keuuuuuwah.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/keyboardcat.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/keyboardcat.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/killbill.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/killbill.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/killbill2.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/killbill2.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/kohlanta.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/kohlanta.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lacitedelapeur.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lacitedelapeur.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lacolegiala.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lacolegiala.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/laferme.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/laferme.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lajungledesanimaux.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lajungledesanimaux.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lalalala.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lalalala.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lalalalalala.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lalalalalala.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lamarmelade.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lamarmelade.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lamerguezparty.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lamerguezparty.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lamernoire.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lamernoire.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lapindumetro.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lapindumetro.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/laughing.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/laughing.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/laughingowl.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/laughingowl.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lazor.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lazor.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/leeeeroy.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/leeeeroy.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/legendary.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/legendary.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lepetitbonhommeenmousse.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lepetitbonhommeenmousse.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lepetitculdelucas.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lepetitculdelucas.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lesproduitslaitiers.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lesproduitslaitiers.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/letempscommelesoeufs.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/letempscommelesoeufs.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/letthebodies.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/letthebodies.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/leviosa.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/leviosa.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lightsaber.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lightsaber.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/loituma.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/loituma.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/lookatmyhorse.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/lookatmyhorse.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/looneytoons.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/looneytoons.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/maci.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/maci.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/madagascar.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/madagascar.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/magabon.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/magabon.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/magnum.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/magnum.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/maiscestdlamerde.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/maiscestdlamerde.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/maisouicestclair.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/maisouicestclair.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/maistespasnet.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/maistespasnet.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/mariocoin.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/mariocoin.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/mcgyver.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/mcgyver.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/mefairefoutre.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/mefairefoutre.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/memequedesfoismoijevomis.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/memequedesfoismoijevomis.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/mercilagueuse.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/mercilagueuse.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/mercivous.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/mercivous.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/mescouillessurtonnez.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/mescouillessurtonnez.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/metalgear.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/metalgear.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/meu.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/meu.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/meuh.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/meuh.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/michelcestlebresil.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/michelcestlebresil.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/michelforevertonight.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/michelforevertonight.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/mjhihi.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/mjhihi.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/mlb.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/mlb.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/modem.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/modem.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/moijevoteilbuffe.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/moijevoteilbuffe.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/monpetit.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/monpetit.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/monsacestfait.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/monsacestfait.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/monsterkill.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/monsterkill.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/moskau.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/moskau.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/motus.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/motus.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/movebitchgetouttheway.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/movebitchgetouttheway.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/msn.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/msn.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/muppets.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/muppets.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/murloc.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/murloc.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/naon.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/naon.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/narwhals.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/narwhals.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/neinnein.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/neinnein.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/nestcepas.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/nestcepas.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/no.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/no.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/nokia3310.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/nokia3310.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/nomdezeus.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/nomdezeus.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/non.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/non.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/noncestpasunematraque.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/noncestpasunematraque.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/nooo.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/nooo.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/nootnoot.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/nootnoot.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/nope.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/nope.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/notreprojet.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/notreprojet.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ntmmlp.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ntmmlp.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/nyancat.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/nyancat.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/objection.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/objection.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ohlongjohnson.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ohlongjohnson.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ohyeah.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ohyeah.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/oleputain.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/oleputain.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/onatousledroit.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/onatousledroit.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/onsenbatlescouilles.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/onsenbatlescouilles.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ouaisouais.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ouaisouais.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ouaisouaisouaisouais.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ouaisouaisouaisouais.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/oui.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/oui.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/over9000.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/over9000.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/pacman.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/pacman.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/pacmandeath.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/pacmandeath.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/papapingouin.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/papapingouin.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/papifougasse.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/papifougasse.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/papifougasse2.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/papifougasse2.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/pasdeprobleme.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/pasdeprobleme.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/pegi18.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/pegi18.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/penny.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/penny.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/petitevoiture.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/petitevoiture.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/philippe.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/philippe.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/pikachu.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/pikachu.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/pitoyable.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/pitoyable.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/pokemon.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/pokemon.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/popipo.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/popipo.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/popopo.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/popopo.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/portalturret.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/portalturret.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/poupipou.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/poupipou.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/powerrangers.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/powerrangers.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ppap.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/ppap.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/psx.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/psx.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/psycho.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/psycho.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/puddipuddi.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/puddipuddi.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/questcequiestpetitetmarron.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/questcequiestpetitetmarron.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/questquiestjauneetquiattend.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/questquiestjauneetquiattend.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/quoiiii.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/quoiiii.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/r2d2.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/r2d2.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/rabbids.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/rabbids.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/rigolespectacle.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/rigolespectacle.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/roggan.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/roggan.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/rumble.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/rumble.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/run.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/run.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/sacrehubert.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/sacrehubert.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/sadtrombone.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/sadtrombone.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/sadviolin.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/sadviolin.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/salope.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/salope.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/salutbandedesalope.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/salutbandedesalope.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/salutlestrouducs.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/salutlestrouducs.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/salutyoutube.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/salutyoutube.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/samsung.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/samsung.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/saupiquet.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/saupiquet.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/scatman.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/scatman.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/screaminggoat.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/screaminggoat.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/sega.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/sega.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/sega2.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/sega2.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/servietski.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/servietski.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/sexyandknowit.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/sexyandknowit.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/shakethatass.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/shakethatass.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/shame.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/shame.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/shootingstars.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/shootingstars.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/shufflin.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/shufflin.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/shutup.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/shutup.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/singhallelujah.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/singhallelujah.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/skype.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/skype.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/smokeweedeveryday.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/smokeweedeveryday.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/smokeweedeverydayremix.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/smokeweedeverydayremix.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/sncf.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/sncf.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/softkitty.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/softkitty.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/sonicboom.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/sonicboom.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/sortezvouslesdoigtsducul.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/sortezvouslesdoigtsducul.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/souffrirok.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/souffrirok.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/spanishflea.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/spanishflea.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/spongebob.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/spongebob.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/squalala.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/squalala.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/steppinonthebeach.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/steppinonthebeach.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/suitup.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/suitup.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/supergreen.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/supergreen.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/superman.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/superman.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/supertimor.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/supertimor.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/surprise.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/surprise.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/surprisemotherfucker.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/surprisemotherfucker.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tada.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tada.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tagueule.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tagueule.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tagueule2.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tagueule2.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tank.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tank.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tapettegeante.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tapettegeante.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/telepod2000.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/telepod2000.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tequilaheineken.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tequilaheineken.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tescon.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tescon.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tetris.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tetris.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/texto.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/texto.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/thefinalcountdown.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/thefinalcountdown.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/theyseemerollin.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/theyseemerollin.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/thisissparta.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/thisissparta.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/thx.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/thx.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/titanic.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/titanic.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/titanicflute.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/titanicflute.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tnetennba.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tnetennba.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tobecontinued.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tobecontinued.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/toomanycooks.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/toomanycooks.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/toucheatoncul.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/toucheatoncul.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/toujoursdebout.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/toujoursdebout.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tournerlesserviettes.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tournerlesserviettes.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tousensemble.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tousensemble.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/toutlemondesenbranle.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/toutlemondesenbranle.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/troisiemecorde.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/troisiemecorde.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/trolololol.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/trolololol.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tropgeniale.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tropgeniale.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/troyandabed.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/troyandabed.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/truieviolette.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/truieviolette.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tuestresmoche.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tuestresmoche.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tumbleweed.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tumbleweed.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tunaktunak.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tunaktunak.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tutecalmesmartine.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tutecalmesmartine.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/tuturu.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/tuturu.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/twister.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/twister.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/unclefucker.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/unclefucker.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/unpeucommemabite.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/unpeucommemabite.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/valeriepecresse.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/valeriepecresse.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/victoryff.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/victoryff.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/viensboireunptitcoup.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/viensboireunptitcoup.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/vousnagezbienchef.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/vousnagezbienchef.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/vraimenttresinteressant.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/vraimenttresinteressant.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/vuvuzela.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/vuvuzela.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/walle.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/walle.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/warcraft.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/warcraft.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/wasted.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/wasted.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/wattocantina.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/wattocantina.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/wazzup.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/wazzup.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/wearethechampions.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/wearethechampions.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/whatislove.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/whatislove.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/whatisthefuque.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/whatisthefuque.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/whatthecut.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/whatthecut.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/whatwhat.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/whatwhat.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/wheatley.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/wheatley.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/whee.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/whee.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/whip.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/whip.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/whocansay.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/whocansay.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/wholetthedogsout.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/wholetthedogsout.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/whosthatpokemon.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/whosthatpokemon.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/whosyourdaddy.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/whosyourdaddy.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/wilhelm.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/wilhelm.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/windows95.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/windows95.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/wololo.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/wololo.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/wow.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/wow.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/wow2.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/wow2.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/wtfboom.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/wtfboom.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/xfiles.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/xfiles.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/yaaaaaaay.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/yaaaaaaay.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/yabbadabbadoo.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/yabbadabbadoo.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/yametekudasai.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/yametekudasai.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/yeah.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/yeah.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/yeahhh.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/yeahhh.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/yeeeeees.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/yeeeeees.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/yenaquonessaye.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/yenaquonessaye.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/yep.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/yep.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/yesyes.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/yesyes.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/youareapirate.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/youareapirate.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/youlose.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/youlose.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/youshallnotpass.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/youshallnotpass.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/youtouchmytralala.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/youtouchmytralala.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/zas.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/zas.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/zeldaitem.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/zeldaitem.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/zeldasecret.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/zeldasecret.mp3" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1044410777">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="json" value="1" />
+          <entry key="scss" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="1" />
+          <entry key="SCSS" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="95" column="97" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="61" column="92" lean-forward="true" selection-start-line="61" selection-start-column="92" selection-end-line="68" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json/data.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="3" selection-end-line="2957" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret column="492" selection-start-column="492" selection-end-column="492" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2559" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/launchpad.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1206">
+              <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>paint</find>
+      <find>util</find>
+      <find>paintNames</find>
+      <find>buttons</find>
+      <find>button</find>
+      <find>button(</find>
+      <find>9ecf3a</find>
+      <find>after-</find>
+      <find>darkoff</find>
+      <find>orange</find>
+      <find>pickButtonColor</find>
+      <find>violetred</find>
+      <find>consol</find>
+      <find>50px</find>
+      <find>flicker</find>
+      <find>audioSource</find>
+      <find>json</find>
+      <find>orderBy</find>
+      <find>filter</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/js/launchpad.min.js" />
+        <option value="$PROJECT_DIR$/js/launch.js" />
+        <option value="$PROJECT_DIR$/js/controller.js" />
+        <option value="$PROJECT_DIR$/js/launchpad-mini.js" />
+        <option value="$PROJECT_DIR$/js/launchpad.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/sass/style.sass" />
+        <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="22" />
+    <option name="width" value="1440" />
+    <option name="height" value="878" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="buttons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buttons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buttons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buttons" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buttons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buttons" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buttons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buttons" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buttons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buttons" type="462c0819:PsiDirectoryNode" />
+              <item name="sounds" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11d88650-415c-4033-905e-e9cb9906d296" name="Default" comment="" />
+      <created>1517153416393</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1517153416393</updated>
+      <workItem from="1517153418109" duration="536000" />
+      <workItem from="1520007861295" duration="2870000" />
+      <workItem from="1520250415546" duration="10087000" />
+      <workItem from="1520264637436" duration="7700000" />
+      <workItem from="1520412021319" duration="3502000" />
+      <workItem from="1529420643169" duration="480000" />
+      <workItem from="1529421269937" duration="199000" />
+      <workItem from="1539102405865" duration="416000" />
+      <workItem from="1540819238847" duration="967000" />
+      <workItem from="1540907723426" duration="588000" />
+      <workItem from="1541406913297" duration="1607000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add launchpad control">
+      <created>1520347636355</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1520347636355</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add launchpad control">
+      <created>1540819585888</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540819585889</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="28952000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1440" y="22" width="1920" height="1058" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12619808" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Grunt " order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32896462" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.26511136" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32942432" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="JSON Viewer" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="Add launchpad control" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add launchpad control" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/controller.js" />
+    <entry file="file://$PROJECT_DIR$/js/launch.js" />
+    <entry file="file://$PROJECT_DIR$/js/launchpad-mini.js" />
+    <entry file="file://$PROJECT_DIR$/js/launchpad.min.js" />
+    <entry file="file://$PROJECT_DIR$/js/angular.js" />
+    <entry file="file://$PROJECT_DIR$/sass/style.sass" />
+    <entry file="file://$PROJECT_DIR$/js/launchpad.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1206">
+          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="3" selection-end-line="2957" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret column="492" selection-start-column="492" selection-end-column="492" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2559" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="61" column="92" lean-forward="true" selection-start-line="61" selection-start-column="92" selection-end-line="68" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="95" column="97" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
