@@ -41,8 +41,15 @@ var app = angular
               i.type = 'data';
 
               // Describe full path source
-              if (i.fileName) {
-                i.fullPath = "sounds/" + i.fileName + ".mp3";
+              const fileName = i.title.replace(/[\s.,\/#!$%\^&\*;:{}=\-_`~()?!<>'"+]/gmi, "")
+                  .toLowerCase()
+                  .replace(/[àâ]/gmi, "a")
+                  .replace(/ç/gmi, "c")
+                  .replace(/[éèê]/gmi, "e")
+                  .replace(/ù/gmi, "u")
+                  .replace(/[îï]/gmi, "i");
+              if (fileName) {
+                i.fullPath = "sounds/" + fileName + ".mp3";
               }
 
             });
