@@ -86,7 +86,8 @@
                 </div>
             </div>
             <a class="link"
-               data-ng-href="#/{{::button.fileName}}">
+               data-ng-if="::button.title"
+               data-ng-href="#/{{::vm.toFileName(button.title)}}">
                 <div class="title"
                      data-ng-bind="::button.title"></div>
             </a>

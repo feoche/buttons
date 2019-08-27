@@ -20,6 +20,14 @@ var app = angular
         var localStorageButtons = JSON.parse($window.localStorage.getItem('buttons'));
         vm.buttons = localStorageButtons;
 
+        vm.toFileName = (title) => title.replace(/[\s.,\/#!$%\^&\*;:{}=\-_`~()?!<>'"+]/gmi, "")
+            .toLowerCase()
+            .replace(/[àâ]/gmi, "a")
+            .replace(/ç/gmi, "c")
+            .replace(/[éèê]/gmi, "e")
+            .replace(/[ùü]/gmi, "u")
+            .replace(/[îï]/gmi, "i");
+
         // Retrieve JSON afterwards
         $http.get('json/data.json').then(function (data) {
           if(data.status === 200) {
@@ -41,13 +49,7 @@ var app = angular
               i.type = 'data';
 
               // Describe full path source
-              const fileName = i.title.replace(/[\s.,\/#!$%\^&\*;:{}=\-_`~()?!<>'"+]/gmi, "")
-                  .toLowerCase()
-                  .replace(/[àâ]/gmi, "a")
-                  .replace(/ç/gmi, "c")
-                  .replace(/[éèê]/gmi, "e")
-                  .replace(/ù/gmi, "u")
-                  .replace(/[îï]/gmi, "i");
+              const fileName = vm.toFileName(i.title);
               if (fileName) {
                 i.fullPath = "sounds/" + fileName + ".mp3";
               }
