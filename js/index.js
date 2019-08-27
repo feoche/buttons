@@ -32,7 +32,7 @@ var app = angular
         $http.get('json/data.json').then(function (data) {
           if(data.status === 200) {
             angular.forEach(data.data, function (i) {
-              if (i.fileName === $stateParams.fileName) {
+              if (vm.toFileName(i.title) === $stateParams.fileName) {
 
                 vm.buttonDetail = i;
                 vm.buttonDetail.video =
