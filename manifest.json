@@ -1,0 +1,39 @@
+{
+  "dir" : "ltr",
+  "lang" : "French",
+  "name" : "MyButtons",
+  "scope" : "/",
+  "display" : "fullscreen",
+  "start_url" : "https://mybuttons.fr/",
+  "short_name" : "MyButtons",
+  "theme_color" : "transparent",
+  "description" : "Funny buttons, based on the (instantsfun.es) website",
+  "orientation" : "any",
+  "background_color" : "transparent",
+  "related_applications" : [],
+  "prefer_related_applications" : false,
+  "icons" : [
+    {
+      "src": "https://mybuttons.fr/img/favicon.png",
+      "sizes": "67x66"
+    },
+    {
+      "src": "https://mybuttons.fr/img/favicon.png",
+      "sizes": "67x66"
+    },
+    {
+      "src": "https://mybuttons.fr/img/favicon.png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "https://mybuttons.fr/img/favicon.png",
+      "sizes": "167x167"
+    },
+    {
+      "src": "https://mybuttons.fr/img/favicon.png",
+      "sizes": "180x180"
+    }],
+  "url" : "https://mybuttons.fr",
+  "screenshots" : [],
+  "generated" : "true"
+}
