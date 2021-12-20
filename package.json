@@ -1,0 +1,12 @@
+{
+  "name": "buttons",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "git@github.com:feoche/buttons.git",
+  "author": "feoche <francois.eoche@corp.ovh.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2",
+    "fs": "^0.0.1-security"
+  }
+}
