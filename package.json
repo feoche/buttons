@@ -5,6 +5,9 @@
   "repository": "git@github.com:feoche/buttons.git",
   "author": "feoche <francois.eoche@corp.ovh.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "express": "^4.17.2",
     "fs": "^0.0.1-security"
