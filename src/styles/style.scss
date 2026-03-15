@@ -231,15 +231,18 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 4px;
-    padding: 0 50px 0 0;
+
+    @media screen and (max-width: 640px) {
+      gap: 2px;
+    }
 
     .button {
       min-height: 130px;
       width: 120px;
 
       @media screen and (max-width: 640px) {
-        min-height: 32vw;
-        width: 32vw;
+        min-height: 28vw;
+        width: calc(33.33% - 2px);
       }
     }
 
@@ -489,45 +492,6 @@ body {
   }
 }
 
-// ─── Letter scroll sidebar ───────────────────────────────────────────────────
-.letter-scroll {
-  position: fixed;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: rgba($accent, 0.55);
-  font-family: $font-stack;
-  font-size: 2vh;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 12px 14px;
-  z-index: 10;
-  background: rgba(12, 20, 30, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid $glass-border;
-  border-right: none;
-  border-radius: $radius-md 0 0 $radius-md;
-
-  .letter {
-    cursor: pointer;
-    padding: 5px 8px;
-    transition: color $transition-fast, transform $transition-fast;
-    border-radius: 3px;
-
-    &:hover {
-      color: $accent;
-      transform: scale(1.4) translateX(-2px);
-      background: rgba($accent, 0.08);
-    }
-  }
-}
 
 // ─── Button detail page ──────────────────────────────────────────────────────
 .button-detail {

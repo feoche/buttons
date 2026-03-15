@@ -6,7 +6,6 @@ import { saveButton, saveButtons, loadStoredButtons } from "../utils/helpers";
 import { useButtonData } from "../hooks/useButtonData";
 import type { SoundButton as SoundButtonType } from "../types";
 
-const LETTERS = "#abcdefghijklmnopqrstuvwxyz".split("");
 const BATCH_SIZE = 120;
 const BATCH_INTERVAL_MS = 200;
 const RANDOM_INTERVAL_MS = 2000;
@@ -158,24 +157,6 @@ export default function AllButtons() {
     });
   }, [favoriteButtons, filter]);
 
-  const scrollToLetter = useCallback(
-    (letter: string) => {
-      if (letter === "#") {
-        window.scrollTo(0, 0);
-        return;
-      }
-      const idx = sortedButtons.findIndex(
-        (item) => item.title?.toLowerCase()[0] === letter
-      );
-      if (idx !== -1) {
-        const el = document.querySelectorAll<HTMLElement>(
-          ".buttons > .button"
-        )[idx];
-        if (el) window.scrollTo(0, el.offsetTop - 50);
-      }
-    },
-    [sortedButtons]
-  );
 
   const toggleSidebar = useCallback(() => setSidebarOpen((v) => !v), []);
 
@@ -226,17 +207,6 @@ export default function AllButtons() {
             onToggleFav={handleToggleFav}
           />
         )}
-      </div>
-      <div className="letter-scroll">
-        {LETTERS.map((letter) => (
-          <div
-            key={letter}
-            className="letter"
-            onClick={() => scrollToLetter(letter)}
-          >
-            {letter}
-          </div>
-        ))}
       </div>
     </div>
   );
