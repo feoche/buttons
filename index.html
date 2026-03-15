@@ -1,121 +1,36 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <!-- Global Site Tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56077388-2"></script>
-        <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)}gtag('js', new Date());gtag('config', 'UA-56077388-2');</script>
-
-        <meta charset="UTF-8">
-        <title>Buttons</title>
-        <meta name="google-site-verification" content="_m71ZW3VGdxVCsqNpfrA9oZrxX84mGstwg3Oa7Ur3_8" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="viewport" content="width=device-width, user-scalable=no">
-        <link rel='manifest' href='manifest.json'>
-        <link rel="icon" type="image/png" href="img/favicon.png"/>
-        <link href="img/favicon.png" rel="apple-touch-icon"/>
-        <link href="img/favicon.png" rel="apple-touch-icon" sizes="152x152"/>
-        <link href="img/favicon.png" rel="apple-touch-icon" sizes="167x167"/>
-        <link href="img/favicon.png" rel="apple-touch-icon" sizes="180x180"/>
-    </head>
-    <body data-ng-app="app">
-        <div data-ui-view></div>
-    </body>
-    <!-- Templates -->
-    <script type="text/ng-template" id="all.html">
-        <div class="container all">
-            <input class="filter"
-                   data-ng-model="vm.filter"
-                   autofocus
-                   placeholder="Search...">
-            <div class="buttons">
-                <sound-button data-ng-repeat="(key, button) in vm.buttons | orderBy:['fav','title'] | limitTo:vm.limit track by $index"
-                              data-ng-show="([button] | filter:vm.filter).length > 0"
-                              button="button"
-                              key="key"
-                              vm="vm"></sound-button>
-                <sound-button class="random-button"
-                              button="vm.randomButton"
-                              key="vm.buttons.length+1"
-                              vm="vm"></sound-button>
-            </div>
-            <div class="letter-scroll">
-                <div class="letter"
-                     data-ng-repeat="letter in '#abcdefghijklmnopqrstuvwxyz'.split('') track by $index"
-                     data-ng-bind="letter"
-                     data-ng-click="vm.scrollToLetter(letter)"></div>
-            </div>
-        </div>
-        <audio></audio>
-        <iframe></iframe>
-    </script>
-    <script type="text/ng-template" id="button-detail.html">
-        <div class="container button-detail">
-            <a class="back-button" data-ui-sref="buttons">&lt; Home</a>
-            <div class="button data-ng-cloak">
-                <audio preload="auto" src="{{::vm.buttonDetail.fullPath}}" autoplay></audio>
-                <div class="button-container">
-                    <div class="item"
-                            data-ng-click="vm.play(vm.buttonDetail, key)"></div>
-                </div>
-                <div class="title" data-ng-bind="::vm.buttonDetail.title"></div>
-                <div class="description" data-ng-bind="::vm.buttonDetail.description"></div>
-                <iframe data-ng-if="::vm.buttonDetail.video"
-                        id="ytplayer"
-                        type="text/html"
-                        width="640"
-                        height="390"
-                        data-ng-src="{{::vm.buttonDetail.video}}"
-                        frameborder="0"/>
-            </div>
-        </div>
-    </script>
-    <script type="text/ng-template" id="button.html">
-        <div class="button"
-             data-ng-init="button.firstLetter = button.title.toLowerCase()[0]"
-             data-ng-right-click="vm.play(button, key, true)"
-             data-ng-cloak>
-            <div class="button-container"
-                 data-ng-class="{'active': vm.activeButton === key}">
-                <div class="item"
-                     data-ng-click="vm.play(button, key)"></div>
-                <div class="fav-button ng-hide"
-                     data-ng-class="{'active': button.fav}"
-                     data-ng-click="vm.toggleFav(button)">
-                    <span data-ng-if="!button.fav">✰</span>
-                    <span data-ng-if="button.fav">🟊</span>
-                </div>
-            </div>
-            <a class="link"
-               data-ng-if="::button.title"
-               data-ng-href="#/{{::vm.toFileName(button.title)}}">
-                <div class="title"
-                     data-ng-bind="::button.title"></div>
-            </a>
-            <div class="description"
-                 data-ng-bind="::button.description"
-                 data-ng-if="::button.description"></div>
-        </div>
-    </script>
-    <!-- Vendors -->
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/angular.min.js"></script>
-    <script src="js/angular-ui-router.min.js"></script>
-    <script src="js/index.js"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <link href="/img/favicon.png" rel="apple-touch-icon" />
+    <link href="/img/favicon.png" rel="apple-touch-icon" sizes="152x152" />
+    <link href="/img/favicon.png" rel="apple-touch-icon" sizes="167x167" />
+    <link href="/img/favicon.png" rel="apple-touch-icon" sizes="180x180" />
+    <title>Buttons</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
     <script>
       if ("serviceWorker" in navigator) {
-          if (navigator.serviceWorker.controller) {
-              console.log("[PWA Builder] active service worker found, no need to register");
-          } else {
-              // Register the service worker
-              navigator.serviceWorker
-              .register("pwabuilder-sw.js", {
-                  scope: "./"
-              })
-              .then(function (reg) {
-                  console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-              });
-          }
+        if (navigator.serviceWorker.controller) {
+          console.log("[PWA Builder] active service worker found, no need to register");
+        } else {
+          navigator.serviceWorker
+            .register("/pwabuilder-sw.js", { scope: "./" })
+            .then(function (reg) {
+              console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+            });
+        }
       }
     </script>
+  </body>
 </html>

@@ -1,0 +1,851 @@
+// ─── Reset ───────────────────────────────────────────────────────────────────
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// ─── Variables ───────────────────────────────────────────────────────────────
+$font-stack: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, sans-serif;
+$bg-dark: #0f1923;
+$bg-surface: #162230;
+$accent: #ffd260;
+$accent-glow: #ff8c00;
+$text-primary: #f0f0f0;
+$text-muted: rgba(255, 255, 255, 0.5);
+$glass-bg: rgba(22, 34, 48, 0.72);
+$glass-border: rgba(255, 255, 255, 0.08);
+$radius-sm: 8px;
+$radius-md: 14px;
+$radius-lg: 24px;
+$transition-fast: 0.15s ease;
+$transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+// ─── Base ────────────────────────────────────────────────────────────────────
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: $font-stack;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 0;
+  background: $bg-dark;
+  background-image:
+    radial-gradient(ellipse at 20% 0%, rgba(30, 60, 90, 0.5) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 100%, rgba(20, 50, 80, 0.4) 0%, transparent 50%);
+  background-attachment: fixed;
+  line-height: 1;
+  min-height: 100vh;
+}
+
+// ─── Container ───────────────────────────────────────────────────────────────
+.container {
+  font-size: 1rem;
+  color: $text-primary;
+  min-height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  padding: 5rem 0.75rem 2rem;
+
+  // ── Header bar ──
+  .header-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background: rgba(12, 20, 30, 0.9);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+
+    &__burger {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+      width: 52px;
+      height: 52px;
+      padding: 14px;
+      background: none;
+      border: none;
+      border-right: 1px solid rgba(255, 255, 255, 0.06);
+      cursor: pointer;
+      transition: background $transition-fast;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: $text-primary;
+        border-radius: 1px;
+        transition: transform $transition-fast, opacity $transition-fast;
+      }
+    }
+
+    &__search {
+      flex: 1;
+      background: transparent;
+      font-family: $font-stack;
+      font-size: 1.05rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      border: none;
+      outline: none;
+      color: $text-primary;
+      padding: 16px 24px;
+      min-width: 0;
+
+      &:focus {
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      &::placeholder {
+        color: $text-muted;
+        font-weight: 400;
+      }
+    }
+
+    &__category {
+      flex-shrink: 0;
+      appearance: none;
+      -webkit-appearance: none;
+      background: rgba(255, 255, 255, 0.04);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='rgba(255,255,255,0.45)'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      font-family: $font-stack;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: $accent;
+      border: none;
+      border-left: 1px solid rgba(255, 255, 255, 0.06);
+      outline: none;
+      padding: 16px 36px 16px 18px;
+      cursor: pointer;
+      transition: background $transition-fast, color $transition-fast;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.07);
+      }
+
+      &:focus {
+        background: rgba(255, 255, 255, 0.07);
+        color: lighten($accent, 10%);
+      }
+
+      option {
+        background: $bg-dark;
+        color: $text-primary;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  // ── Favorites row ──
+  .favorites-row {
+    width: 100%;
+    margin-bottom: 12px;
+    text-align: left;
+    padding: 0 8px 0 8px;
+
+    &__label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: $accent;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0 8px 8px;
+      opacity: 0.7;
+    }
+
+    &__list {
+      display: flex;
+      gap: 4px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 4px 4px 10px;
+      scroll-snap-type: x proximity;
+      -webkit-overflow-scrolling: touch;
+
+      // Hide scrollbar but keep scrollable
+      scrollbar-width: thin;
+      scrollbar-color: rgba($accent, 0.15) transparent;
+
+      &::-webkit-scrollbar {
+        height: 4px;
+      }
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: rgba($accent, 0.15);
+        border-radius: 2px;
+      }
+
+      .button {
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        min-height: 110px;
+        width: 100px;
+      }
+    }
+
+    // Subtle separator below
+    &::after {
+      content: "";
+      display: block;
+      margin: 8px auto 0;
+      width: 80%;
+      height: 1px;
+      background: linear-gradient(
+        to right,
+        transparent,
+        rgba($accent, 0.12) 30%,
+        rgba($accent, 0.12) 70%,
+        transparent
+      );
+    }
+  }
+
+  // ── Buttons grid ──
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    padding: 0 50px 0 0;
+
+    .button {
+      min-height: 130px;
+      width: 120px;
+
+      @media screen and (max-width: 640px) {
+        min-height: 32vw;
+        width: 32vw;
+      }
+    }
+
+    // ── Tooltip ──
+    .description {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) translateY(6px);
+      transition: opacity $transition-base, transform $transition-base;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: $radius-sm;
+      color: $text-primary;
+      font-size: 0.75rem;
+      line-height: 1.35;
+      margin-top: 6px;
+      opacity: 0;
+      padding: 6px 8px;
+      width: 120px;
+      z-index: -1;
+      pointer-events: none;
+      white-space: normal;
+      word-wrap: break-word;
+
+      &::before {
+        content: "";
+        border: solid;
+        border-color: rgba(0, 0, 0, 0.88) transparent;
+        border-width: 0 5px 5px 5px;
+        position: absolute;
+        z-index: 99;
+        top: -5px;
+        left: calc(50% - 5px);
+      }
+    }
+  }
+}
+
+// ─── Button container (inner wrapper) ────────────────────────────────────────
+.button-container {
+  display: inline-block;
+  margin: 12px auto 4px;
+  position: relative;
+
+  .link {
+    &:hover + .description {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+      z-index: 12;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.active {
+    .fav-button {
+      opacity: 1;
+    }
+  }
+
+  .fav-button {
+    transition: opacity $transition-fast, transform $transition-fast;
+    opacity: 0;
+    position: absolute;
+    right: -20px;
+    top: -8px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.45);
+    cursor: pointer;
+    user-select: none;
+    z-index: 5;
+
+    &:hover {
+      transform: scale(1.25);
+    }
+
+    &.active {
+      opacity: 1;
+      color: $accent;
+      filter: drop-shadow(0 0 3px rgba($accent, 0.5));
+    }
+  }
+}
+
+// ─── Progress Ring ───────────────────────────────────────────────────────────
+.progress-ring {
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 3;
+  width: 60px;
+  aspect-ratio: 1;
+
+  &__track {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.06);
+    stroke-width: 3;
+  }
+
+  &__fill {
+    fill: none;
+    stroke: $accent;
+    stroke-width: 3;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: stroke-dashoffset 0.08s linear;
+    filter: drop-shadow(0 0 4px rgba($accent, 0.45));
+  }
+
+  &--active &__fill {
+    stroke: $accent-glow;
+    filter: drop-shadow(0 0 6px rgba($accent-glow, 0.65));
+  }
+
+  &--complete &__fill {
+    stroke: $accent;
+  }
+}
+
+// Larger ring for detail page
+.button-detail .progress-ring {
+  width: 100px;
+  height: 100px;
+
+  &__track,
+  &__fill {
+    stroke-width: 3.5;
+  }
+}
+
+// ─── Random color system (KEPT INTACT) ───────────────────────────────────────
+.buttons > .button,
+.button-detail {
+  @for $i from 1 through 500 {
+    &:nth-child(#{$i}) .item {
+      $random-color: rgb(random(255), random(255), random(255));
+      background: radial-gradient(
+        circle at 38% 32%,
+        lighten($random-color, 14%) 0%,
+        $random-color 50%,
+        darken($random-color, 10%) 100%
+      );
+    }
+  }
+}
+
+// ─── Button (individual) ─────────────────────────────────────────────────────
+.button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  vertical-align: top;
+  position: relative;
+  text-decoration: none;
+  padding: 4px 2px;
+
+  .item {
+    display: inline-block;
+    font-size: 50px;
+    border: none;
+    width: 56px;
+    aspect-ratio: 1;
+    border-radius: 999em;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1),
+      box-shadow 0.2s ease, filter 0.2s ease;
+    box-shadow:
+      inset 0 2px 4px rgba(255, 255, 255, 0.18),
+      0 3px 8px rgba(0, 0, 0, 0.4),
+      0 1px 2px rgba(0, 0, 0, 0.25);
+
+    // Glossy top highlight
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6%;
+      left: 18%;
+      right: 18%;
+      height: 35%;
+      border-radius: 50%;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.28) 0%,
+        rgba(255, 255, 255, 0.06) 60%,
+        transparent 100%
+      );
+      pointer-events: none;
+    }
+
+    &:hover {
+      transform: scale(1.12) translateY(-2px);
+      box-shadow:
+        inset 0 2px 4px rgba(255, 255, 255, 0.22),
+        0 6px 16px rgba(0, 0, 0, 0.45),
+        0 2px 4px rgba(0, 0, 0, 0.2),
+        0 0 12px rgba(255, 255, 255, 0.04);
+      filter: brightness(1.1) saturate(1.08);
+    }
+
+    &:active {
+      transform: scale(0.9) translateY(1px);
+      transition-duration: 0.06s;
+      box-shadow:
+        inset 0 3px 8px rgba(0, 0, 0, 0.35),
+        0 1px 2px rgba(0, 0, 0, 0.3);
+      filter: brightness(0.88);
+
+      &::after {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  .link {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    max-width: 100%;
+  }
+
+  .title {
+    color: $accent;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    position: relative;
+    hyphens: none;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    margin-top: 4px;
+    line-height: 1.2;
+    max-width: 100px;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: lighten($accent, 10%);
+    }
+  }
+}
+
+// ─── Letter scroll sidebar ───────────────────────────────────────────────────
+.letter-scroll {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgba($accent, 0.55);
+  font-family: $font-stack;
+  font-size: 2vh;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 12px 14px;
+  z-index: 10;
+  background: rgba(12, 20, 30, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid $glass-border;
+  border-right: none;
+  border-radius: $radius-md 0 0 $radius-md;
+
+  .letter {
+    cursor: pointer;
+    padding: 5px 8px;
+    transition: color $transition-fast, transform $transition-fast;
+    border-radius: 3px;
+
+    &:hover {
+      color: $accent;
+      transform: scale(1.4) translateX(-2px);
+      background: rgba($accent, 0.08);
+    }
+  }
+}
+
+// ─── Button detail page ──────────────────────────────────────────────────────
+.button-detail {
+  padding-top: 5rem;
+
+  .button {
+    .button-container {
+      width: 80px;
+      max-width: 80px;
+      height: 80px;
+      max-height: 80px;
+      margin: 24px auto;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 16px;
+      max-width: none;
+    }
+  }
+
+  .description {
+    color: rgba($accent, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-shadow: none;
+    margin-top: 20px;
+    position: relative;
+    opacity: 1;
+    transform: none;
+    width: auto;
+    background: none;
+    border: none;
+    backdrop-filter: none;
+    pointer-events: auto;
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+
+    + iframe {
+      margin-top: 24px;
+      max-width: 100vw;
+      border-radius: $radius-md;
+    }
+  }
+
+  .back-button {
+    color: $accent;
+    font-family: $font-stack;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-shadow: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 18px 24px;
+    z-index: 10;
+    border-radius: 0 0 $radius-md 0;
+    background: rgba(12, 20, 30, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid $glass-border;
+    border-top: none;
+    border-left: none;
+    transition: background $transition-fast, color $transition-fast;
+
+    &:hover {
+      background: rgba($accent, 0.08);
+      color: lighten($accent, 10%);
+    }
+  }
+}
+
+// ─── Sidebar overlay ─────────────────────────────────────────────────────────
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  &--open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+// ─── Sidebar drawer ──────────────────────────────────────────────────────────
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1200;
+  width: 320px;
+  max-width: 85vw;
+  display: flex;
+  flex-direction: column;
+  background: darken($bg-dark, 2%);
+  border-right: 1px solid $glass-border;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.6);
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--open {
+    transform: translateX(0);
+  }
+
+  &__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid $glass-border;
+    border-radius: 6px;
+    color: $text-muted;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background $transition-fast, color $transition-fast;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.12);
+      color: $text-primary;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 48px 20px 20px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba($accent, 0.12) transparent;
+  }
+
+  &__section {
+    margin-bottom: 28px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__heading {
+    font-family: $font-stack;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: $accent;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    font-family: $font-stack;
+    font-size: 0.82rem;
+    color: $text-muted;
+    margin-bottom: 10px;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    font-family: $font-stack;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: $text-primary;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid $glass-border;
+    border-radius: $radius-sm;
+    cursor: pointer;
+    text-align: left;
+    transition: background $transition-fast, border-color $transition-fast;
+
+    &:hover:not(:disabled) {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &--danger {
+      color: #ff6b6b;
+      border-color: rgba(255, 107, 107, 0.15);
+
+      &:hover:not(:disabled) {
+        background: rgba(255, 107, 107, 0.08);
+        border-color: rgba(255, 107, 107, 0.3);
+      }
+    }
+
+    &--accent {
+      color: $bg-dark;
+      background: $accent;
+      border-color: $accent;
+      font-weight: 600;
+      text-align: center;
+
+      &:hover:not(:disabled) {
+        background: lighten($accent, 8%);
+        border-color: lighten($accent, 8%);
+      }
+    }
+  }
+
+  // ── Form ──
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 9px 12px;
+      font-family: $font-stack;
+      font-size: 0.82rem;
+      color: $text-primary;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid $glass-border;
+      border-radius: $radius-sm;
+      outline: none;
+      transition: border-color $transition-fast;
+
+      &:focus {
+        border-color: rgba($accent, 0.35);
+      }
+
+      &::placeholder {
+        color: $text-muted;
+      }
+    }
+
+    select {
+      appearance: none;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='rgba(255,255,255,0.45)'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      padding-right: 28px;
+
+      option {
+        background: $bg-dark;
+        color: $text-primary;
+      }
+    }
+  }
+
+  &__file-label {
+    display: block;
+    padding: 9px 12px;
+    font-family: $font-stack;
+    font-size: 0.82rem;
+    color: $text-muted;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px dashed rgba(255, 255, 255, 0.12);
+    border-radius: $radius-sm;
+    cursor: pointer;
+    transition: border-color $transition-fast, color $transition-fast;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:hover {
+      border-color: rgba($accent, 0.3);
+      color: $text-primary;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+  }
+
+  &__success {
+    font-family: $font-stack;
+    font-size: 0.78rem;
+    color: #6bff8e;
+    margin-top: 4px;
+  }
+
+  // ── Footer ──
+  &__footer {
+    flex-shrink: 0;
+    padding: 16px 20px;
+    border-top: 1px solid $glass-border;
+    font-family: $font-stack;
+    font-size: 0.72rem;
+    color: $text-muted;
+    line-height: 1.7;
+
+    strong {
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 600;
+    }
+  }
+}
+
+// ─── Hidden audio iframe ─────────────────────────────────────────────────────
+audio + iframe {
+  width: 0;
+  height: 0;
+}
