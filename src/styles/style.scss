@@ -225,25 +225,18 @@ body {
     }
   }
 
-  // ── Buttons grid ──
+  // ── Buttons grid — always 4 columns ──
   .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 4px;
-
-    @media screen and (max-width: 640px) {
-      gap: 2px;
-    }
+    width: 100%;
+    max-width: 520px;   // ~4 × 124px + 3 × 4px gaps
+    margin: 0 auto;
 
     .button {
+      width: 100%;
       min-height: 130px;
-      width: 120px;
-
-      @media screen and (max-width: 640px) {
-        min-height: 28vw;
-        width: calc(33.33% - 2px);
-      }
     }
 
     // ── Tooltip ──
@@ -906,6 +899,91 @@ body {
 audio + iframe {
   width: 0;
   height: 0;
+}
+
+// ─── Mobile overrides (≤ 640 px) ─────────────────────────────────────────────
+@media screen and (max-width: 640px) {
+  // Compact container — less top padding to match smaller header
+  .container {
+    padding: 3.25rem 0.25rem 1.5rem;
+  }
+
+  // Compact header — reduce height and font sizes
+  .container .header-bar {
+    &__burger {
+      width: 44px;
+      height: 44px;
+      padding: 11px;
+    }
+
+    &__search {
+      font-size: 0.9rem;
+      padding: 11px 12px;
+    }
+
+    &__category {
+      font-size: 0.75rem;
+      padding: 11px 26px 11px 10px;
+      background-position: right 9px center;
+    }
+  }
+
+  // 4-column grid already set above — just tighten gap and height on small screens
+  .container .buttons {
+    gap: 2px;
+
+    .button {
+      min-height: 23vw;
+    }
+  }
+
+  // Tighter button internals
+  .button {
+    padding: 2px 1px;
+
+    .item {
+      width: 44px;
+      margin: 1px 4px 7px;
+    }
+
+    .title {
+      font-size: 0.6rem;
+      max-width: 70px;
+      margin-top: 2px;
+    }
+  }
+
+  // Less margin on button-container
+  .button-container {
+    margin: 6px auto 2px;
+  }
+
+  // Compact favorites row
+  .container .favorites-row {
+    margin-bottom: 6px;
+    padding: 0 4px;
+
+    &__label {
+      font-size: 0.65rem;
+      padding: 0 4px 5px;
+    }
+
+    &__list {
+      gap: 2px;
+      padding: 2px 2px 8px;
+
+      .button {
+        width: 78px;
+        min-height: 88px;
+      }
+    }
+  }
+
+  // Compact progress ring for small buttons
+  .progress-ring {
+    width: 50px;
+    top: 22px;
+  }
 }
 
 // ─── Offline banner ──────────────────────────────────────────────────────────
