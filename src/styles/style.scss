@@ -907,3 +907,42 @@ audio + iframe {
   width: 0;
   height: 0;
 }
+
+// ─── Offline banner ──────────────────────────────────────────────────────────
+.offline-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(20, 10, 0, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 140, 0, 0.25);
+  animation: slideUp 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    font-family: $font-stack;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(255, 200, 100, 0.9);
+    text-align: center;
+  }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+

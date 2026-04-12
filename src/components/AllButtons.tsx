@@ -3,6 +3,7 @@ import SoundButton from "./SoundButton";
 import HeaderBar from "./HeaderBar";
 import Sidebar from "./Sidebar";
 import ButtonDetailModal from "./ButtonDetailModal";
+import OfflineBanner from "./OfflineBanner";
 import { saveButton, saveButtons, loadStoredButtons } from "../utils/helpers";
 import { useButtonData } from "../hooks/useButtonData";
 import type { SoundButton as SoundButtonType } from "../types";
@@ -121,6 +122,7 @@ export default function AllButtons() {
         onCategoryChange={setCategory}
         onMenuToggle={toggleSidebar}
       />
+      <OfflineBanner />
       <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
       {filteredFavorites.length > 0 && category !== "favorites" && (
         <div className="favorites-row">
