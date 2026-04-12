@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_dispatch:   # allow manual runs from the Actions tab
 
 permissions:
   contents: read
@@ -21,11 +22,16 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version-file: .nvmrc   # version is pinned in .nvmrc
           cache: npm
 
       - run: npm ci
-      - run: npm run build
+
+      - name: Type-check
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -40,4 +46,3 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-

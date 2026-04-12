@@ -87,7 +87,7 @@ self.addEventListener("fetch", (event) => {
 
 // ── Strategies ────────────────────────────────────────────────────────────────
 
-/** Sound cache (filled by in-app download) → network → silent fallback */
+/** Sound cache (filled by in-app download) → network → 404 fallback */
 async function soundFirst(request) {
   const soundCache = await caches.open(SOUND_CACHE);
   const cached = await soundCache.match(request);
@@ -101,12 +101,9 @@ async function soundFirst(request) {
     }
     return response;
   } catch {
-    // Offline and not cached — return a valid empty audio response so the
-    // browser doesn't throw a network error
-    return new Response(new Uint8Array(0), {
-      status: 200,
-      headers: { "Content-Type": "audio/mpeg", "Content-Length": "0" },
-    });
+    // Offline and not cached — return 404 so the audio element fails cleanly
+    // (audioManager catches the play() rejection silently)
+    return new Response(null, { status: 404, statusText: "Sound not cached" });
   }
 }
 

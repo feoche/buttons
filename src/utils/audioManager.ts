@@ -65,7 +65,7 @@ export function playSound(button: SoundButton, repeat: boolean): void {
       if (!button._paused) {
         audio.currentTime = 0.01;
       }
-      audio.play();
+      audio.play().catch(() => {});
       trackPlay(button.title);
       button._paused = false;
     } else {
@@ -82,7 +82,7 @@ export function playSound(button: SoundButton, repeat: boolean): void {
     audio.preload = "auto";
     audio.currentTime = 0.01;
     audio.loop = repeat;
-    audio.play();
+    audio.play().catch(() => {});
     trackPlay(button.title);
   }
 }
