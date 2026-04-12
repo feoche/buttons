@@ -316,9 +316,17 @@ body {
     cursor: pointer;
     user-select: none;
     z-index: 5;
+    border-radius: 50%;
+    outline: none;
 
     &:hover {
       transform: scale(1.25);
+    }
+
+    &:focus-visible {
+      opacity: 1;
+      outline: 2px solid $accent;
+      outline-offset: 3px;
     }
 
     &.active {
@@ -367,10 +375,12 @@ body {
   }
 }
 
-// Larger ring for detail page
-.button-detail .progress-ring {
-  width: 100px;
-  height: 100px;
+// Larger ring for detail modal
+.detail-modal .progress-ring {
+  width: 90px;
+  height: 90px;
+  top: 42px;
+  left: calc(50% + 6px);
 
   &__track,
   &__fill {
@@ -378,19 +388,48 @@ body {
   }
 }
 
-// ─── Random color system (KEPT INTACT) ───────────────────────────────────────
-.buttons > .button,
-.button-detail {
-  @for $i from 1 through 500 {
-    &:nth-child(#{$i}) .item {
-      $random-color: rgb(random(255), random(255), random(255));
-      background: radial-gradient(
-        circle at 38% 32%,
-        lighten($random-color, 14%) 0%,
-        $random-color 50%,
-        darken($random-color, 10%) 100%
-      );
-    }
+// ─── Button color system (driven by CSS variables set in TSX) ────────────────
+// Variables expected on .item:
+//   --btn-color, --btn-lighter, --btn-light, --btn-dark, --btn-darker
+.button .item,
+.button-detail .item {
+  background-color: var(--btn-color);
+  background-image:
+    radial-gradient(
+      ellipse closest-side,
+      var(--btn-lighter) 20%,
+      var(--btn-color) 70%,
+      var(--btn-light) 88%,
+      var(--btn-dark)
+    ),
+    radial-gradient(
+      200% 60% at 50% 20%,
+      var(--btn-dark) 20%,
+      var(--btn-darker) 60%,
+      var(--btn-light) 70%
+    ),
+    radial-gradient(
+      100% 40% at 50% 80%,
+      var(--btn-light) 10%,
+      var(--btn-lighter) 60%,
+      rgba(100, 100, 250, 0) 70%
+    );
+
+  &::after {
+    background-color: var(--btn-color);
+    background-image: linear-gradient(
+      to right,
+      var(--btn-color),
+      var(--btn-light) 10%,
+      var(--btn-dark),
+      var(--btn-darker) 90%,
+      var(--btn-color)
+    );
+  }
+
+  &::before {
+    background-color: var(--btn-color);
+    background-image: radial-gradient(circle, black 50%, var(--btn-color) 58%);
   }
 }
 
@@ -411,55 +450,54 @@ body {
     border: none;
     width: 56px;
     aspect-ratio: 1;
-    border-radius: 999em;
+    border-radius: 50%;
     outline: none;
     cursor: pointer;
     position: relative;
-    transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1),
-      box-shadow 0.2s ease, filter 0.2s ease;
-    box-shadow:
-      inset 0 2px 4px rgba(255, 255, 255, 0.18),
-      0 3px 8px rgba(0, 0, 0, 0.4),
-      0 1px 2px rgba(0, 0, 0, 0.25);
+    // Reserve space for ::before overflow (6px sides + 10px bottom)
+    margin: 2px 6px 10px;
 
-    // Glossy top highlight
+    &:focus-visible {
+      outline: 3px solid $accent;
+      outline-offset: 5px;
+    }
+
+    // ── Side / rim layer (sits just behind & below the dome) ──
     &::after {
       content: "";
       position: absolute;
-      top: 6%;
-      left: 18%;
-      right: 18%;
-      height: 35%;
+      z-index: -1;
+      top: 0;
+      right: 1px;
+      bottom: -3px;
+      left: 1px;
       border-radius: 50%;
-      background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.28) 0%,
-        rgba(255, 255, 255, 0.06) 60%,
-        transparent 100%
-      );
-      pointer-events: none;
     }
 
-    &:hover {
-      transform: scale(1.12) translateY(-2px);
-      box-shadow:
-        inset 0 2px 4px rgba(255, 255, 255, 0.22),
-        0 6px 16px rgba(0, 0, 0, 0.45),
-        0 2px 4px rgba(0, 0, 0, 0.2),
-        0 0 12px rgba(255, 255, 255, 0.04);
-      filter: brightness(1.1) saturate(1.08);
+    // ── Dark base / shadow pedestal ──
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -2;
+      top: -1px;
+      bottom: -10px;
+      right: -6px;
+      left: -6px;
+      border-radius: 50%;
     }
 
+    // ── Active: physically pressed down ──
     &:active {
-      transform: scale(0.9) translateY(1px);
-      transition-duration: 0.06s;
-      box-shadow:
-        inset 0 3px 8px rgba(0, 0, 0, 0.35),
-        0 1px 2px rgba(0, 0, 0, 0.3);
-      filter: brightness(0.88);
+      margin-top: 5px;
+      margin-bottom: 8px;
 
       &::after {
-        opacity: 0.4;
+        display: none;
+      }
+
+      &::before {
+        top: -4px;
+        bottom: -8px;
       }
     }
   }
@@ -469,6 +507,13 @@ body {
     cursor: pointer;
     display: block;
     max-width: 100%;
+    border-radius: $radius-sm;
+    outline: none;
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 2px;
+    }
   }
 
   .title {
@@ -493,83 +538,132 @@ body {
 }
 
 
-// ─── Button detail page ──────────────────────────────────────────────────────
-.button-detail {
-  padding-top: 5rem;
+// ─── Detail modal ────────────────────────────────────────────────────────────
+.detail-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: fadeIn 0.2s ease;
+}
 
-  .button {
-    .button-container {
-      width: 80px;
-      max-width: 80px;
-      height: 80px;
-      max-height: 80px;
-      margin: 24px auto;
-    }
+.detail-modal {
+  position: relative;
+  width: 90vw;
+  max-width: 540px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: $bg-surface;
+  border: 1px solid $glass-border;
+  border-radius: $radius-lg;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.04);
+  animation: modalSlideUp 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  scrollbar-width: thin;
+  scrollbar-color: rgba($accent, 0.12) transparent;
 
-    .title {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-top: 16px;
-      max-width: none;
-    }
-  }
-
-  .description {
-    color: rgba($accent, 0.7);
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    text-shadow: none;
-    margin-top: 20px;
-    position: relative;
-    opacity: 1;
-    transform: none;
-    width: auto;
-    background: none;
-    border: none;
-    backdrop-filter: none;
-    pointer-events: auto;
-    padding: 0;
-
-    &::before {
-      display: none;
-    }
-
-    + iframe {
-      margin-top: 24px;
-      max-width: 100vw;
-      border-radius: $radius-md;
-    }
-  }
-
-  .back-button {
-    color: $accent;
-    font-family: $font-stack;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-shadow: none;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
+  &__close {
     position: absolute;
-    left: 0;
-    top: 0;
-    padding: 18px 24px;
-    z-index: 10;
-    border-radius: 0 0 $radius-md 0;
-    background: rgba(12, 20, 30, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    top: 12px;
+    right: 12px;
+    z-index: 5;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.06);
     border: 1px solid $glass-border;
-    border-top: none;
-    border-left: none;
+    border-radius: 8px;
+    color: $text-muted;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
     transition: background $transition-fast, color $transition-fast;
 
     &:hover {
-      background: rgba($accent, 0.08);
-      color: lighten($accent, 10%);
+      background: rgba(255, 255, 255, 0.12);
+      color: $text-primary;
     }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 2px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 24px 32px;
+
+    .button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .button-container {
+        display: block;
+        width: auto;
+        margin: 0 auto 8px;
+        position: relative;
+      }
+
+      .item {
+        display: block;
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  &__title {
+    color: $accent;
+    font-family: $font-stack;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 12px;
+    letter-spacing: 0.01em;
+  }
+
+  &__description {
+    color: rgba($accent, 0.65);
+    font-family: $font-stack;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 12px;
+    max-width: 400px;
+  }
+
+  &__video {
+    margin-top: 24px;
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 16 / 9;
+    border-radius: $radius-md;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 

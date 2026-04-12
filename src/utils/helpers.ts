@@ -1,5 +1,4 @@
 import type { SoundButton } from "../types";
-import { categorizeButton } from "./categories";
 
 const SPECIAL_CHARS_RE = /[\s.,/#!$%^&*;:{}=\-_`~()?<>'"+]/gi;
 
@@ -14,21 +13,18 @@ export function toFileName(title: string): string {
     .replace(/[îï]/gi, "i");
 }
 
-function readButtonsFromStorage(): SoundButton[] {
+function readFromStorage(): SoundButton[] {
   const raw = localStorage.getItem("buttons");
   return raw ? (JSON.parse(raw) as SoundButton[]) : [];
 }
 
 export function saveButton(button: SoundButton): void {
-  const stored = readButtonsFromStorage();
+  const stored = readFromStorage();
   const idx = stored.findIndex(
     (item) => item.title === button.title && item.type === button.type
   );
-  if (idx === -1) {
-    stored.push(button);
-  } else {
-    stored[idx] = button;
-  }
+  if (idx === -1) stored.push(button);
+  else stored[idx] = button;
   localStorage.setItem("buttons", JSON.stringify(stored));
 }
 
@@ -37,7 +33,7 @@ export function saveButtons(buttons: SoundButton[]): void {
 }
 
 export function loadStoredButtons(): SoundButton[] {
-  return readButtonsFromStorage();
+  return readFromStorage();
 }
 
 /** Enrich a raw data.json entry with `type`, `fullPath`, and `category`. */
@@ -47,8 +43,6 @@ export function enrichButton(item: SoundButton): SoundButton {
     ...item,
     type: "data",
     fullPath: fileName ? `sounds/${fileName}.mp3` : undefined,
-    category:
-      item.category ??
-      categorizeButton(item.title, item.description, item.keywords),
+    category: item.category ?? "autre",
   };
 }

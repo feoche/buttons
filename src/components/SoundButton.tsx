@@ -1,10 +1,19 @@
-import { memo, useCallback } from "react";
-import { Link } from "react-router-dom";
-import { toFileName } from "../utils/helpers";
+import { memo, useCallback, useMemo } from "react";
 import { playSound } from "../utils/audioManager";
 import { useAudioProgress } from "../hooks/useAudioProgress";
+import { getButtonColorVars } from "../utils/buttonColors";
 import ProgressRing from "./ProgressRing";
 import type { SoundButton as SoundButtonType } from "../types";
+
+/** Returns a keydown handler that fires `fn` on Enter or Space. */
+function onActivate(fn: () => void) {
+  return (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      fn();
+    }
+  };
+}
 
 interface SoundButtonProps {
   button: SoundButtonType;
@@ -12,6 +21,7 @@ interface SoundButtonProps {
   activeButton: number | null;
   setActiveButton: (index: number) => void;
   onToggleFav: (button: SoundButtonType) => void;
+  onOpenDetail: (button: SoundButtonType) => void;
 }
 
 function SoundButtonInner({
@@ -20,13 +30,14 @@ function SoundButtonInner({
   activeButton,
   setActiveButton,
   onToggleFav,
+  onOpenDetail,
 }: SoundButtonProps) {
-  const handleClick = useCallback(() => {
+  const play = useCallback(() => {
     setActiveButton(index);
     playSound(button, false);
   }, [button, index, setActiveButton]);
 
-  const handleContextMenu = useCallback(
+  const playLoop = useCallback(
     (e: React.MouseEvent) => {
       e.preventDefault();
       setActiveButton(index);
@@ -35,34 +46,52 @@ function SoundButtonInner({
     [button, index, setActiveButton]
   );
 
-  const handleToggleFav = useCallback(
-    () => onToggleFav(button),
-    [button, onToggleFav]
-  );
+  const toggleFav = useCallback(() => onToggleFav(button), [button, onToggleFav]);
+  const openDetail = useCallback(() => onOpenDetail(button), [button, onOpenDetail]);
 
-  const fileName = button.title ? toFileName(button.title) : "";
   const isActive = activeButton === index;
   const progress = useAudioProgress(isActive ? button.fullPath : undefined);
+  const colorVars = useMemo(() => getButtonColorVars(button.title), [button.title]);
 
   return (
     <div
       className="button"
-      data-first-letter={button.title ? button.title.toLowerCase()[0] : ""}
-      onContextMenu={handleContextMenu}
+      data-first-letter={button.title?.toLowerCase()[0] ?? ""}
+      onContextMenu={playLoop}
     >
       <div className={`button-container${isActive ? " active" : ""}`}>
         <ProgressRing progress={progress} size={66} strokeWidth={3} />
-        <div className="item" onClick={handleClick} />
+        <div
+          className="item"
+          role="button"
+          tabIndex={0}
+          aria-label={`Play ${button.title}`}
+          onClick={play}
+          onKeyDown={onActivate(play)}
+          style={colorVars}
+        />
         <div
           className={`fav-button${button.fav ? " active" : ""}`}
-          onClick={handleToggleFav}
+          role="button"
+          tabIndex={0}
+          aria-label={button.fav ? `Remove ${button.title} from favourites` : `Add ${button.title} to favourites`}
+          aria-pressed={!!button.fav}
+          onClick={toggleFav}
+          onKeyDown={onActivate(toggleFav)}
         >
           <span>{button.fav ? "🟊" : "✰"}</span>
         </div>
         {button.title && (
-          <Link className="link" to={`/${fileName}`}>
+          <div
+            className="link"
+            role="button"
+            tabIndex={0}
+            aria-label={`Open details for ${button.title}`}
+            onClick={openDetail}
+            onKeyDown={onActivate(openDetail)}
+          >
             <div className="title">{button.title}</div>
-          </Link>
+          </div>
         )}
         {button.description && (
           <div className="description">{button.description}</div>
@@ -73,5 +102,4 @@ function SoundButtonInner({
 }
 
 const SoundButton = memo(SoundButtonInner);
-
 export default SoundButton;

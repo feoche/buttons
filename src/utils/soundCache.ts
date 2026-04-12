@@ -1,3 +1,5 @@
+import { toFileName } from "./helpers";
+
 const CACHE_NAME = "buttons-sounds-v1";
 
 /**
@@ -7,21 +9,14 @@ const CACHE_NAME = "buttons-sounds-v1";
 export async function downloadAllSounds(
   onProgress?: (done: number, total: number) => void
 ): Promise<void> {
-  const res = await fetch("/json/data.json");
-  const data: { title: string }[] = await res.json();
+  const data: { title: string }[] = await fetch("/json/data.json").then((r) =>
+    r.json()
+  );
 
-  // Build the list of sound URLs from the public/sounds directory
   const urls = data
     .map((item) => {
-      const fileName = item.title
-        .replace(/[\s.,/#!$%^&*;:{}=\-_`~()?<>'"+]/gi, "")
-        .toLowerCase()
-        .replace(/[àâ]/gi, "a")
-        .replace(/ç/gi, "c")
-        .replace(/[éèê]/gi, "e")
-        .replace(/[ùü]/gi, "u")
-        .replace(/[îï]/gi, "i");
-      return fileName ? `/sounds/${fileName}.mp3` : null;
+      const f = toFileName(item.title);
+      return f ? `/sounds/${f}.mp3` : null;
     })
     .filter(Boolean) as string[];
 
@@ -30,21 +25,16 @@ export async function downloadAllSounds(
   let done = 0;
 
   // Download in batches of 6 to avoid hammering the server
-  const BATCH = 6;
-  for (let i = 0; i < urls.length; i += BATCH) {
-    const batch = urls.slice(i, i + BATCH);
+  for (let i = 0; i < urls.length; i += 6) {
     await Promise.allSettled(
-      batch.map(async (url) => {
+      urls.slice(i, i + 6).map(async (url) => {
         try {
           const response = await fetch(url);
-          if (response.ok) {
-            await cache.put(url, response);
-          }
+          if (response.ok) await cache.put(url, response);
         } catch {
-          // skip failed files silently
+          // skip failed files
         }
-        done++;
-        onProgress?.(done, total);
+        onProgress?.(++done, total);
       })
     );
   }
@@ -58,9 +48,7 @@ export async function clearSoundCache(): Promise<void> {
 /** Returns the number of items currently in the sound cache. */
 export async function getCachedCount(): Promise<number> {
   try {
-    const cache = await caches.open(CACHE_NAME);
-    const keys = await cache.keys();
-    return keys.length;
+    return (await (await caches.open(CACHE_NAME)).keys()).length;
   } catch {
     return 0;
   }
