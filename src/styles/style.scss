@@ -24,6 +24,11 @@ $radius-lg: 24px;
 $transition-fast: 0.15s ease;
 $transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
+// ─── Header height token ─────────────────────────────────────────────────────
+:root {
+  --header-height: 52px;
+}
+
 // ─── Base ────────────────────────────────────────────────────────────────────
 html,
 body {
@@ -52,7 +57,7 @@ body {
   min-height: 100vh;
   text-align: center;
   overflow: hidden;
-  padding: 5rem 0.75rem 2rem;
+  padding: var(--header-height) 0.75rem 2rem;
 
   // ── Header bar ──
   .header-bar {
@@ -225,13 +230,12 @@ body {
     }
   }
 
-  // ── Buttons grid — always 4 columns ──
+  // ── Buttons grid — fills available width on desktop, 4 columns on mobile ──
   .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     gap: 4px;
     width: 100%;
-    max-width: 520px;   // ~4 × 124px + 3 × 4px gaps
     margin: 0 auto;
 
     .button {
@@ -333,7 +337,7 @@ body {
 // ─── Progress Ring ───────────────────────────────────────────────────────────
 .progress-ring {
   position: absolute;
-  top: 28px;
+  top: 33px;
   left: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -903,9 +907,13 @@ audio + iframe {
 
 // ─── Mobile overrides (≤ 640 px) ─────────────────────────────────────────────
 @media screen and (max-width: 640px) {
+  :root {
+    --header-height: 44px;
+  }
+
   // Compact container — less top padding to match smaller header
   .container {
-    padding: 3.25rem 0.25rem 1.5rem;
+    padding: var(--header-height) 0.25rem 1.5rem;
   }
 
   // Compact header — reduce height and font sizes
@@ -928,8 +936,9 @@ audio + iframe {
     }
   }
 
-  // 4-column grid already set above — just tighten gap and height on small screens
+  // Force 4-column grid and tighten gap on small screens
   .container .buttons {
+    grid-template-columns: repeat(4, 1fr);
     gap: 2px;
 
     .button {
