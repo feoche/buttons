@@ -1,0 +1,8 @@
+{
+  "name": "mybuttons-webmcp",
+  "tools": [
+    "search_buttons",
+    "list_categories"
+  ]
+}
+

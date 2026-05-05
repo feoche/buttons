@@ -1,0 +1,36 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "MyButtons Public API",
+    "version": "1.0.0",
+    "description": "Read-only discovery endpoints for the MyButtons catalog."
+  },
+  "servers": [
+    {
+      "url": "https://mybuttons.fr"
+    }
+  ],
+  "paths": {
+    "/json/data.json": {
+      "get": {
+        "summary": "Get the sound button catalog",
+        "responses": {
+          "200": {
+            "description": "Array of sound buttons"
+          }
+        }
+      }
+    },
+    "/api/status": {
+      "get": {
+        "summary": "Health status",
+        "responses": {
+          "200": {
+            "description": "Service readiness"
+          }
+        }
+      }
+    }
+  }
+}
+

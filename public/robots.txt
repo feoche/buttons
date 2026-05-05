@@ -1,0 +1,30 @@
+# robots.txt for https://mybuttons.fr/
+# RFC 9309 + AI crawler policy declarations
+
+User-agent: *
+Allow: /
+Allow: /.well-known/
+Allow: /json/
+Disallow: /api/private/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /api/private/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/private/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /api/private/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/private/
+
+# Content usage preferences for AI systems
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+Sitemap: https://mybuttons.fr/sitemap.xml
+

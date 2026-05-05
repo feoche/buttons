@@ -1,0 +1,16 @@
+# MyButtons API
+
+This site exposes static JSON resources for button discovery.
+
+## Endpoints
+
+- `GET /json/data.json` - Sound button catalog
+- `GET /api/status` - Health and readiness signal
+- `GET /api/openapi.json` - OpenAPI description
+
+## Discovery
+
+- `/.well-known/api-catalog`
+- `/.well-known/oauth-protected-resource`
+- `/.well-known/openid-configuration`
+

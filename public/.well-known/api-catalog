@@ -1,0 +1,26 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://mybuttons.fr/api",
+      "service-desc": [
+        {
+          "href": "https://mybuttons.fr/api/openapi.json",
+          "type": "application/openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://mybuttons.fr/docs/api",
+          "type": "text/markdown"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://mybuttons.fr/api/status",
+          "type": "application/health+json"
+        }
+      ]
+    }
+  ]
+}
+

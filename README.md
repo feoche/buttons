@@ -38,3 +38,24 @@ Tracked event parameters:
 
 In GA4, use **Reports > Engagement > Events** (or **Explore**) and inspect `sound_button_click` to see which buttons are used.
 
+## Agent readiness endpoints
+
+This project publishes machine-discovery files from `public/`:
+
+- `/robots.txt`
+- `/sitemap.xml`
+- `/.well-known/api-catalog`
+- `/.well-known/openid-configuration`
+- `/.well-known/oauth-authorization-server`
+- `/.well-known/oauth-protected-resource`
+- `/.well-known/mcp/server-card.json`
+- `/.well-known/agent-skills/index.json`
+- `/index.md` (markdown representation of the homepage)
+
+Build-time generators:
+
+- `scripts/generate-sitemap.mjs`
+- `scripts/generate-agent-skills-index.mjs`
+
+These scripts run automatically via `npm run build`.
+

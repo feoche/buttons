@@ -1,0 +1,91 @@
+{
+  "$schema": "https://agentskills.io/schemas/agent-skills-index-v0.2.0.json",
+  "version": "0.2.0",
+  "generatedAt": "2026-05-05T14:18:50.021Z",
+  "skills": [
+    {
+      "name": "Agent Skills",
+      "type": "documentation",
+      "description": "Publishes the Agent Skills discovery index.",
+      "url": "https://mybuttons.fr/.well-known/agent-skills/agent-skills/SKILL.md",
+      "sha256": "d43c061f36f3876d3522b345ef96133b436b579f11d4d5321d1cad929fdeb9b8"
+    },
+    {
+      "name": "Ai Rules",
+      "type": "documentation",
+      "description": "Defines explicit AI crawler directives in `robots.txt`.",
+      "url": "https://mybuttons.fr/.well-known/agent-skills/ai-rules/SKILL.md",
+      "sha256": "4bed9a8b0965e5891af1c9cc969345fc7aef7de47fc1addefcdb74188536e5ae"
+    },
+    {
+      "name": "Api Catalog",
+      "type": "documentation",
+      "description": "Publishes an API catalog in JSON linkset format for automated API discovery.",
+      "url": "https://mybuttons.fr/.well-known/agent-skills/api-catalog/SKILL.md",
+      "sha256": "90b21ef663e676aba55722e71536b5cf2d790c722b2cde04237f4b2c76f1fe81"
+    },
+    {
+      "name": "Content Signals",
+      "type": "documentation",
+      "description": "Publishes content-usage preferences for AI systems.",
+      "url": "https://mybuttons.fr/.well-known/agent-skills/content-signals/SKILL.md",
+      "sha256": "ad85bd988c68cbe32253e92569d6c7ee76b326284fdc769e9c8685fb5b198758"
+    },
+    {
+      "name": "Link Headers",
+      "type": "documentation",
+      "description": "Adds RFC 8288 discovery links for agent clients.",
+      "url": "https://mybuttons.fr/.well-known/agent-skills/link-headers/SKILL.md",
+      "sha256": "4ed1ea909e37e4f20569be5617f76648bc50f75195ca013817aa979e5ec44670"
+    },
+    {
+      "name": "Markdown Negotiation",
+      "type": "documentation",
+      "description": "Exposes a markdown representation of the homepage for agent use.",
+      "url": "https://mybuttons.fr/.well-known/agent-skills/markdown-negotiation/SKILL.md",
+      "sha256": "24d9a5cf47f2a758851f5323857fa67047c1c6b4823d128c86f8686a83e06789"
+    },
+    {
+      "name": "Mcp Server Card",
+      "type": "documentation",
+      "description": "Publishes an MCP server card for machine discovery.",
+      "url": "https://mybuttons.fr/.well-known/agent-skills/mcp-server-card/SKILL.md",
+      "sha256": "d1556c3f015a2191bd25ed99fcd6c0128f51dfbba4c27e8494e7a9d8f54b88b2"
+    },
+    {
+      "name": "Oauth Discovery",
+      "type": "documentation",
+      "description": "Publishes OAuth and OIDC discovery metadata for agent authentication flows.",
+      "url": "https://mybuttons.fr/.well-known/agent-skills/oauth-discovery/SKILL.md",
+      "sha256": "b08844c4d37a4763098b0c34f14f7c5f8d9b27df766a858e88c45fd3cf782f1b"
+    },
+    {
+      "name": "Oauth Protected Resource",
+      "type": "documentation",
+      "description": "Publishes OAuth Protected Resource Metadata for API token discovery.",
+      "url": "https://mybuttons.fr/.well-known/agent-skills/oauth-protected-resource/SKILL.md",
+      "sha256": "7b2b9f034188b2b94a8a925221cf60eabb6c2780dd14e2cb2e9482cf91e6bc24"
+    },
+    {
+      "name": "Robots Txt",
+      "type": "documentation",
+      "description": "Defines crawl rules and AI crawler policy at `/robots.txt`.",
+      "url": "https://mybuttons.fr/.well-known/agent-skills/robots-txt/SKILL.md",
+      "sha256": "37f06a50a1de8f6c9208e29a416143d9f493e173112f8db1cb1b967fee801db3"
+    },
+    {
+      "name": "Sitemap",
+      "type": "documentation",
+      "description": "Publishes and refreshes the XML sitemap used by search engines and agents.",
+      "url": "https://mybuttons.fr/.well-known/agent-skills/sitemap/SKILL.md",
+      "sha256": "76b4037887cf480db12ca44622364f04f9e0be746740caa7efab496c6b872189"
+    },
+    {
+      "name": "Webmcp",
+      "type": "documentation",
+      "description": "Provides browser-native tools through the WebMCP API when available.",
+      "url": "https://mybuttons.fr/.well-known/agent-skills/webmcp/SKILL.md",
+      "sha256": "9742d79c2f9f9fe761bba337f9cbf26e8b914f59795cf1247891237aedd7bb4b"
+    }
+  ]
+}

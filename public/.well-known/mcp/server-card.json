@@ -1,0 +1,14 @@
+{
+  "serverInfo": {
+    "name": "MyButtons MCP",
+    "version": "1.0.0"
+  },
+  "transport": {
+    "type": "webmcp",
+    "url": "https://mybuttons.fr/.well-known/webmcp"
+  },
+  "capabilities": {
+    "tools": true
+  }
+}
+

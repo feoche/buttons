@@ -1,0 +1,7 @@
+{
+  "resource": "https://mybuttons.fr/api",
+  "authorization_servers": ["https://mybuttons.fr"],
+  "scopes_supported": ["buttons.read"],
+  "bearer_methods_supported": ["header"]
+}
+

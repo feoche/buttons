@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <link rel="alternate" type="text/markdown" href="/index.md" />
+    <link rel="service-doc" href="/docs/api" />
+    <link rel="service-desc" type="application/openapi+json" href="/api/openapi.json" />
+    <link rel="describedby" type="application/linkset+json" href="/.well-known/api-catalog" />
     <link href="/img/favicon.png" rel="apple-touch-icon" />
     <link href="/img/favicon.png" rel="apple-touch-icon" sizes="152x152" />
     <link href="/img/favicon.png" rel="apple-touch-icon" sizes="167x167" />
@@ -38,6 +42,92 @@
           })
           .catch((err) => console.warn("[SW] Registration failed:", err));
       }
+    </script>
+    <script>
+      (async () => {
+        if (!("modelContext" in navigator) || typeof navigator.modelContext?.provideContext !== "function") {
+          return;
+        }
+
+        async function loadButtons() {
+          const response = await fetch("/json/data.json", { cache: "force-cache" });
+          if (!response.ok) {
+            throw new Error(`Failed to load data.json (${response.status})`);
+          }
+          return response.json();
+        }
+
+        const tools = [
+          {
+            name: "search_buttons",
+            description: "Search button titles, descriptions, and keywords in the MyButtons catalog.",
+            inputSchema: {
+              type: "object",
+              properties: {
+                query: { type: "string", minLength: 1 },
+                limit: { type: "integer", minimum: 1, maximum: 25, default: 10 }
+              },
+              required: ["query"],
+              additionalProperties: false
+            },
+            execute: async ({ query, limit = 10 }) => {
+              const q = String(query).trim().toLowerCase();
+              const records = await loadButtons();
+              const matches = records
+                .filter((item) => {
+                  const title = String(item.title || "").toLowerCase();
+                  const description = String(item.description || "").toLowerCase();
+                  const keywords = Array.isArray(item.keywords) ? item.keywords.join(" ").toLowerCase() : "";
+                  return title.includes(q) || description.includes(q) || keywords.includes(q);
+                })
+                .slice(0, Number(limit))
+                .map((item) => ({
+                  title: item.title,
+                  category: item.category || "autre",
+                  description: item.description || "",
+                  video: item.video || null
+                }));
+
+              return {
+                total: matches.length,
+                results: matches
+              };
+            }
+          },
+          {
+            name: "list_categories",
+            description: "List available sound categories and counts.",
+            inputSchema: {
+              type: "object",
+              properties: {},
+              additionalProperties: false
+            },
+            execute: async () => {
+              const records = await loadButtons();
+              const counts = new Map();
+              for (const item of records) {
+                const key = item.category || "autre";
+                counts.set(key, (counts.get(key) || 0) + 1);
+              }
+              return {
+                categories: Array.from(counts.entries())
+                  .sort(([a], [b]) => a.localeCompare(b))
+                  .map(([name, count]) => ({ name, count }))
+              };
+            }
+          }
+        ];
+
+        await navigator.modelContext.provideContext({
+          tools,
+          metadata: {
+            name: "MyButtons WebMCP",
+            endpoint: "/.well-known/webmcp"
+          }
+        });
+      })().catch((err) => {
+        console.warn("[WebMCP] Registration failed:", err);
+      });
     </script>
   </body>
 </html>
