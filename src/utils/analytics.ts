@@ -47,7 +47,6 @@ export function initAnalytics(): void {
     injectScript(`https://www.googletagmanager.com/gtag/js?id=${measurementId}`);
 
     isInitialized = true;
-    console.debug("[Analytics] GA4 initialized with ID:", measurementId);
   } catch (error) {
     console.warn("[Analytics] Failed to initialize:", error);
   }
