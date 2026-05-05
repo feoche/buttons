@@ -25,3 +25,5 @@ video-report.json
 *.njsproj
 *.sln
 *.sw?
+
+.env

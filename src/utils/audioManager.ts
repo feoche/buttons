@@ -1,10 +1,5 @@
 import type { SoundButton } from "../types";
-
-declare function gtag(
-  command: string,
-  event: string,
-  params: Record<string, string>
-): void;
+import { trackButtonClick } from "./analytics";
 
 const audio = new Audio();
 let iframe: HTMLIFrameElement | null = null;
@@ -32,10 +27,8 @@ function getIframe(): HTMLIFrameElement {
   return iframe;
 }
 
-function trackPlay(title: string): void {
-  if (typeof gtag !== "undefined") {
-    gtag("event", "button_play", { event_label: title });
-  }
+function trackPlay(button: SoundButton, repeat: boolean): void {
+  trackButtonClick(button, repeat);
 }
 
 export function playSound(button: SoundButton, repeat: boolean): void {
@@ -66,7 +59,7 @@ export function playSound(button: SoundButton, repeat: boolean): void {
         audio.currentTime = 0.01;
       }
       audio.play().catch(() => {});
-      trackPlay(button.title);
+      trackPlay(button, repeat);
       button._paused = false;
     } else {
       audio.pause();
@@ -83,6 +76,6 @@ export function playSound(button: SoundButton, repeat: boolean): void {
     audio.currentTime = 0.01;
     audio.loop = repeat;
     audio.play().catch(() => {});
-    trackPlay(button.title);
+    trackPlay(button, repeat);
   }
 }
